@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 9ee622dc11090e64482fc135e298e29d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4612793032870907868
+    second: marisa_talk_0
+  - first:
+      213: 304764521064550195
+    second: marisa_talk_1
+  - first:
+      213: -3836019885786238324
+    second: marisa_talk_2
+  - first:
+      213: 2148264022270072933
+    second: marisa_talk_3
+  - first:
+      213: 6050817813779822683
+    second: marisa_talk_4
+  - first:
+      213: 6662142246349987238
+    second: marisa_talk_5
+  - first:
+      213: 7410666220148493607
+    second: marisa_talk_6
+  - first:
+      213: 5618729069794372931
+    second: marisa_talk_7
+  - first:
+      213: -2799162892569429603
+    second: marisa_talk_8
+  - first:
+      213: -1974461927266196229
+    second: marisa_talk_9
+  - first:
+      213: -6441537601293825592
+    second: marisa_talk_10
+  - first:
+      213: -4991174074665058520
+    second: marisa_talk_11
+  - first:
+      213: -5776031183257459363
+    second: marisa_talk_12
+  - first:
+      213: 1530536163650601076
+    second: marisa_talk_13
+  - first:
+      213: 3518210361843978127
+    second: marisa_talk_14
+  - first:
+      213: 9031618175446065979
+    second: marisa_talk_15
+  - first:
+      213: -3310858917663248623
+    second: marisa_talk_16
+  - first:
+      213: -5905817198041404248
+    second: marisa_talk_17
+  - first:
+      213: -325337605830817934
+    second: marisa_talk_18
+  - first:
+      213: -2820647063106166312
+    second: marisa_talk_19
+  - first:
+      213: 2953672512718436244
+    second: marisa_talk_20
+  - first:
+      213: 4500654005819237129
+    second: marisa_talk_21
+  - first:
+      213: 899245716221899133
+    second: marisa_talk_22
+  - first:
+      213: 5854600867122818190
+    second: marisa_talk_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: marisa_talk_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1412
+        width: 91
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfcaa2e2dee30040800000000000000
+      internalID: 4612793032870907868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 798
+        width: 682
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fc13a97bdba3400800000000000000
+      internalID: 304764521064550195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_2
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1291
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82706cec38b3cac0800000000000000
+      internalID: -3836019885786238324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_3
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1291
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568d82b0fba20dd10800000000000000
+      internalID: 2148264022270072933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_4
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1291
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58b3f63eb2d8f350800000000000000
+      internalID: 6050817813779822683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1295
+        width: 74
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad50d4531fa47c50800000000000000
+      internalID: 6662142246349987238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_6
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1178
+        width: 76
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d00f0f9a9f7d660800000000000000
+      internalID: 7410666220148493607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_7
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1044
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d2146d15cb9fd40800000000000000
+      internalID: 5618729069794372931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_8
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1044
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99b1f70e206729d0800000000000000
+      internalID: -2799162892569429603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_9
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1044
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4e3ca965d4994e0800000000000000
+      internalID: -1974461927266196229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1061
+        width: 25
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c94f8b2eaf0b96a0800000000000000
+      internalID: -6441537601293825592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_11
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 944
+        width: 78
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f337b9f99cbbab0800000000000000
+      internalID: -4991174074665058520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_12
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 797
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d552c56dd3a67dfa0800000000000000
+      internalID: -5776031183257459363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_13
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 798
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470884e188e8d3510800000000000000
+      internalID: 1530536163650601076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_14
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 827
+        width: 74
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f0fce0fa133d030800000000000000
+      internalID: 3518210361843978127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_15
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 33
+        width: 682
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33ac6601e0c65d70800000000000000
+      internalID: 9031618175446065979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_16
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 526
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f6f372b577d02d0800000000000000
+      internalID: -3310858917663248623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_17
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 526
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac695a7c825a0ea0800000000000000
+      internalID: -5905817198041404248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_18
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 526
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277c064db2b2c7bf0800000000000000
+      internalID: -325337605830817934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_19
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 279
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1eec6c07c0bd8d0800000000000000
+      internalID: -2820647063106166312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_20
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 279
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497fa67408d8df820800000000000000
+      internalID: 2953672512718436244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_21
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 279
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9036bc909f8857e30800000000000000
+      internalID: 4500654005819237129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_22
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 32
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71b239e633ca7c00800000000000000
+      internalID: 899245716221899133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marisa_talk_23
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 32
+        width: 264
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cac8a3878bf3150800000000000000
+      internalID: 5854600867122818190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      marisa_talk_0: 4612793032870907868
+      marisa_talk_1: 304764521064550195
+      marisa_talk_10: -6441537601293825592
+      marisa_talk_11: -4991174074665058520
+      marisa_talk_12: -5776031183257459363
+      marisa_talk_13: 1530536163650601076
+      marisa_talk_14: 3518210361843978127
+      marisa_talk_15: 9031618175446065979
+      marisa_talk_16: -3310858917663248623
+      marisa_talk_17: -5905817198041404248
+      marisa_talk_18: -325337605830817934
+      marisa_talk_19: -2820647063106166312
+      marisa_talk_2: -3836019885786238324
+      marisa_talk_20: 2953672512718436244
+      marisa_talk_21: 4500654005819237129
+      marisa_talk_22: 899245716221899133
+      marisa_talk_23: 5854600867122818190
+      marisa_talk_3: 2148264022270072933
+      marisa_talk_4: 6050817813779822683
+      marisa_talk_5: 6662142246349987238
+      marisa_talk_6: 7410666220148493607
+      marisa_talk_7: 5618729069794372931
+      marisa_talk_8: -2799162892569429603
+      marisa_talk_9: -1974461927266196229
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: b24b04f57d366c543b7f7275fca7a8c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7706361695687595217
+    second: reimu_talk_0
+  - first:
+      213: -7915536288332713172
+    second: reimu_talk_1
+  - first:
+      213: 4737575307622780945
+    second: reimu_talk_2
+  - first:
+      213: 5226085352264492099
+    second: reimu_talk_3
+  - first:
+      213: -6582382838558896395
+    second: reimu_talk_4
+  - first:
+      213: -1271208837717685168
+    second: reimu_talk_5
+  - first:
+      213: 2983641058661945588
+    second: reimu_talk_6
+  - first:
+      213: 5093394353183958436
+    second: reimu_talk_7
+  - first:
+      213: -5398701353321942449
+    second: reimu_talk_8
+  - first:
+      213: 4764450663229139794
+    second: reimu_talk_9
+  - first:
+      213: 8687750359888430638
+    second: reimu_talk_10
+  - first:
+      213: 5470903303278761405
+    second: reimu_talk_11
+  - first:
+      213: -4353486834979026013
+    second: reimu_talk_12
+  - first:
+      213: 463840021169214892
+    second: reimu_talk_13
+  - first:
+      213: -8738214932098723293
+    second: reimu_talk_14
+  - first:
+      213: -5845720216589670110
+    second: reimu_talk_15
+  - first:
+      213: -2203898695715596641
+    second: reimu_talk_16
+  - first:
+      213: -1633687658003419401
+    second: reimu_talk_17
+  - first:
+      213: 8852867929916301222
+    second: reimu_talk_18
+  - first:
+      213: 6728655795236930085
+    second: reimu_talk_19
+  - first:
+      213: -4485175539526601827
+    second: reimu_talk_20
+  - first:
+      213: -8219524657672648378
+    second: reimu_talk_21
+  - first:
+      213: -1918796518191268676
+    second: reimu_talk_22
+  - first:
+      213: 150189697378511288
+    second: reimu_talk_23
+  - first:
+      213: -8877823067824496125
+    second: reimu_talk_24
+  - first:
+      213: 129100673515352707
+    second: reimu_talk_25
+  - first:
+      213: -8304902656140369731
+    second: reimu_talk_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reimu_talk_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1516
+        width: 76
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b2dd92ed08d0590800000000000000
+      internalID: -7706361695687595217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 871
+        width: 667
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23f63f1fad562290800000000000000
+      internalID: -7915536288332713172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_2
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1436
+        width: 227
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110948b34af3fb140800000000000000
+      internalID: 4737575307622780945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_3
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1436
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344e89b50f8c68840800000000000000
+      internalID: 5226085352264492099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_4
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1436
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fec11ceeada6a4a0800000000000000
+      internalID: -6582382838558896395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_5
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1399
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c00881c42cb5ee0800000000000000
+      internalID: -1271208837717685168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1282
+        width: 25
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0d0de1cb5086920800000000000000
+      internalID: 2983641058661945588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_7
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1159
+        width: 261
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5a282ad2f5fa640800000000000000
+      internalID: 5093394353183958436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_8
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1325
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4233d209b5f315b0800000000000000
+      internalID: -5398701353321942449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_9
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1159
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ba5a392aabe1240800000000000000
+      internalID: 4764450663229139794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_10
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 1159
+        width: 229
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e260c623ce6119870800000000000000
+      internalID: 8687750359888430638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1165
+        width: 91
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db51178719d8ceb40800000000000000
+      internalID: 5470903303278761405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1048
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab4cb21ace4593c0800000000000000
+      internalID: -4353486834979026013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_13
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 871
+        width: 227
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5966eaa04ef6600800000000000000
+      internalID: 463840021169214892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_14
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 981
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322dd39f0df9bb680800000000000000
+      internalID: -8738214932098723293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_15
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 871
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2296ad95f64dfdea0800000000000000
+      internalID: -5845720216589670110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_16
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 16
+        width: 667
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96dce020dd2a61e0800000000000000
+      internalID: -2203898695715596641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_17
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 581
+        width: 227
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe24ce0bb9f359e0800000000000000
+      internalID: -1633687658003419401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_18
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 581
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afdb1e4a74bbda70800000000000000
+      internalID: 8852867929916301222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_19
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 581
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52288fabbccf06d50800000000000000
+      internalID: 6728655795236930085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_20
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 304
+        width: 261
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93fe3b3c9471c1c0800000000000000
+      internalID: -4485175539526601827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_21
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 470
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6498bdc6fd16eed80800000000000000
+      internalID: -8219524657672648378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_22
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 304
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbcf3f0abb01f55e0800000000000000
+      internalID: -1918796518191268676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_23
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 304
+        width: 229
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b96b29ebb4951200800000000000000
+      internalID: 150189697378511288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_24
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 16
+        width: 227
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3026d8fd4f2abc480800000000000000
+      internalID: -8877823067824496125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_25
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 126
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3827529e068aac100800000000000000
+      internalID: 129100673515352707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu_talk_26
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 16
+        width: 227
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db02e86190f0fbc80800000000000000
+      internalID: -8304902656140369731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      reimu_talk_0: -7706361695687595217
+      reimu_talk_1: -7915536288332713172
+      reimu_talk_10: 8687750359888430638
+      reimu_talk_11: 5470903303278761405
+      reimu_talk_12: -4353486834979026013
+      reimu_talk_13: 463840021169214892
+      reimu_talk_14: -8738214932098723293
+      reimu_talk_15: -5845720216589670110
+      reimu_talk_16: -2203898695715596641
+      reimu_talk_17: -1633687658003419401
+      reimu_talk_18: 8852867929916301222
+      reimu_talk_19: 6728655795236930085
+      reimu_talk_2: 4737575307622780945
+      reimu_talk_20: -4485175539526601827
+      reimu_talk_21: -8219524657672648378
+      reimu_talk_22: -1918796518191268676
+      reimu_talk_23: 150189697378511288
+      reimu_talk_24: -8877823067824496125
+      reimu_talk_25: 129100673515352707
+      reimu_talk_26: -8304902656140369731
+      reimu_talk_3: 5226085352264492099
+      reimu_talk_4: -6582382838558896395
+      reimu_talk_5: -1271208837717685168
+      reimu_talk_6: 2983641058661945588
+      reimu_talk_7: 5093394353183958436
+      reimu_talk_8: -5398701353321942449
+      reimu_talk_9: 4764450663229139794
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
