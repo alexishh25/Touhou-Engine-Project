@@ -1,0 +1,1315 @@
+fileFormatVersion: 2
+guid: cddd9c0ff02ed66459bd2227ae956387
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1374449374049159042
+    second: Shot_01_0
+  - first:
+      213: 5976868192633453669
+    second: Shot_01_1
+  - first:
+      213: -1480083892958432366
+    second: Shot_01_2
+  - first:
+      213: 7835527783679146700
+    second: Shot_01_3
+  - first:
+      213: -8934756777013284584
+    second: Shot_01_4
+  - first:
+      213: 235149079213507051
+    second: Shot_01_5
+  - first:
+      213: -276973459773047010
+    second: Shot_01_6
+  - first:
+      213: 7664751860984618208
+    second: Shot_01_7
+  - first:
+      213: -1215186035028576770
+    second: Shot_01_8
+  - first:
+      213: 6881031396796270271
+    second: Shot_01_9
+  - first:
+      213: 8078726562184556213
+    second: Shot_01_10
+  - first:
+      213: 7790856720285830362
+    second: Shot_01_11
+  - first:
+      213: -6623232891296193629
+    second: Shot_01_12
+  - first:
+      213: 5079814887394166574
+    second: Shot_01_13
+  - first:
+      213: -8297203982055518555
+    second: Shot_01_14
+  - first:
+      213: -2690489425577403995
+    second: Shot_01_15
+  - first:
+      213: 1505527343525918210
+    second: Shot_01_16
+  - first:
+      213: -4354148097300987522
+    second: Shot_01_17
+  - first:
+      213: 796177934650558442
+    second: Shot_01_18
+  - first:
+      213: -4666734690421116630
+    second: Shot_01_19
+  - first:
+      213: -7230509166640497447
+    second: Shot_01_20
+  - first:
+      213: -2414056718243665328
+    second: Shot_01_21
+  - first:
+      213: -4155978658201962409
+    second: Shot_01_22
+  - first:
+      213: -1958963241706889668
+    second: Shot_01_23
+  - first:
+      213: 4626178844390939887
+    second: Shot_01_24
+  - first:
+      213: -5088123729640229950
+    second: Shot_01_25
+  - first:
+      213: 4259135878484569903
+    second: Shot_01_26
+  - first:
+      213: 2114122773443775013
+    second: Shot_01_27
+  - first:
+      213: -7293236276757544056
+    second: Shot_01_28
+  - first:
+      213: -5231121064479752518
+    second: Shot_01_29
+  - first:
+      213: -4680116078447942703
+    second: Shot_01_30
+  - first:
+      213: -1151374552411673480
+    second: Shot_01_31
+  - first:
+      213: -3409525078668605590
+    second: Shot_01_32
+  - first:
+      213: -7654561389460874365
+    second: Shot_01_33
+  - first:
+      213: 2255812214835172402
+    second: Shot_01_34
+  - first:
+      213: 5050131293229762327
+    second: Shot_01_35
+  - first:
+      213: -7613059615215619275
+    second: Shot_01_36
+  - first:
+      213: -5780131006126858312
+    second: Shot_01_37
+  - first:
+      213: -1584798622211557757
+    second: Shot_01_38
+  - first:
+      213: 1944470673186878666
+    second: Shot_01_39
+  - first:
+      213: 5998433709299162132
+    second: Shot_01_40
+  - first:
+      213: -2464806907862092284
+    second: Shot_01_41
+  - first:
+      213: 8402402786210191049
+    second: Shot_01_42
+  - first:
+      213: -6937984311900549413
+    second: Shot_01_43
+  - first:
+      213: 5023310292332700790
+    second: Shot_01_44
+  - first:
+      213: -1384115729488136320
+    second: Shot_01_45
+  - first:
+      213: -1658937209210049472
+    second: Shot_01_46
+  - first:
+      213: -951769384408737049
+    second: Shot_01_47
+  - first:
+      213: 1232765080511687879
+    second: Shot_01_48
+  - first:
+      213: 5547033938843002900
+    second: Shot_01_49
+  - first:
+      213: 5876972548192181283
+    second: Shot_01_50
+  - first:
+      213: -3068789218164726480
+    second: Shot_01_51
+  - first:
+      213: 4559887836491868300
+    second: Shot_01_52
+  - first:
+      213: -671990440631738534
+    second: Shot_01_53
+  - first:
+      213: -367725989839238523
+    second: Shot_01_54
+  - first:
+      213: -1421681394802192660
+    second: Shot_01_55
+  - first:
+      213: 8549214485844455898
+    second: Shot_01_56
+  - first:
+      213: 1091297212178533028
+    second: Shot_01_57
+  - first:
+      213: -2954679937184808242
+    second: Shot_01_58
+  - first:
+      213: -7892485220690470720
+    second: Shot_01_59
+  - first:
+      213: 1721691729716737101
+    second: Shot_01_60
+  - first:
+      213: -8611989496542013387
+    second: Shot_01_61
+  - first:
+      213: 1591052160072901445
+    second: Shot_01_62
+  - first:
+      213: -1246730869399815461
+    second: Shot_01_63
+  - first:
+      213: -8516719607836963492
+    second: Shot_01_64
+  - first:
+      213: 1389333088517099523
+    second: Shot_01_65
+  - first:
+      213: 280215317383981846
+    second: Shot_01_66
+  - first:
+      213: 699032335482330407
+    second: Shot_01_67
+  - first:
+      213: 1328382446757153574
+    second: Shot_01_68
+  - first:
+      213: -4868664574116080892
+    second: Shot_01_69
+  - first:
+      213: 4558418391599800018
+    second: Shot_01_70
+  - first:
+      213: -4430066905253255105
+    second: Shot_01_71
+  - first:
+      213: -4549746532253325491
+    second: Shot_01_72
+  - first:
+      213: -4655189492920577966
+    second: Shot_01_73
+  - first:
+      213: -8123904958621255160
+    second: Shot_01_74
+  - first:
+      213: -4666730728787563786
+    second: Shot_01_75
+  - first:
+      213: -5736046162943873714
+    second: Shot_01_76
+  - first:
+      213: 4135232252185560029
+    second: Shot_01_77
+  - first:
+      213: -7140501079848788335
+    second: Shot_01_78
+  - first:
+      213: 65284609351623974
+    second: Shot_01_79
+  - first:
+      213: 5710290072692806081
+    second: Shot_01_80
+  - first:
+      213: 5445050222656524716
+    second: Shot_01_81
+  - first:
+      213: 2242755364228460320
+    second: Shot_01_82
+  - first:
+      213: 6712044182166408610
+    second: Shot_01_83
+  - first:
+      213: 7123664500026099833
+    second: Shot_01_84
+  - first:
+      213: 7645929156839388134
+    second: Shot_01_85
+  - first:
+      213: 8308981983659664828
+    second: Shot_01_86
+  - first:
+      213: 4088829456303480720
+    second: Shot_01_87
+  - first:
+      213: -7539424739421486004
+    second: Shot_01_88
+  - first:
+      213: 5240197814244582898
+    second: Shot_01_89
+  - first:
+      213: -8897405856414876120
+    second: Shot_01_90
+  - first:
+      213: 8237813578533626316
+    second: Shot_01_91
+  - first:
+      213: -2034667892963566241
+    second: Shot_01_92
+  - first:
+      213: 5250960229265782219
+    second: Shot_01_93
+  - first:
+      213: -1379513532986020048
+    second: Shot_01_94
+  - first:
+      213: -4434647210910326167
+    second: Shot_01_95
+  - first:
+      213: -6619779117484801805
+    second: Shot_01_96
+  - first:
+      213: 5660550621051233452
+    second: Shot_01_97
+  - first:
+      213: -5099519687083080323
+    second: Shot_01_98
+  - first:
+      213: 4127951473849537212
+    second: Shot_01_99
+  - first:
+      213: -4806309788688582780
+    second: Shot_01_100
+  - first:
+      213: 8159441908629999260
+    second: Shot_01_101
+  - first:
+      213: 3972611073149061111
+    second: Shot_01_102
+  - first:
+      213: -6470681864111236600
+    second: Shot_01_103
+  - first:
+      213: 543045627576124159
+    second: Shot_01_104
+  - first:
+      213: 2943477909249753037
+    second: Shot_01_105
+  - first:
+      213: -8459271032594898769
+    second: Shot_01_106
+  - first:
+      213: 8246545312250173266
+    second: Shot_01_107
+  - first:
+      213: 3857433083169175860
+    second: Shot_01_108
+  - first:
+      213: -1691593005438725725
+    second: Shot_01_109
+  - first:
+      213: -1725899193028703536
+    second: Shot_01_110
+  - first:
+      213: -6404738182502585968
+    second: Shot_01_111
+  - first:
+      213: -8407032352798443269
+    second: Shot_01_112
+  - first:
+      213: 1334682786237358219
+    second: Shot_01_113
+  - first:
+      213: -5222688420784239351
+    second: Shot_01_114
+  - first:
+      213: 767316293039715084
+    second: Shot_01_115
+  - first:
+      213: 8632977338817222361
+    second: Shot_01_116
+  - first:
+      213: 7457738620168797649
+    second: Shot_01_117
+  - first:
+      213: 2684761668542065241
+    second: Shot_01_118
+  - first:
+      213: 1831614757640132642
+    second: Shot_01_119
+  - first:
+      213: 8470659122807649293
+    second: Shot_01_120
+  - first:
+      213: 1116113066340436632
+    second: Shot_01_121
+  - first:
+      213: 408037881207880436
+    second: Shot_01_122
+  - first:
+      213: 8203083103291333350
+    second: Shot_01_123
+  - first:
+      213: -5518380214900911371
+    second: Shot_01_124
+  - first:
+      213: -7982305480774510798
+    second: Shot_01_125
+  - first:
+      213: -7745022891569025991
+    second: Shot_01_126
+  - first:
+      213: 4268804431766227791
+    second: Shot_01_127
+  - first:
+      213: 3543554201073068263
+    second: Shot_01_128
+  - first:
+      213: -3694285466586199090
+    second: Shot_01_129
+  - first:
+      213: 8923595490804936774
+    second: Shot_01_130
+  - first:
+      213: -243966690505871684
+    second: Shot_01_131
+  - first:
+      213: 7540874984512871207
+    second: Shot_01_132
+  - first:
+      213: 6154202514201009797
+    second: Shot_01_133
+  - first:
+      213: 1375650355945855951
+    second: Shot_01_134
+  - first:
+      213: -8125153538508722893
+    second: Shot_01_135
+  - first:
+      213: 5090058069947575287
+    second: Shot_01_136
+  - first:
+      213: 5871645996545059422
+    second: Shot_01_137
+  - first:
+      213: 2157313641416058187
+    second: Shot_01_138
+  - first:
+      213: 5742921440967178277
+    second: Shot_01_139
+  - first:
+      213: 2753732538021986538
+    second: Shot_01_140
+  - first:
+      213: 3672346916748978462
+    second: Shot_01_141
+  - first:
+      213: 8348904530666596965
+    second: Shot_01_142
+  - first:
+      213: -5767219099710869439
+    second: Shot_01_143
+  - first:
+      213: -1153060977326788973
+    second: Shot_01_144
+  - first:
+      213: 8122180138727629941
+    second: Shot_01_145
+  - first:
+      213: 746440603633146032
+    second: Shot_01_146
+  - first:
+      213: -8362443857144037684
+    second: Shot_01_147
+  - first:
+      213: 6432383193228364241
+    second: Shot_01_148
+  - first:
+      213: 5069474987671454372
+    second: Shot_01_149
+  - first:
+      213: -5605914317728842342
+    second: Shot_01_150
+  - first:
+      213: 7943542211694535776
+    second: Shot_01_151
+  - first:
+      213: -3884154598576657204
+    second: Shot_01_152
+  - first:
+      213: 1786374396862327099
+    second: Shot_01_153
+  - first:
+      213: 4164696214287286413
+    second: Shot_01_154
+  - first:
+      213: 3935326739840073785
+    second: Shot_01_155
+  - first:
+      213: 5642794503414328324
+    second: Shot_01_156
+  - first:
+      213: -8032610199221202030
+    second: Shot_01_157
+  - first:
+      213: -4207828636638334815
+    second: Shot_01_158
+  - first:
+      213: -7884699481488924593
+    second: Shot_01_159
+  - first:
+      213: 3741700109801418350
+    second: Shot_01_160
+  - first:
+      213: 4127072065011375836
+    second: Shot_01_161
+  - first:
+      213: -7414890472872970984
+    second: Shot_01_162
+  - first:
+      213: -762900105519888177
+    second: Shot_01_163
+  - first:
+      213: 5788061801347033071
+    second: Shot_01_164
+  - first:
+      213: -3935840746458277229
+    second: Shot_01_165
+  - first:
+      213: 4515526025647356268
+    second: Shot_01_166
+  - first:
+      213: 1451887209171153868
+    second: Shot_01_167
+  - first:
+      213: -6568090214865079637
+    second: Shot_01_168
+  - first:
+      213: -1157985704999263403
+    second: Shot_01_169
+  - first:
+      213: 8152240634832651094
+    second: Shot_01_170
+  - first:
+      213: -6261001784088190394
+    second: Shot_01_171
+  - first:
+      213: -4805952303592692132
+    second: Shot_01_172
+  - first:
+      213: 5341377356789268572
+    second: Shot_01_173
+  - first:
+      213: -2696678859308938768
+    second: Shot_01_174
+  - first:
+      213: -3112394946170003121
+    second: Shot_01_175
+  - first:
+      213: 4786644656860077545
+    second: Shot_01_176
+  - first:
+      213: -3378592889372990889
+    second: Shot_01_177
+  - first:
+      213: 3437097634242746729
+    second: Shot_01_178
+  - first:
+      213: -4298682719853371805
+    second: Shot_01_179
+  - first:
+      213: -120235155588479203
+    second: Shot_01_180
+  - first:
+      213: 4949514372330215015
+    second: Shot_01_181
+  - first:
+      213: -4798530174311663067
+    second: Shot_01_182
+  - first:
+      213: -3924154564769751150
+    second: Shot_01_183
+  - first:
+      213: -7444491774963712180
+    second: Shot_01_184
+  - first:
+      213: -8435147803966599939
+    second: Shot_01_185
+  - first:
+      213: 5220192127734558492
+    second: Shot_01_186
+  - first:
+      213: 6035932273939351141
+    second: Shot_01_187
+  - first:
+      213: -3136410661676621945
+    second: Shot_01_188
+  - first:
+      213: -2972583402778626281
+    second: Shot_01_189
+  - first:
+      213: -8451593542350071789
+    second: Shot_01_190
+  - first:
+      213: 5821662906753582505
+    second: Shot_01_191
+  - first:
+      213: -2262039850974495659
+    second: Shot_01_192
+  - first:
+      213: -4865103631854638946
+    second: Shot_01_193
+  - first:
+      213: -4959301212222030130
+    second: Shot_01_194
+  - first:
+      213: -4830609652084727783
+    second: Shot_01_195
+  - first:
+      213: 200524627577107874
+    second: Shot_01_196
+  - first:
+      213: -8450455072795248223
+    second: Shot_01_197
+  - first:
+      213: -317860209026332435
+    second: Shot_01_198
+  - first:
+      213: 3142591154708195538
+    second: Shot_01_199
+  - first:
+      213: 7993576116851559267
+    second: Shot_01_200
+  - first:
+      213: 5299343048175051991
+    second: Shot_01_201
+  - first:
+      213: 5324882985340510061
+    second: Shot_01_202
+  - first:
+      213: -3030038181526460335
+    second: Shot_01_203
+  - first:
+      213: -8328856369142046807
+    second: Shot_01_204
+  - first:
+      213: -2588557395287241692
+    second: Shot_01_205
+  - first:
+      213: -4350232190436474792
+    second: Shot_01_206
+  - first:
+      213: 4573900976873590797
+    second: Shot_01_207
+  - first:
+      213: -1000364606418923156
+    second: Shot_01_208
+  - first:
+      213: -900960242814740849
+    second: Shot_01_209
+  - first:
+      213: -8219990773899683844
+    second: Shot_01_210
+  - first:
+      213: -6856780294324221793
+    second: Shot_01_211
+  - first:
+      213: -6694789319561617533
+    second: Shot_01_212
+  - first:
+      213: 5583722064886707025
+    second: Shot_01_213
+  - first:
+      213: -5327207299485759776
+    second: Shot_01_214
+  - first:
+      213: -8746620324152339418
+    second: Shot_01_215
+  - first:
+      213: -7711648841577915664
+    second: Shot_01_216
+  - first:
+      213: 7816416985191169098
+    second: Shot_01_217
+  - first:
+      213: -6825712093094284447
+    second: Shot_01_218
+  - first:
+      213: -6690036620553617562
+    second: Shot_01_219
+  - first:
+      213: 6543070283152547001
+    second: Shot_01_220
+  - first:
+      213: -6024194384890311746
+    second: Shot_01_221
+  - first:
+      213: 4359997647440841868
+    second: Shot_01_222
+  - first:
+      213: -2594943477260519752
+    second: Shot_01_223
+  - first:
+      213: 5792775786578946389
+    second: Shot_01_224
+  - first:
+      213: -4400003007697821348
+    second: Shot_01_225
+  - first:
+      213: -288322092381470714
+    second: Shot_01_226
+  - first:
+      213: 5443396538351296549
+    second: Shot_01_227
+  - first:
+      213: 8626685105648744835
+    second: Shot_01_228
+  - first:
+      213: 4517140970991391157
+    second: Shot_01_229
+  - first:
+      213: -4494738911509017108
+    second: Shot_01_230
+  - first:
+      213: -6035483872395893109
+    second: Shot_01_231
+  - first:
+      213: 7635236536740726030
+    second: Shot_01_232
+  - first:
+      213: -165318214847291311
+    second: Shot_01_233
+  - first:
+      213: 8599027658035101673
+    second: Shot_01_234
+  - first:
+      213: -2834523103316121929
+    second: Shot_01_235
+  - first:
+      213: 1463716035430284118
+    second: Shot_01_236
+  - first:
+      213: -4842382671213102751
+    second: Shot_01_237
+  - first:
+      213: -2433287141008699016
+    second: Shot_01_238
+  - first:
+      213: 7008535801700675591
+    second: Shot_01_239
+  - first:
+      213: -6678642518055733264
+    second: Shot_01_240
+  - first:
+      213: -4631956191818161775
+    second: Shot_01_241
+  - first:
+      213: 1857096343471926830
+    second: Shot_01_242
+  - first:
+      213: 4932687500159297867
+    second: Shot_01_243
+  - first:
+      213: 835589179395036908
+    second: Shot_01_244
+  - first:
+      213: -5892420984181613072
+    second: Shot_01_245
+  - first:
+      213: -6037636109721708880
+    second: Shot_01_246
+  - first:
+      213: -3779982192120486271
+    second: Shot_01_247
+  - first:
+      213: -2992897553132524673
+    second: Shot_01_248
+  - first:
+      213: -2471236889618417372
+    second: Shot_01_249
+  - first:
+      213: -1499239934070973196
+    second: Shot_01_250
+  - first:
+      213: -7553333319141930373
+    second: Shot_01_251
+  - first:
+      213: -6540690141695164336
+    second: Shot_01_252
+  - first:
+      213: -7158571178336592394
+    second: Shot_01_253
+  - first:
+      213: -4408225560181098487
+    second: Shot_01_254
+  - first:
+      213: 8615833075948011147
+    second: Shot_01_255
+  - first:
+      213: -5489271889412976196
+    second: Shot_01_256
+  - first:
+      213: 8394269043988108405
+    second: Shot_01_257
+  - first:
+      213: -303902296474585183
+    second: Shot_01_258
+  - first:
+      213: 7679221810712832909
+    second: Shot_01_259
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shot_01_1
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1094
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c7f3354f912f250800000000000000
+      internalID: 5976868192633453669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_3
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1030
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca36ed31036dbc60800000000000000
+      internalID: 7835527783679146700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_4
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 966
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811fb97bc0e510480800000000000000
+      internalID: -8934756777013284584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_5
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 902
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be108c777da634300800000000000000
+      internalID: 235149079213507051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_6
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 837
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f34061b1ef72cf0800000000000000
+      internalID: -276973459773047010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_7
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 774
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec908d353bae5a60800000000000000
+      internalID: 7664751860984618208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_8
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 709
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef53b1e4dbac22fe0800000000000000
+      internalID: -1215186035028576770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_9
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 646
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb60a5e19955e7f50800000000000000
+      internalID: 6881031396796270271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_10
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 581
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bee58061076d1070800000000000000
+      internalID: 8078726562184556213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_11
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 518
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc0a9cc8eeae1c60800000000000000
+      internalID: 7790856720285830362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_12
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 454
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a36b99d6cc8514a0800000000000000
+      internalID: -6623232891296193629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_13
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 390
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27cedfd9b02f7640800000000000000
+      internalID: 5079814887394166574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_14
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 326
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aecf9450f86adc80800000000000000
+      internalID: -8297203982055518555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_15
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 261
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9938c4f1679aad0800000000000000
+      internalID: -2690489425577403995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_16
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 198
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206ff7e6425b4e410800000000000000
+      internalID: 1505527343525918210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_17
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 133
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e718ee0ff55f293c0800000000000000
+      internalID: -4354148097300987522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_18
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 70
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7c9dcfc979c0b00800000000000000
+      internalID: 796177934650558442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_01_19
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 5
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21f474468d6c3fb0800000000000000
+      internalID: -4666734690421116630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cefb672c1a20aca40b3f12c8693735a0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":2,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Shot_01_0: 1374449374049159042
+      Shot_01_1: 5976868192633453669
+      Shot_01_10: 8078726562184556213
+      Shot_01_11: 7790856720285830362
+      Shot_01_12: -6623232891296193629
+      Shot_01_13: 5079814887394166574
+      Shot_01_14: -8297203982055518555
+      Shot_01_15: -2690489425577403995
+      Shot_01_16: 1505527343525918210
+      Shot_01_17: -4354148097300987522
+      Shot_01_18: 796177934650558442
+      Shot_01_19: -4666734690421116630
+      Shot_01_2: -1480083892958432366
+      Shot_01_3: 7835527783679146700
+      Shot_01_4: -8934756777013284584
+      Shot_01_5: 235149079213507051
+      Shot_01_6: -276973459773047010
+      Shot_01_7: 7664751860984618208
+      Shot_01_8: -1215186035028576770
+      Shot_01_9: 6881031396796270271
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
