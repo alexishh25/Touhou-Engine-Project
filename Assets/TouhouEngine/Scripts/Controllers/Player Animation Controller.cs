@@ -7,6 +7,15 @@ public class PlayerAnimationController : MonoBehaviour
     private static readonly int idleHash = Animator.StringToHash("Idle");
     private static readonly int isMovingHash = Animator.StringToHash("isMoving");
 
+    private enum PlayerState
+    {
+        Idle,
+        MovingRight,
+        MovingLeft
+    }
+
+    [SerializeField] private PlayerState playerState;
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -23,5 +32,20 @@ public class PlayerAnimationController : MonoBehaviour
     public void PlayDeath()
     {
         _animator.SetTrigger("Death");
+    }
+    private void Update()
+    {
+        switch (playerState)
+        {
+            case PlayerState.Idle:
+
+                break;
+            case PlayerState.MovingRight:
+                // Handle moving right state
+                break;
+            case PlayerState.MovingLeft:
+                // Handle moving left state
+                break;
+        }
     }
 }
