@@ -12,11 +12,11 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rgdbody;
 
-    [SerializeField] public float moveSpeed = 5f;
+    [SerializeField] public float moveSpeed;
 
-    private void OnEnable() => inputActions.FindActionMap("Player").Enable();
+    private void OnEnable() => moveAction?.Enable();
 
-    private void OnDisable() => inputActions.FindActionMap("Player").Disable();
+    private void OnDisable() => moveAction?.Disable();
 
     private void Awake()
     {
@@ -34,15 +34,21 @@ public class PlayerController : MonoBehaviour
 
     private void Moverse()
     {
+        if (moveAction == null) return;
+
         moveInput = moveAction.ReadValue<Vector2>();
 
-        if (moveAction.WasPressedThisFrame())
-        {
-            rgdbody.AddForceAtPosition(new Vector2(moveSpeed, 0), Vector2.up, ForceMode2D.Force);
-        }
+        moveInput = new Vector2(
+            Mathf.Abs(moveInput.x) > 0.1f ? Mathf.Sign(moveInput.x) : 0,
+            Mathf.Abs(moveInput.y) > 0.1f ? Mathf.Sign(moveInput.y) : 0
+        );
+
+        rgdbody.linearVelocity = moveInput * moveSpeed;
+
+        animator.SetFloat("Blend", moveInput.x);
     }
     private void Update()
     {
-        //Moverse();
+        Moverse();
     }
 }

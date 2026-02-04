@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: moveleft
+  m_Name: reimu_premoveleft
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -26,18 +26,8 @@ AnimationClip:
       value: {fileID: -865492837845741942, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
     - time: 0.16666667
       value: {fileID: -3355352157446676642, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - time: 0.25
-      value: {fileID: 8465632479084846818, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - time: 0.33333334
-      value: {fileID: 6823094972800110870, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - time: 0.41666666
-      value: {fileID: 1456264429820348860, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - time: 0.5
-      value: {fileID: -5425684682266424973, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - time: 0.5833333
-      value: {fileID: -2085414386574335758, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - time: 0.65
-      value: {fileID: -2085414386574335758, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
+    - time: 0.23333333
+      value: {fileID: -3355352157446676642, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -63,18 +53,13 @@ AnimationClip:
     - {fileID: 4614050099165156534, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
     - {fileID: -865492837845741942, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
     - {fileID: -3355352157446676642, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - {fileID: 8465632479084846818, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - {fileID: 6823094972800110870, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - {fileID: 1456264429820348860, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - {fileID: -5425684682266424973, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - {fileID: -2085414386574335758, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
-    - {fileID: -2085414386574335758, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
+    - {fileID: -3355352157446676642, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666667
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -93,11 +78,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.6666667
-    functionName: LoopingSpeceficTime
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

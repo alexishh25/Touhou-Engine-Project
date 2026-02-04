@@ -37,7 +37,7 @@ public class PlayerAnimationController : MonoBehaviour
 
     public void LoopingSpeceficTime(float time)
     {
-        _animator.Play("animName", 0, time);
+        _animator.Play("Blend Tree", 0, time);
     }
 
     private void Update()

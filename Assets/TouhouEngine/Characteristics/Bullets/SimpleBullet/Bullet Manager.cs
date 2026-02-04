@@ -21,7 +21,7 @@ public class BulletManager : MonoBehaviour
 
         if (shotTimerCooldown <= 0f)
         {
-            Shot(transform.position, transform.right * bulletSpeed);
+            Shot(transform.position, transform.up * bulletSpeed);
             shotTimerCooldown += shotCooldown;
         }
     }

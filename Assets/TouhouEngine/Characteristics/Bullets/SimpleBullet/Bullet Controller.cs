@@ -4,10 +4,15 @@ public class BulletController : MonoBehaviour
 {
     private const float MAX_LIFE_TIME = 10f;
     private float lifeTimer = 0f;
+
+    public Transform puntoDisparo;
     public Vector2 Velocity;
 
     private void Movement()
     {
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.linearVelocity = puntoDisparo.forward * Velocity;
+
         transform.position += (Vector3)Velocity * Time.deltaTime;
         lifeTimer += Time.deltaTime;
 
