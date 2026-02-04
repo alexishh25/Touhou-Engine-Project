@@ -7,9 +7,8 @@ public class PlayerController : MonoBehaviour
 
     public InputAction moveAction;
 
-    public Vector2 moveInput;
+    public Vector2 moveInput;   
 
-    private Animator animator;
     private Rigidbody2D rgdbody;
 
     [SerializeField] public float moveSpeed;
@@ -22,7 +21,6 @@ public class PlayerController : MonoBehaviour
     {
         moveAction = InputSystem.actions.FindAction("Move");
 
-        animator = GetComponent<Animator>();
         rgdbody = GetComponent<Rigidbody2D>();
     }
 
@@ -45,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
         rgdbody.linearVelocity = moveInput * moveSpeed;
 
-        animator.SetFloat("Blend", moveInput.x);
+        PlayerAnimationController.Instance.AlterarProgresivamenteBlend(GetComponent<Animator>(), "Blend", moveInput);
     }
     private void Update()
     {

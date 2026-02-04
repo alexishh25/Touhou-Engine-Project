@@ -5533,7 +5533,7 @@ TextureImporter:
         width: 14
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5542,6 +5542,116 @@ TextureImporter:
       bones: []
       spriteID: c0622d259710225409ca29ff536b27b1
       internalID: -4530932756991735275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_03_218
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 416
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374c08321f4981248ba58d121e8eb441
+      internalID: 2008055871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_03_219
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 416
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ebd941a53cc314f87e25576c28eb82
+      internalID: -1594854475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_03_220
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 416
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffacd0239336b4e45a1f5238083fe672
+      internalID: 72906555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_03_221
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 416
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdbc23fe36ddc548a1f65f9fc305bb6
+      internalID: 1736621041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot_03_222
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 416
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8609c51adcfc93e49a74c104377b06f7
+      internalID: -1049343557
       vertices: []
       indices: 
       edges: []
@@ -5693,7 +5803,12 @@ TextureImporter:
       Shot_03_215: 7296318382523328861
       Shot_03_216: 8711641202359202606
       Shot_03_217: 879752134723257795
+      Shot_03_218: 2008055871
+      Shot_03_219: -1594854475
       Shot_03_22: 8300826867503359478
+      Shot_03_220: 72906555
+      Shot_03_221: 1736621041
+      Shot_03_222: -1049343557
       Shot_03_23: 8418620440332564094
       Shot_03_24: -4697797460608286579
       Shot_03_25: 1062325339932262274

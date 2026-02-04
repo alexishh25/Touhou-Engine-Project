@@ -3,56 +3,30 @@ using System.Globalization;
 
 public class PlayerAnimationController : MonoBehaviour
 {
-    private Animator _animator;
+    public float currentVal = 0.0f;
 
-    private static readonly int idleHash = Animator.StringToHash("Idle");
-    private static readonly int isMovingHash = Animator.StringToHash("isMoving");
-
-    private enum PlayerState
-    {
-        Idle,
-        MovingRight,
-        MovingLeft
-    }
-
-    [SerializeField] private PlayerState playerState;
-
+    public static PlayerAnimationController Instance { get; private set; }
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
-    }
-
-    public void UpdateMovementAnimation(float horizontalInput)
-    {
-        bool isMoving = Mathf.Abs(horizontalInput) == 0f;
-
-        _animator.SetBool(idleHash, isMoving);
-        _animator.SetFloat(isMovingHash, horizontalInput);
-    }
-
-    public void PlayDeath()
-    {
-        _animator.SetTrigger("Death");
-    }
-
-    public void LoopingSpeceficTime(float time)
-    {
-        _animator.Play("Blend Tree", 0, time);
-    }
-
-    private void Update()
-    {
-        switch (playerState)
+        if (Instance == null)
         {
-            case PlayerState.Idle:
-
-                break;
-            case PlayerState.MovingRight:
-                // Handle moving right state
-                break;
-            case PlayerState.MovingLeft:
-                // Handle moving left state
-                break;
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
+        else
+            Destroy(gameObject);
+    }
+    public void AlterarProgresivamenteBlend(Animator animator, string nombre, Vector2 moveinput)
+    {
+        Debug.Log("MoveInput: " + moveinput);
+
+        if (moveinput.x == 0.0f)
+        {
+            animator.SetFloat(nombre, moveinput.x);
+            return;
+        }
+        currentVal = Mathf.Lerp(currentVal, moveinput.x, 13 * Time.deltaTime);
+        animator.SetFloat(nombre, currentVal);
+        Debug.Log("Blend Alterado a: " + currentVal);
     }
 }
