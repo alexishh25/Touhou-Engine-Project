@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Globalization;
 
 public class PlayerAnimationController : MonoBehaviour
 {
@@ -33,6 +34,12 @@ public class PlayerAnimationController : MonoBehaviour
     {
         _animator.SetTrigger("Death");
     }
+
+    public void LoopingSpeceficTime(float time)
+    {
+        _animator.Play("animName", 0, time);
+    }
+
     private void Update()
     {
         switch (playerState)
