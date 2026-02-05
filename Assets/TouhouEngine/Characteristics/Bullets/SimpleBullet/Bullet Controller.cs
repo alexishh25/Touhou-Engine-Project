@@ -10,7 +10,7 @@ public class BulletController : MonoBehaviour
 
     private void Movement()
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = puntoDisparo.forward * Velocity;
 
         transform.position += (Vector3)Velocity * Time.deltaTime;

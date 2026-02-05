@@ -2,9 +2,11 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BulletPool : MonoBehaviour
 {
+
     private static BulletPool _instance;
     public static BulletPool Instance
     {
@@ -48,17 +50,14 @@ public class BulletPool : MonoBehaviour
 
     public BulletController RequestBullet()
     {
-        for (int i = 0; i < pool.Count; i++)
+        foreach (var bullet in pool)
         {
-            if (!pool[i].gameObject.activeSelf)
-            {
-                pool[i].gameObject.SetActive(true);
-                return pool[i];
-            }
+            if (!bullet.gameObject.activeInHierarchy)
+                return bullet;
         }
 
         BulletController newBullet = Instantiate(bulletprefab);
-        newBullet.gameObject.SetActive(false);
+        newBullet.gameObject.SetActive(true);
         newBullet.transform.parent = this.transform;
         pool.Add(newBullet);
         return newBullet;

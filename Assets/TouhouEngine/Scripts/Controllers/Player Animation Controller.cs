@@ -18,14 +18,12 @@ public class PlayerAnimationController : MonoBehaviour
     }
     public void AlterarProgresivamenteBlend(Animator animator, string nombre, Vector2 moveinput)
     {
-        Debug.Log("MoveInput: " + moveinput);
-
         if (moveinput.x == 0.0f)
         {
             animator.SetFloat(nombre, moveinput.x);
             return;
         }
-        currentVal = Mathf.Lerp(currentVal, moveinput.x, 13 * Time.deltaTime);
+        currentVal = Mathf.Lerp(currentVal, moveinput.x, 8 * Time.deltaTime);
         animator.SetFloat(nombre, currentVal);
         Debug.Log("Blend Alterado a: " + currentVal);
     }

@@ -1,10 +1,10 @@
 using System.Globalization;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerStateManager : MonoBehaviour
 {
 
-    public static PlayerManager instance;
+    public static PlayerStateManager instance;
     private void Awake()
     {
         if (instance == null)

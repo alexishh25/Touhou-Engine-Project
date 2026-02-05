@@ -1,0 +1,1135 @@
+fileFormatVersion: 2
+guid: d1eb576d97e468c468f7d3eecc83b041
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7737272411842996655
+    second: reimu portrait_0
+  - first:
+      213: -4991594767134162215
+    second: reimu portrait_1
+  - first:
+      213: -6865768247348174365
+    second: reimu portrait_2
+  - first:
+      213: -8464848456514925525
+    second: reimu portrait_3
+  - first:
+      213: 6195189939863568097
+    second: reimu portrait_4
+  - first:
+      213: -7011344042533589483
+    second: reimu portrait_5
+  - first:
+      213: 7297721827703520895
+    second: reimu portrait_6
+  - first:
+      213: 1633993946772060420
+    second: reimu portrait_7
+  - first:
+      213: -2562386278730258922
+    second: reimu portrait_8
+  - first:
+      213: -7106850093906196656
+    second: reimu portrait_9
+  - first:
+      213: 2083973545889735715
+    second: reimu portrait_10
+  - first:
+      213: 5502921421043427027
+    second: reimu portrait_11
+  - first:
+      213: -7654929152299315366
+    second: reimu portrait_12
+  - first:
+      213: 1141590565555459372
+    second: reimu portrait_13
+  - first:
+      213: 3304539052108476128
+    second: reimu portrait_14
+  - first:
+      213: -3431275982372436760
+    second: reimu portrait_15
+  - first:
+      213: 2713531594534976133
+    second: reimu portrait_16
+  - first:
+      213: 938138910868654409
+    second: reimu portrait_17
+  - first:
+      213: -9006886331038975866
+    second: reimu portrait_18
+  - first:
+      213: 8170718282496326950
+    second: reimu portrait_19
+  - first:
+      213: 2117268776841583590
+    second: reimu portrait_20
+  - first:
+      213: -969494435871586015
+    second: reimu portrait_21
+  - first:
+      213: -4667282902378817993
+    second: reimu portrait_22
+  - first:
+      213: -8511788945084429699
+    second: reimu portrait_23
+  - first:
+      213: 4891921714851578163
+    second: reimu portrait_24
+  - first:
+      213: 6234265829675852337
+    second: reimu portrait_25
+  - first:
+      213: 3901326457269571744
+    second: reimu portrait_26
+  - first:
+      213: 2053450688102369947
+    second: reimu portrait_27
+  - first:
+      213: 3876654972409859806
+    second: reimu portrait_28
+  - first:
+      213: -5448467166556491209
+    second: reimu portrait_29
+  - first:
+      213: -8452995707834207697
+    second: reimu portrait_30
+  - first:
+      213: -6985237982664731923
+    second: reimu portrait_31
+  - first:
+      213: 6982586640603776593
+    second: reimu portrait_32
+  - first:
+      213: 2629322142996833865
+    second: reimu portrait_33
+  - first:
+      213: -4057423528863133646
+    second: reimu portrait_34
+  - first:
+      213: 7911442449051840263
+    second: reimu portrait_35
+  - first:
+      213: -4594230012112493243
+    second: reimu portrait_36
+  - first:
+      213: 8744884117724146272
+    second: reimu portrait_37
+  - first:
+      213: 8360347834411237915
+    second: reimu portrait_38
+  - first:
+      213: -4033255339380433185
+    second: reimu portrait_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reimu portrait_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 635
+        width: 258
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1561ba93cbfaf9490800000000000000
+      internalID: -7737272411842996655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_1
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 529
+        width: 258
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d20542810b4abab0800000000000000
+      internalID: -4991594767134162215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_2
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 930
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1e7aac724e7b0a0800000000000000
+      internalID: -6865768247348174365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_3
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 898
+        width: 183
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c0aef6d21d68a80800000000000000
+      internalID: -8464848456514925525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 632
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee34a14d6cb9f550800000000000000
+      internalID: 6195189939863568097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_5
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 632
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51eebb2bdb3b2be90800000000000000
+      internalID: -7011344042533589483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 632
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ef1e95657b64560800000000000000
+      internalID: 7297721827703520895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_7
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 632
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409bc7a56dc1da610800000000000000
+      internalID: 1633993946772060420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_8
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 632
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616a2fe6143907cd0800000000000000
+      internalID: -2562386278730258922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_9
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 632
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05705c84e756f5d90800000000000000
+      internalID: -7106850093906196656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_10
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 632
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324a11c06e2cbec10800000000000000
+      internalID: 2083973545889735715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_11
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 632
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d66e2070ed4e5c40800000000000000
+      internalID: 5502921421043427027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_12
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 632
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fca685e7a34c590800000000000000
+      internalID: -7654929152299315366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_13
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 618
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25deda229eb7df00800000000000000
+      internalID: 1141590565555459372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_14
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 618
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eee45b72c41cdd20800000000000000
+      internalID: 3304539052108476128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_15
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 618
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e48c587ca8a160d0800000000000000
+      internalID: -3431275982372436760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_16
+      rect:
+        serializedVersion: 2
+        x: 2283
+        y: 618
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a7e0bbb9668a520800000000000000
+      internalID: 2713531594534976133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_17
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 618
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9494c447e50f40d00800000000000000
+      internalID: 938138910868654409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_18
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 618
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688b91a3a9c110380800000000000000
+      internalID: -9006886331038975866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_19
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 618
+        width: 130
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62dbbf3dcf8346170800000000000000
+      internalID: 8170718282496326950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_21
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 100
+        width: 258
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129082a72f9ab82f0800000000000000
+      internalID: -969494435871586015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_22
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 9
+        width: 258
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736d479bdea7a3fb0800000000000000
+      internalID: -4667282902378817993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_23
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 430
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a45254d0d00e980800000000000000
+      internalID: -8511788945084429699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_24
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 398
+        width: 169
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3318fb291e893e340800000000000000
+      internalID: 4891921714851578163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_25
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 106
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1326f25ddbf848650800000000000000
+      internalID: 6234265829675852337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_26
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 106
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0d2662ebb442630800000000000000
+      internalID: 3901326457269571744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_27
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 106
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a8f1c65825f7c10800000000000000
+      internalID: 2053450688102369947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_28
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 106
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edecd337825acc530800000000000000
+      internalID: 3876654972409859806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_29
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 106
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732750faaf72364b0800000000000000
+      internalID: -5448467166556491209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_30
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 106
+        width: 130
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22f3aa803de0ba80800000000000000
+      internalID: -8452995707834207697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_31
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 106
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2d3bb60137f0f90800000000000000
+      internalID: -6985237982664731923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_32
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 106
+        width: 130
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1568396ed8127e060800000000000000
+      internalID: 6982586640603776593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_33
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 107
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946256dee8a3d7420800000000000000
+      internalID: 2629322142996833865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_34
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 107
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2301dc23cc221b7c0800000000000000
+      internalID: -4057423528863133646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_35
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 107
+        width: 130
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f6ea4adf61bcd60800000000000000
+      internalID: 7911442449051840263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_36
+      rect:
+        serializedVersion: 2
+        x: 2190
+        y: 107
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545a89f25240e30c0800000000000000
+      internalID: -4594230012112493243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_37
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 106
+        width: 130
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a27eec5c11c5970800000000000000
+      internalID: 8744884117724146272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_38
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 106
+        width: 130
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12c9c47f0ce50470800000000000000
+      internalID: 8360347834411237915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimu portrait_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1427
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde18cf43aff608c0800000000000000
+      internalID: -4033255339380433185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 34573e5132f5ad243ace6737d90f9f30
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      reimu portrait_0: -7737272411842996655
+      reimu portrait_1: -4991594767134162215
+      reimu portrait_10: 2083973545889735715
+      reimu portrait_11: 5502921421043427027
+      reimu portrait_12: -7654929152299315366
+      reimu portrait_13: 1141590565555459372
+      reimu portrait_14: 3304539052108476128
+      reimu portrait_15: -3431275982372436760
+      reimu portrait_16: 2713531594534976133
+      reimu portrait_17: 938138910868654409
+      reimu portrait_18: -9006886331038975866
+      reimu portrait_19: 8170718282496326950
+      reimu portrait_2: -6865768247348174365
+      reimu portrait_20: 2117268776841583590
+      reimu portrait_21: -969494435871586015
+      reimu portrait_22: -4667282902378817993
+      reimu portrait_23: -8511788945084429699
+      reimu portrait_24: 4891921714851578163
+      reimu portrait_25: 6234265829675852337
+      reimu portrait_26: 3901326457269571744
+      reimu portrait_27: 2053450688102369947
+      reimu portrait_28: 3876654972409859806
+      reimu portrait_29: -5448467166556491209
+      reimu portrait_3: -8464848456514925525
+      reimu portrait_30: -8452995707834207697
+      reimu portrait_31: -6985237982664731923
+      reimu portrait_32: 6982586640603776593
+      reimu portrait_33: 2629322142996833865
+      reimu portrait_34: -4057423528863133646
+      reimu portrait_35: 7911442449051840263
+      reimu portrait_36: -4594230012112493243
+      reimu portrait_37: 8744884117724146272
+      reimu portrait_38: 8360347834411237915
+      reimu portrait_39: -4033255339380433185
+      reimu portrait_4: 6195189939863568097
+      reimu portrait_5: -7011344042533589483
+      reimu portrait_6: 7297721827703520895
+      reimu portrait_7: 1633993946772060420
+      reimu portrait_8: -2562386278730258922
+      reimu portrait_9: -7106850093906196656
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
