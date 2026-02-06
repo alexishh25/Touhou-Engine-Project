@@ -255,6 +255,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2753067809346582803, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025931992171646144, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
+      propertyPath: actionShot.m_Name
+      value: Action Shot
+      objectReference: {fileID: 0}
     - target: {fileID: 4582608299995147172, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.50821
@@ -298,6 +306,10 @@ PrefabInstance:
     - target: {fileID: 6790346336197958616, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
       propertyPath: m_Name
       value: Reimu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550036078641099256, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
+      propertyPath: focusAction.m_Name
+      value: Focus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
