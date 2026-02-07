@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: MarisaData
   basemoveSpeed: 10
   focusSpeed: 3.33
-  animatorController: {fileID: 9100000, guid: 91f033a121e8aa44aa2bb1e562daaae6, type: 2}
+  animatorController: {fileID: 22100000, guid: 657803ecfb5eef540b6f46d925dc898c, type: 2}
   bulletSprite: {fileID: -5575633316234760076, guid: 60092df62e84fb34697deed03414eb0b, type: 3}

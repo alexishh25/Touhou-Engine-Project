@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: ReimuData
   basemoveSpeed: 10
   focusSpeed: 3.33
-  animatorController: {fileID: 9100000, guid: 5085ea004736c3a47bda5618bae5ce91, type: 2}
+  animatorController: {fileID: 22100000, guid: 047659a76389cbe4892a4cb5b31dc3c0, type: 2}
   bulletSprite: {fileID: -4530932756991735275, guid: 60092df62e84fb34697deed03414eb0b, type: 3}

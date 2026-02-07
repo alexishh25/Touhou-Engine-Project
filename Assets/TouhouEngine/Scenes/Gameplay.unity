@@ -316,7 +316,7 @@ PrefabInstance:
     - target: {fileID: 5483577417110523626, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 22100000, guid: 047659a76389cbe4892a4cb5b31dc3c0, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6790346336197958616, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
       propertyPath: m_Name
       value: Reimu
