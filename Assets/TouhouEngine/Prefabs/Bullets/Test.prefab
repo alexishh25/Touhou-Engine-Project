@@ -46,3 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BulletManager
   shotCooldown: 0.05
   bulletSpeed: 20
+  actionShot:
+    m_Name: Action Shot
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 395c55ad-a8fe-45f7-8fdd-0724e2a94ef9
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0

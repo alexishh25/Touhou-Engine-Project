@@ -2,21 +2,19 @@ using UnityEngine;
 
 public class PlayerMarisaState : PlayerBaseState
 {
-    public PlayerMarisaState(PlayerStateManager currentContext) : base(currentContext)
-    {
-
-    }
-    public override void EnterState(PlayerStateManager player)
+    public PlayerMarisaState(PlayerStateManager currentContext) : base(currentContext) { }
+    public override void EnterState()
     {
         Debug.Log("Entering Sanae State");
-        // Initialize Sanae-specific attributes here
+
+        _ctx.LoadCharacterData(_ctx.currentData);
     }
-    public override void UpdateState(PlayerStateManager player)
+    public override void UpdateState()
     {
-        // Handle Sanae-specific updates here
+        LogicMoverse();
     }
-    public override void OnCollisionEnter(PlayerStateManager player)
+    public override void OnCollisionEnter()
     {
-        // Handle Sanae-specific collision logic here
+        // Handle Marisa-specific collision logic here
     }
 }

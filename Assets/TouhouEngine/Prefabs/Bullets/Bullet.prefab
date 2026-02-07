@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BulletController
   puntoDisparo: {fileID: 5538318948808775723, guid: ea84295211c31444da5c0d058e29692b, type: 3}
   Velocity: {x: 10, y: 0}
+  _rendererbullet: {fileID: 7500072641199916888}
 --- !u!212 &7500072641199916888
 SpriteRenderer:
   m_ObjectHideFlags: 0

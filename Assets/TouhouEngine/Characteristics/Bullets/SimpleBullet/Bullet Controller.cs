@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BulletController : MonoBehaviour
 {
@@ -7,6 +8,12 @@ public class BulletController : MonoBehaviour
 
     public Transform puntoDisparo;
     public Vector2 Velocity;
+    public SpriteRenderer _rendererbullet;
+
+    private void Awake()
+    {
+        _rendererbullet = GetComponent<SpriteRenderer>();
+    }
 
     private void Movement()
     {
@@ -17,6 +24,19 @@ public class BulletController : MonoBehaviour
         lifeTimer += Time.deltaTime;
 
         if (lifeTimer >= MAX_LIFE_TIME) Destroy();
+    }
+
+    public void ChangeSprite(Sprite newSprite)
+    {
+        if (_rendererbullet != null)
+        {
+            _rendererbullet.sprite = newSprite;
+            Debug.Log("Sprite de bala cambiado a: " + newSprite.name);
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró SpriteRenderer en el BulletController para cambiar el sprite.");
+        }
     }
 
     private void Destroy()

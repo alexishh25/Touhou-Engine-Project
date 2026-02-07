@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2218505200921139295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5617940490888690079}
+  m_Layer: 0
+  m_Name: AnimationController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5617940490888690079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2218505200921139295}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4582608299995147172}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6790346336197958616
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,8 +42,8 @@ GameObject:
   - component: {fileID: 4582608299995147172}
   - component: {fileID: 2753067809346582803}
   - component: {fileID: 2313148321028488087}
-  - component: {fileID: 7550036078641099256}
   - component: {fileID: 5483577417110523626}
+  - component: {fileID: 2235601636792215805}
   - component: {fileID: 6358244300612771122}
   m_Layer: 0
   m_Name: Reimu
@@ -35,6 +66,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8923415526742232096}
+  - {fileID: 5617940490888690079}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2753067809346582803
@@ -83,7 +115,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1456264429820348860, guid: 151cd2d7c4a6c044eb5f87c33bd5d679, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -107,31 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8106a62dfc4b274449bbd7d546f885a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationController
-  playerState: 0
---- !u!114 &7550036078641099256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6790346336197958616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1c37d3aad76f114bb3051c5adc3b632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  inputActions: {fileID: 0}
-  moveAction:
-    m_Name: Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 5790b4c5-9ad5-4943-83ee-9a320895d09f
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveInput: {x: 0, y: 0}
-  moveSpeed: 10
+  currentVal: 0
 --- !u!95 &5483577417110523626
 Animator:
   serializedVersion: 7
@@ -154,6 +162,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2235601636792215805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6790346336197958616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a5f2f67242858449a58707079277b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStateManager
+  rgb2D: {fileID: 0}
+  moveAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d4731a1a-2ce0-4b23-bdf0-377171e5098a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  focusAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3167fe85-5d8c-4305-839a-55ed515ad3eb
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  currentData: {fileID: 11400000, guid: 9af8980e42efc82498e726d116a573e0, type: 2}
 --- !u!50 &6358244300612771122
 Rigidbody2D:
   serializedVersion: 5
@@ -189,6 +229,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4582608299995147172}
     m_Modifications:
+    - target: {fileID: 59852225658706123, guid: ea84295211c31444da5c0d058e29692b, type: 3}
+      propertyPath: actionShot.m_Name
+      value: Action Shot
+      objectReference: {fileID: 0}
     - target: {fileID: 5538318948808775723, guid: ea84295211c31444da5c0d058e29692b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

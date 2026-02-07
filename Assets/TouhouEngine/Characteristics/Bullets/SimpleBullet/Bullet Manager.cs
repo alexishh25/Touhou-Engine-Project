@@ -9,17 +9,27 @@ public class BulletManager : MonoBehaviour
     private float shotTimerCooldown = 0f;
     public InputAction actionShot;
 
+    private Sprite bulletsprite;
     private void Awake()
     {
         actionShot = InputSystem.actions.FindAction("Shoot");
     }
 
+    public void SetAmmoSprite(Sprite newSprite)
+    {
+        bulletsprite = newSprite;
+    }
 
     private void Shot(Vector2 origin, Vector2 velocity)
     {
         BulletController bullet = BulletPool.Instance.RequestBullet();
         bullet.transform.position = origin;
         bullet.Velocity = velocity;
+
+        if (bulletsprite != null)
+        {
+            bullet.ChangeSprite(bulletsprite);
+        }
 
         bullet.gameObject.SetActive(true);
     }

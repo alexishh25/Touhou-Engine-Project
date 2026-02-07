@@ -2,20 +2,19 @@ using UnityEngine;
 
 public class PlayerSanaeState : PlayerBaseState
 {
-    public PlayerSanaeState(PlayerStateManager currentContext) : base(currentContext)
-    {
-
-    }
-    public override void EnterState(PlayerStateManager player)
+    public PlayerSanaeState(PlayerStateManager currentContext) : base(currentContext) { }
+    public override void EnterState()
     {
         Debug.Log("Entering Sanae State");
-        // Initialize Sanae-specific attributes here
+        CharacterData data = Resources.Load<CharacterData>("SanaeData");
+
+        _ctx.LoadCharacterData(data);
     }
-    public override void UpdateState(PlayerStateManager player)
+    public override void UpdateState()
     {
-        // Handle Sanae-specific updates here
+        LogicMoverse();
     }
-    public override void OnCollisionEnter(PlayerStateManager player)
+    public override void OnCollisionEnter()
     {
         // Handle Sanae-specific collision logic here
     }

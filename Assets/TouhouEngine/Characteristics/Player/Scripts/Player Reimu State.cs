@@ -2,22 +2,20 @@ using UnityEngine;
 
 public class PlayerReimuState : PlayerBaseState
 {
-    public PlayerReimuState(PlayerStateManager currentContext) : base(currentContext) 
-    { 
+    public PlayerReimuState(PlayerStateManager currentContext) : base(currentContext) { }
 
-    }
+    public override void EnterState()
+    {
+        Debug.Log("Reimu State Ready");
 
-    public override void EnterState(PlayerStateManager player)
-    {
-        Debug.Log("Entering Sanae State");
-        // Initialize Sanae-specific attributes here
+        _ctx.LoadCharacterData(_ctx.currentData);
     }
-    public override void UpdateState(PlayerStateManager player)
+    public override void UpdateState()
     {
-        // Handle Sanae-specific updates here
+        LogicMoverse();
     }
-    public override void OnCollisionEnter(PlayerStateManager player)
+    public override void OnCollisionEnter()
     {
-        // Handle Sanae-specific collision logic here
+        // Handle Reimu-specific collision logic here
     }
 }
