@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// Es una plantilla abstracta que define la estructura básica de un estado del jugador. 
+/// Cada estado específico (Reimu, Marisa, Sanae, etc) hereda de esta clase y implementa su propia lógica para moverse, atacar, etc.
+/// </summary>
 public abstract class PlayerBaseState 
 {
     protected PlayerStateManager _ctx;

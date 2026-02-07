@@ -2,6 +2,10 @@ using System.Globalization;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Es el cerebro de los estados del jugador. Contiene referencias a los componentes necesarios, los datos del personaje y las instancias de cada estado específico. 
+/// Se encarga de actualizar el estado actual y de cambiar entre estados cuando sea necesario.
+/// </summary>
 public class PlayerStateManager : MonoBehaviour
 {
     [HideInInspector] public Rigidbody2D rgb2D;
@@ -9,8 +13,11 @@ public class PlayerStateManager : MonoBehaviour
     [HideInInspector] public InputAction focusAction;
     [HideInInspector] public Animator animator;
 
+    #region 1. References
+    [Header("Components")]
     public CharacterData currentData;
     public BulletManager bulletManager;
+    #endregion
 
     public PlayerBaseState currentStats;
     public PlayerReimuState reimuState;

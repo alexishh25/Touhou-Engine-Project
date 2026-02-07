@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Un almacen de balas apagadas que se pueden solicitar para ser activadas y usadas. 
+/// Esto mejora el rendimiento al evitar la necesidad de instanciar nuevas balas cada vez que se necesitan, reutilizando las existentes en su lugar.
+/// </summary>
 public class BulletPool : MonoBehaviour
 {
 
