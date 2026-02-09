@@ -273,6 +273,10 @@ PrefabInstance:
       propertyPath: bulletManager
       value: 
       objectReference: {fileID: 556243639}
+    - target: {fileID: 4025931992171646144, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
+      propertyPath: shotCooldown
+      value: 0.06
+      objectReference: {fileID: 0}
     - target: {fileID: 4582608299995147172, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.50821

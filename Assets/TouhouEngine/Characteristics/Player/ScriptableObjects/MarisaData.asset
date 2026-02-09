@@ -17,3 +17,5 @@ MonoBehaviour:
   focusSpeed: 3.33
   animatorController: {fileID: 22100000, guid: 657803ecfb5eef540b6f46d925dc898c, type: 2}
   bulletSprite: {fileID: -5575633316234760076, guid: 60092df62e84fb34697deed03414eb0b, type: 3}
+  bulletSound: {fileID: 0}
+  bulletFocusPrefab: {fileID: 0}

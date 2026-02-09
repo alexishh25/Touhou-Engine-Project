@@ -12,5 +12,9 @@ public class CharacterData : ScriptableObject
 
     [Header("Animaciones")]
     public AnimatorOverrideController animatorController;
+
+    [Header("Bullets")]
     public Sprite bulletSprite;
+    public AudioClip bulletSound;
+    public GameObject bulletFocusPrefab;
 }
