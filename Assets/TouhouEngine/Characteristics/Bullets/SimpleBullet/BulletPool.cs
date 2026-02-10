@@ -17,7 +17,7 @@ public class BulletPool : MonoBehaviour
         get
         {
             if (_instance == null)
-                Debug.LogError("La instancia de BulletPool es nula. Asegúrese de que haya un BulletPool en la escena.");
+                Debug.LogError("La instancia de BulletPool es nula. Asegï¿½rese de que haya un BulletPool en la escena.");
 
             return _instance;
         }

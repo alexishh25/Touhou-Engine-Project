@@ -2,8 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Es el encargado de manejar el disparo de las balas. Lee la entrada del jugador para determinar cuándo disparar, y luego solicita una bala del BulletPool para activarla y darle la velocidad adecuada.
-/// También puede cambiar el sprite de las balas si es necesario.
+/// Es el encargado de manejar el disparo de las balas. Lee la entrada del jugador para determinar cuï¿½ndo disparar, y luego solicita una bala del BulletPool para activarla y darle la velocidad adecuada.
+/// Tambiï¿½n puede cambiar el sprite de las balas si es necesario.
 /// </summary>
 public class BulletManager : MonoBehaviour
 {
@@ -13,6 +13,7 @@ public class BulletManager : MonoBehaviour
     private float shotTimerCooldown = 0f;
     public InputAction actionShot;
 
+    private bool flag_sound = true;
     private Sprite bulletsprite;
     private void Awake()
     {

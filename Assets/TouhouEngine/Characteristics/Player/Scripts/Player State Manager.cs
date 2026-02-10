@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Es el cerebro de los estados del jugador. Contiene referencias a los componentes necesarios, los datos del personaje y las instancias de cada estado específico. 
+/// Es el cerebro de los estados del jugador. Contiene referencias a los componentes necesarios, los datos del personaje y las instancias de cada estado especï¿½fico. 
 /// Se encarga de actualizar el estado actual y de cambiar entre estados cuando sea necesario.
 /// </summary>
 public class PlayerStateManager : MonoBehaviour
@@ -60,7 +60,7 @@ public class PlayerStateManager : MonoBehaviour
     {
         if (data == null)
         {
-            Debug.LogError("¡Se intentó cargar datos nulos en el StateManager!");
+            Debug.LogError("ï¿½Se intentï¿½ cargar datos nulos en el StateManager!");
             return;
         }
 

@@ -9,10 +9,12 @@ public class BulletController : MonoBehaviour
     public Transform puntoDisparo;
     public Vector2 Velocity;
     public SpriteRenderer _rendererbullet;
+    public AudioSource audioSource;
 
     private void Awake()
     {
         _rendererbullet = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Movement()
@@ -35,7 +37,7 @@ public class BulletController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se encontró SpriteRenderer en el BulletController para cambiar el sprite.");
+            Debug.LogWarning("No se encontrï¿½ SpriteRenderer en el BulletController para cambiar el sprite.");
         }
     }
 
