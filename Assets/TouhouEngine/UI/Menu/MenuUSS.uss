@@ -1,0 +1,12 @@
+Button {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(27, 27, 27, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    height: 7%;
+    -unity-slice-type: sliced;
+    transition-duration: 0.2s, 3s;
+    width: auto;
+    background-position-x: left 0;
+    transition-property: all, background-color;
+    transition-timing-function: ease, ease-in-out;
+}
