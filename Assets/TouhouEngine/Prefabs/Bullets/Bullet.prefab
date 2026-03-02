@@ -51,6 +51,7 @@ MonoBehaviour:
   puntoDisparo: {fileID: 5538318948808775723, guid: ea84295211c31444da5c0d058e29692b, type: 3}
   Velocity: {x: 10, y: 0}
   _rendererbullet: {fileID: 7500072641199916888}
+  audioSource: {fileID: 7743904629241898217}
 --- !u!212 &7500072641199916888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -194,7 +195,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7b0f2f26dde880b40ae154e608896cf7, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
