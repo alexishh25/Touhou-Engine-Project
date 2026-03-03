@@ -1,15 +1,15 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" schemaLocation="UnityEngine.UIElements ../UIElementsSchema/UnityEngine.UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/TouhouEngine/UI/Menu/MenuUSS.uss?fileID=7433441132597879392&amp;guid=256ec4efde9b87543b2453e394ef62f3&amp;type=3#MenuUSS" />
-    <ui:VisualElement name="ContenedorPrincipal" class="fondo-rojo" style="background-color: rgba(253, 118, 110, 0); background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=2315263262455518574&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#background&quot;); background-size: 100% 100%; width: 100%; height: 100%;">
-        <ui:VisualElement style="flex-grow: 1; width: 40%; -unity-text-align: upper-left; white-space: normal; text-overflow: clip; -unity-background-scale-mode: stretch-to-fill; background-position-x: center; background-position-y: center; position: relative; flex-direction: column; flex-wrap: nowrap; align-items: stretch; align-self: flex-end; justify-content: flex-end; align-content: flex-start; margin-left: 0%; margin-right: 0%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 10%;">
-            <ui:Button text="Button" name="GameStart" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=3926089593197971618&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Game_Start_unfocus&quot;); background-color: rgba(0, 0, 0, 0); align-self: auto; align-items: stretch; justify-content: space-between; margin-right: 0; margin-left: 0%; transition-property: -unity-background-image-tint-color; transition-duration: 0s;" />
-            <ui:Button text="Button" name="ExtraData" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1615203544&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Extra_Start_unfocus&quot;); margin-right: 0%; margin-left: 5%;" />
-            <ui:Button text="Button" name="PracticeStart" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-562431276&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Practice_Start_unfocus&quot;); margin-right: 0%; margin-left: 10%;" />
-            <ui:Button text="Button" name="Replay" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1826028452&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Replay_unfocus&quot;); margin-right: 0%; margin-left: 15%;" />
-            <ui:Button text="Button" name="PlayerData" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-849249885&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Player_Data_unfocus&quot;); margin-left: 20%;" />
-            <ui:Button text="Button" name="MusicRoom" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1720815248&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Music_Room_unfocus&quot;); margin-left: 25%;" />
-            <ui:Button text="Button" name="Option" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-1032506176&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Option_unfocus&quot;); margin-left: 30%;" />
-            <ui:Button text="Button" name="Quit" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1923125006&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Quit_unfocus&quot;); margin-left: 35%;" />
+    <ui:VisualElement name="ContenedorPrincipal" class="main-content">
+        <ui:VisualElement class="button-content">
+            <ui:Button name="GameStart" class="menu-button btn-gamestart" />
+            <ui:Button name="ExtraStart" class="menu-button btn-extradata" />
+            <ui:Button name="PracticeStart" class="menu-button btn-practicestart" />
+            <ui:Button name="Replay" class="menu-button btn-replay" />
+            <ui:Button name="PlayerData" class="menu-button btn-playerdata" />
+            <ui:Button name="MusicRoom" class="menu-button btn-musicroom" />
+            <ui:Button name="Option" class="menu-button btn-option" />
+            <ui:Button name="Quit" class="menu-button btn-quit" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
