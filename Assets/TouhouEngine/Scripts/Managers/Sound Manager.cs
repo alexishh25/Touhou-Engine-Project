@@ -17,7 +17,18 @@ public class SoundManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        musicSource = GetComponent<AudioSource>();
+        AudioSource[] sources = GetComponents<AudioSource>();
+
+        if (sources.Length < 2)
+        {
+            musicSource = gameObject.AddComponent<AudioSource>();
+            sfxSource = gameObject.AddComponent<AudioSource>();
+        }
+        else
+        {
+            musicSource = sources[0];
+            sfxSource = sources[1];
+        }
     }
 
 
@@ -35,7 +46,7 @@ public class SoundManager : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         if (clip == null) return;
-
+        float randomPitch = Random.Range(0.7f, 0.8f);
         sfxSource.PlayOneShot(clip);
     }
 

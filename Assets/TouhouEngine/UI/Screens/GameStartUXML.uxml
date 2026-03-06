@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; width: 100%; height: 0%; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=7221189118869618201&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#SubBackground&quot;);">
+        <ui:Button text="Button" style="height: 20%;" />
+        <ui:Button text="Button" style="height: 20%;" />
+        <ui:Button text="Button" style="height: 20%;" />
+        <ui:Button text="Button" style="height: 20%;" />
+    </ui:VisualElement>
+</ui:UXML>

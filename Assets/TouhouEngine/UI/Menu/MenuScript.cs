@@ -15,7 +15,8 @@ public class PruebaUI : MonoBehaviour
     Button Option_button;
     Button Quit_button;
 
-    [SerializeField] public AudioClip sfx_button;
+    [SerializeField] public AudioClip sfx_buttonhover;
+    [SerializeField] public AudioClip sfx_clickbutton;
 
     Button[] button_set = new Button[8];
 
@@ -45,12 +46,14 @@ public class PruebaUI : MonoBehaviour
     {
         ButtonActionSuscribe();
         navigateActions.FindActionMap("UI").Enable();
+        RegisterHoverSFX();
         button_set[0].Focus();
     }
     private void OnDisable()
     {
         ButtonActionUnsuscribe();
         navigateActions.FindActionMap("UI").Disable();
+        UnregisterHoverSFX();
     }
 
     void ButtonActionSuscribe()
@@ -88,15 +91,43 @@ public class PruebaUI : MonoBehaviour
     private void MenuButtonClicked(string message)
     {
         Debug.Log(message + " clicked");
-        SoundManager.Instance.PlaySFX(sfx_button);
+        SoundManager.Instance.PlaySFX(sfx_clickbutton);
         if (message == "Quit") Application.Quit();
     }
-
-    private void MenuButtonEnter(Button btn)
+    void RegisterHoverSFX()
     {
-        btn.RegisterCallback<MouseEnterEvent>(evt =>
+        foreach (var btn in button_set)
         {
-            SoundManager.Instance.PlaySFX(sfx_button);
-        });
+            btn.RegisterCallback<PointerEnterEvent>(OnButtonHover);
+            btn.RegisterCallback<FocusInEvent>(OnButtonHover);
+        }
+    }
+
+    void UnregisterHoverSFX()
+    {
+        foreach (var btn in button_set)
+        {   
+            if (btn != null)
+            {
+                btn.UnregisterCallback<PointerEnterEvent>(OnButtonHover);
+                btn.UnregisterCallback<FocusInEvent>(OnButtonHover);
+            }
+        }
+    }
+
+    private void OnButtonHover(PointerEnterEvent evt)
+    {
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlaySFX(sfx_buttonhover);
+        }
+    }
+
+    private void OnButtonHover(FocusInEvent evt)
+    {
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlaySFX(sfx_buttonhover);
+        }
     }
 }
