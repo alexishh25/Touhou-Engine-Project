@@ -70,14 +70,4 @@ public class UIManager : MonoBehaviour
             Debug.LogError($"No hay script asignado para {type}");
     }
 
-    private void SetupOptions(VisualElement screenRoot)
-    {
-        // Lógica para la pantalla de opciones
-        var backBtn = screenRoot.Q<Button>("BackButton");
-        if (backBtn != null)
-        {
-            backBtn.clicked += () => ChangeScreen(ScreenType.MainMenu);
-            backBtn.Focus();
-        }
-    }
 }

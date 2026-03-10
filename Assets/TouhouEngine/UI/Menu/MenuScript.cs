@@ -5,20 +5,6 @@ using UnityEngine.UIElements;
 
 public class MenuScript : ScreenLogic
 {
-    public override void Initialize(VisualElement currentRoot)
-    {
-        if (button_set.Count > 0)
-        {
-            ButtonActionAlterSusYUnsuscribe(false);
-            ButtonManager.Instance.AlternateRegisterHoverSFX(false, button_set);
-        }
-        DefinirBotones(currentRoot);
-
-        ButtonActionAlterSusYUnsuscribe(true);
-        ButtonManager.Instance.AlternateRegisterHoverSFX(true, button_set);
-
-        if (button_set.Count != 0) button_set[0].Focus();
-    }
 
     Button GameStart_button;
     Button ExtraStart_button;
@@ -29,12 +15,8 @@ public class MenuScript : ScreenLogic
     Button Option_button;
     Button Quit_button;
 
-    private List<Button> button_set = new List<Button>();
-
-    private void DefinirBotones(VisualElement currentRoot)
+    protected override void DefinirBotones(VisualElement currentRoot)
     {
-        button_set.Clear();
-
         GameStart_button = currentRoot.Q<Button>("GameStart");
         ExtraStart_button = currentRoot.Q<Button>("ExtraStart");
         PracticeStart_button = currentRoot.Q<Button>("PracticeStart");
@@ -54,12 +36,7 @@ public class MenuScript : ScreenLogic
         AddButtonIfNotNull(Quit_button);
     }
 
-    private void AddButtonIfNotNull(Button btn)
-    {
-        if (btn != null) button_set.Add(btn);
-    }
-
-    void ButtonActionAlterSusYUnsuscribe(bool active)
+    protected override void ButtonActionAlterSusYUnsuscribe(bool active)
     {
         ButtonManager.Instance.ManageButtonActions(active,
             (GameStart_button, OnGameStartClicked),
@@ -90,17 +67,5 @@ public class MenuScript : ScreenLogic
         Debug.Log(message + " clicked");
         ButtonManager.Instance.PlayClickSFX();
         if (message == "Quit") Application.Quit();
-    }
-
-    private void OnButtonHover(PointerEnterEvent evt)
-    {
-        if (ButtonManager.Instance != null)
-            ButtonManager.Instance.PlayHoverSFX();
-    }
-
-    private void OnButtonHover(FocusInEvent evt)
-    {
-        if (ButtonManager.Instance != null)
-            ButtonManager.Instance.PlayHoverSFX();
     }
 }
