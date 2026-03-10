@@ -1,9 +1,24 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-public class MenuScript : MonoBehaviour
+public class MenuScript : ScreenLogic
 {
+    public override void Initialize(VisualElement currentRoot)
+    {
+        if (button_set.Count > 0)
+        {
+            ButtonActionAlterSusYUnsuscribe(false);
+            ButtonManager.Instance.AlternateRegisterHoverSFX(false, button_set);
+        }
+        DefinirBotones(currentRoot);
+
+        ButtonActionAlterSusYUnsuscribe(true);
+        ButtonManager.Instance.AlternateRegisterHoverSFX(true, button_set);
+
+        if (button_set.Count != 0) button_set[0].Focus();
+    }
 
     Button GameStart_button;
     Button ExtraStart_button;
@@ -14,18 +29,12 @@ public class MenuScript : MonoBehaviour
     Button Option_button;
     Button Quit_button;
 
-    Button[] button_set = new Button[8];
-
-    private void Awake()
-    {
-        if (UIManager.Instance != null) return;
-
-        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
-        DefinirBotones(root);
-    }
+    private List<Button> button_set = new List<Button>();
 
     private void DefinirBotones(VisualElement currentRoot)
     {
+        button_set.Clear();
+
         GameStart_button = currentRoot.Q<Button>("GameStart");
         ExtraStart_button = currentRoot.Q<Button>("ExtraStart");
         PracticeStart_button = currentRoot.Q<Button>("PracticeStart");
@@ -35,54 +44,33 @@ public class MenuScript : MonoBehaviour
         Option_button = currentRoot.Q<Button>("Option");
         Quit_button = currentRoot.Q<Button>("Quit");
 
-        button_set[0] = GameStart_button;
-        button_set[1] = ExtraStart_button;
-        button_set[2] = PracticeStart_button;
-        button_set[3] = Replay_button;
-        button_set[4] = PlayerData_button;
-        button_set[5] = MusicRoom_button;
-        button_set[6] = Option_button;
-        button_set[7] = Quit_button;
+        AddButtonIfNotNull(GameStart_button);
+        AddButtonIfNotNull(ExtraStart_button);
+        AddButtonIfNotNull(PracticeStart_button);
+        AddButtonIfNotNull(Replay_button);
+        AddButtonIfNotNull(PlayerData_button);
+        AddButtonIfNotNull(MusicRoom_button);
+        AddButtonIfNotNull(Option_button);
+        AddButtonIfNotNull(Quit_button);
     }
 
-    private void OnEnable()
+    private void AddButtonIfNotNull(Button btn)
     {
-        if (button_set[0] == null) return;
-
-        ButtonActionSuscribe();
-        RegisterHoverSFX();
-        button_set[0].Focus();
-    }
-    private void OnDisable()
-    {
-        if (button_set[0] == null) return;
-
-        ButtonActionUnsuscribe();
-        UnregisterHoverSFX();
+        if (btn != null) button_set.Add(btn);
     }
 
-    void ButtonActionSuscribe()
+    void ButtonActionAlterSusYUnsuscribe(bool active)
     {
-        GameStart_button.clicked += OnGameStartClicked;
-        ExtraStart_button.clicked += OnExtraDataClicked;
-        PracticeStart_button.clicked += OnPracticeStartClicked;
-        Replay_button.clicked += OnReplayClicked;
-        PlayerData_button.clicked += OnPlayerDataClicked;
-        MusicRoom_button.clicked += OnMusicRoomClicked;
-        Option_button.clicked += OnOptionClicked;
-        Quit_button.clicked += OnQuitClicked;
-    }
-
-    void ButtonActionUnsuscribe()
-    {
-        GameStart_button.clicked -= OnGameStartClicked;
-        ExtraStart_button.clicked -= OnExtraDataClicked;
-        PracticeStart_button.clicked -= OnPracticeStartClicked;
-        Replay_button.clicked -= OnReplayClicked;
-        PlayerData_button.clicked -= OnPlayerDataClicked;
-        MusicRoom_button.clicked -= OnMusicRoomClicked;
-        Option_button.clicked -= OnOptionClicked;
-        Quit_button.clicked -= OnQuitClicked;
+        ButtonManager.Instance.ManageButtonActions(active,
+            (GameStart_button, OnGameStartClicked),
+            (ExtraStart_button, OnExtraDataClicked),
+            (PracticeStart_button, OnPracticeStartClicked),
+            (Replay_button, OnReplayClicked),
+            (PlayerData_button, OnPlayerDataClicked),
+            (MusicRoom_button, OnMusicRoomClicked),
+            (Option_button, OnOptionClicked),
+            (Quit_button, OnQuitClicked)
+        );
     }
     private void OnGameStartClicked()
     {
@@ -103,25 +91,6 @@ public class MenuScript : MonoBehaviour
         ButtonManager.Instance.PlayClickSFX();
         if (message == "Quit") Application.Quit();
     }
-    void RegisterHoverSFX()
-    {
-        foreach (var btn in button_set)
-        {
-            btn.RegisterCallback<PointerEnterEvent>(OnButtonHover);
-            btn.RegisterCallback<FocusInEvent>(OnButtonHover);
-        }
-    }
-    void UnregisterHoverSFX()
-    {
-        foreach (var btn in button_set)
-        {   
-            if (btn != null)
-            {
-                btn.UnregisterCallback<PointerEnterEvent>(OnButtonHover);
-                btn.UnregisterCallback<FocusInEvent>(OnButtonHover);
-            }
-        }
-    }
 
     private void OnButtonHover(PointerEnterEvent evt)
     {
@@ -133,18 +102,5 @@ public class MenuScript : MonoBehaviour
     {
         if (ButtonManager.Instance != null)
             ButtonManager.Instance.PlayHoverSFX();
-    }
-    public void Setup(VisualElement currentRoot)
-    {
-        if (button_set[0] != null)
-        {
-            ButtonActionUnsuscribe();
-            UnregisterHoverSFX();
-        }
-        DefinirBotones(currentRoot);
-        ButtonActionSuscribe();
-        RegisterHoverSFX();
-
-        if (button_set[0] != null) button_set[0].Focus();
     }
 }

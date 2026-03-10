@@ -16,6 +16,7 @@ public struct ScreenEntry
 {
     public ScreenType type;
     public VisualTreeAsset visualAsset;
+    public ScreenLogic logicComponent;
 }
 public class UIManager : MonoBehaviour
 {
@@ -59,26 +60,14 @@ public class UIManager : MonoBehaviour
         InitializeCurrentScreen(type, screenInstance);
     }
 
-
-
     private void InitializeCurrentScreen(ScreenType type, VisualElement screenRoot)
     {
-        switch (type)
-        {
-            case ScreenType.MainMenu:
-                var menuLogic = FindFirstObjectByType<MenuScript>();
-                if (menuLogic != null)
-                    menuLogic.Setup(screenRoot);
-                else 
-                    Debug.LogError("No se encontró el MenuScript para configurar los botones del MainMenu.");
-                break;
-            case ScreenType.SelectCharacter:
-                SetupOptions(screenRoot);
-                break;
-            default:
-                Debug.LogWarning($"No se ha implementado la inicialización para el screen: {type}");
-                break;
-        }
+        ScreenEntry entry = Array.Find(screens, s => s.type == type);
+
+        if (entry.logicComponent != null)
+            entry.logicComponent.Initialize(screenRoot);
+        else
+            Debug.LogError($"No hay script asignado para {type}");
     }
 
     private void SetupOptions(VisualElement screenRoot)

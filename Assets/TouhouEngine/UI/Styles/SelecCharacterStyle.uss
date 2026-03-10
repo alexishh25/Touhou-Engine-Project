@@ -51,7 +51,7 @@
 }
 
 .Expresion {
-    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=-7535890173591765725&guid=65e90fd085f92db459b86e370aeff497&type=3#all_48");
+    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=4834318778822992428&guid=65e90fd085f92db459b86e370aeff497&type=3#all_38");
     background-size: 70% 36%;
     background-position-y: bottom 0%;
     background-color: rgba(22, 111, 22, 0);
@@ -89,4 +89,16 @@
 .BtnSiguiente {
     background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-669340641&guid=e6342438f41c13a46a87d302659e4514&type=3#arrow_right");
     -unity-background-scale-mode: scale-to-fit;
+}
+
+.Content {
+}
+
+.Subdes {
+}
+
+.Title {
+}
+
+.Description {
 }

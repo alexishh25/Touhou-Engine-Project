@@ -10,8 +10,10 @@
         </ui:VisualElement>
         <ui:VisualElement name="Description" class="description" style="flex-grow: 1; flex-direction: row; flex-wrap: nowrap; flex-basis: auto;">
             <ui:Button text="Button" name="BtnAnterior" class="BtnAnterior" />
-            <ui:VisualElement name="Content" style="flex-grow: 1; position: relative;">
-                <ui:VisualElement name="VisualElement" style="flex-grow: 1;" />
+            <ui:VisualElement name="Content" class="Content" style="flex-grow: 1; position: relative;">
+                <ui:Label text="Label" name="Subdes" class="Subdes" />
+                <ui:Label text="Label" name="Title" class="Title" />
+                <ui:Label text="Label" name="Description" class="Description" />
             </ui:VisualElement>
             <ui:Button text="Button" name="BtnSiguiente" class="BtnSiguiente" />
         </ui:VisualElement>
