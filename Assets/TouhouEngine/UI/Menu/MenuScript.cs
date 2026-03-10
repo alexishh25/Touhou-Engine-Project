@@ -2,9 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-public class PruebaUI : MonoBehaviour
+public class MenuScript : MonoBehaviour
 {
-    public InputActionAsset navigateActions;
 
     Button GameStart_button;
     Button ExtraStart_button;
@@ -15,22 +14,26 @@ public class PruebaUI : MonoBehaviour
     Button Option_button;
     Button Quit_button;
 
-    [SerializeField] public AudioClip sfx_buttonhover;
-    [SerializeField] public AudioClip sfx_clickbutton;
-
     Button[] button_set = new Button[8];
 
     private void Awake()
     {
-        VisualElement root = GetComponent<UIDocument>().rootVisualElement;        
-        GameStart_button = root.Q<Button>("GameStart");
-        ExtraStart_button = root.Q<Button>("ExtraStart");
-        PracticeStart_button = root.Q<Button>("PracticeStart");
-        Replay_button = root.Q<Button>("Replay");
-        PlayerData_button = root.Q<Button>("PlayerData");
-        MusicRoom_button = root.Q<Button>("MusicRoom");
-        Option_button = root.Q<Button>("Option");
-        Quit_button = root.Q<Button>("Quit");
+        if (UIManager.Instance != null) return;
+
+        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+        DefinirBotones(root);
+    }
+
+    private void DefinirBotones(VisualElement currentRoot)
+    {
+        GameStart_button = currentRoot.Q<Button>("GameStart");
+        ExtraStart_button = currentRoot.Q<Button>("ExtraStart");
+        PracticeStart_button = currentRoot.Q<Button>("PracticeStart");
+        Replay_button = currentRoot.Q<Button>("Replay");
+        PlayerData_button = currentRoot.Q<Button>("PlayerData");
+        MusicRoom_button = currentRoot.Q<Button>("MusicRoom");
+        Option_button = currentRoot.Q<Button>("Option");
+        Quit_button = currentRoot.Q<Button>("Quit");
 
         button_set[0] = GameStart_button;
         button_set[1] = ExtraStart_button;
@@ -44,15 +47,17 @@ public class PruebaUI : MonoBehaviour
 
     private void OnEnable()
     {
+        if (button_set[0] == null) return;
+
         ButtonActionSuscribe();
-        navigateActions.FindActionMap("UI").Enable();
         RegisterHoverSFX();
         button_set[0].Focus();
     }
     private void OnDisable()
     {
+        if (button_set[0] == null) return;
+
         ButtonActionUnsuscribe();
-        navigateActions.FindActionMap("UI").Disable();
         UnregisterHoverSFX();
     }
 
@@ -79,7 +84,11 @@ public class PruebaUI : MonoBehaviour
         Option_button.clicked -= OnOptionClicked;
         Quit_button.clicked -= OnQuitClicked;
     }
-    private void OnGameStartClicked() => MenuButtonClicked("Game Start");
+    private void OnGameStartClicked()
+    {
+        UIManager.Instance.ChangeScreen(ScreenType.SelectCharacter);
+        MenuButtonClicked("Game Start");
+    }
     private void OnExtraDataClicked() => MenuButtonClicked("Extra Start");
     private void OnPracticeStartClicked() => MenuButtonClicked("Practice Start");
     private void OnReplayClicked() => MenuButtonClicked("Replay");
@@ -91,7 +100,7 @@ public class PruebaUI : MonoBehaviour
     private void MenuButtonClicked(string message)
     {
         Debug.Log(message + " clicked");
-        SoundManager.Instance.PlaySFX(sfx_clickbutton);
+        ButtonManager.Instance.PlayClickSFX();
         if (message == "Quit") Application.Quit();
     }
     void RegisterHoverSFX()
@@ -102,7 +111,6 @@ public class PruebaUI : MonoBehaviour
             btn.RegisterCallback<FocusInEvent>(OnButtonHover);
         }
     }
-
     void UnregisterHoverSFX()
     {
         foreach (var btn in button_set)
@@ -117,17 +125,26 @@ public class PruebaUI : MonoBehaviour
 
     private void OnButtonHover(PointerEnterEvent evt)
     {
-        if (SoundManager.Instance != null)
-        {
-            SoundManager.Instance.PlaySFX(sfx_buttonhover);
-        }
+        if (ButtonManager.Instance != null)
+            ButtonManager.Instance.PlayHoverSFX();
     }
 
     private void OnButtonHover(FocusInEvent evt)
     {
-        if (SoundManager.Instance != null)
+        if (ButtonManager.Instance != null)
+            ButtonManager.Instance.PlayHoverSFX();
+    }
+    public void Setup(VisualElement currentRoot)
+    {
+        if (button_set[0] != null)
         {
-            SoundManager.Instance.PlaySFX(sfx_buttonhover);
+            ButtonActionUnsuscribe();
+            UnregisterHoverSFX();
         }
+        DefinirBotones(currentRoot);
+        ButtonActionSuscribe();
+        RegisterHoverSFX();
+
+        if (button_set[0] != null) button_set[0].Focus();
     }
 }

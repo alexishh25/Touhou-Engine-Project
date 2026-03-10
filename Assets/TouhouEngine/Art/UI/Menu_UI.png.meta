@@ -1390,13 +1390,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_41
+      name: player_select
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 1207
-        width: 256
-        height: 176
+        x: 1919
+        y: 1256
+        width: 244
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4738,9 +4738,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2225
-        y: 1223
+        y: 1225
         width: 64
-        height: 18
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4910,13 +4910,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_224
+      name: arrow_left
       rect:
         serializedVersion: 2
-        x: 2217
-        y: 1195
-        width: 84
-        height: 29
+        x: 2216
+        y: 1208
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6999,6 +6999,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: arrow_right
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e21711eccf904b47b2235da01b92bfb
+      internalID: -669340641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -7028,7 +7050,6 @@ TextureImporter:
       How_To_Play: 114073713
       Lunatic_Focus: -2137511943
       Lunatic_Unfocus: 476932987
-      Menu_UI_0: -8274363237862750152
       Menu_UI_1: -3716901722540852846
       Menu_UI_10: -8539172373682689331
       Menu_UI_100: 1634971905337611894
@@ -7158,7 +7179,6 @@ TextureImporter:
       Menu_UI_221: 1736610312
       Menu_UI_222: -568795731
       Menu_UI_223: 1781996144
-      Menu_UI_224: 241075140
       Menu_UI_225: 598161522
       Menu_UI_226: 1762817949
       Menu_UI_227: 2014696726
@@ -7263,7 +7283,6 @@ TextureImporter:
       Menu_UI_38: -2016165911416006112
       Menu_UI_4: -5566540313789226800
       Menu_UI_40: -2150888552332900138
-      Menu_UI_41: 5499279502772520267
       Menu_UI_42: -7671210120011290436
       Menu_UI_43: -9222710704038633723
       Menu_UI_44: 6105647958953384263
@@ -7340,7 +7359,10 @@ TextureImporter:
       Replay: 1058759748
       Replay_unfocus: 1826028452
       SubBackground: 7221189118869618201
+      arrow_left: 241075140
+      arrow_right: -8274363237862750152
       background: 2315263262455518574
+      player_select: 5499279502772520267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

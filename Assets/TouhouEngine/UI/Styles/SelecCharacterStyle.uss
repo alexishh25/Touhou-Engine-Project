@@ -1,0 +1,92 @@
+:root {
+}
+
+.background {
+    flex-grow: 1;
+    width: 100%;
+    height: 0%;
+    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=7221189118869618201&guid=e6342438f41c13a46a87d302659e4514&type=3#SubBackground");
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(138, 138, 138);
+}
+
+.Portrait {
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0);
+    width: 45%;
+    height: 100%;
+    position: absolute;
+}
+
+.Character {
+    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=-1021872555423717409&guid=65e90fd085f92db459b86e370aeff497&type=3#all_37");
+    background-color: rgba(0, 0, 0, 0);
+    flex-grow: 1;
+    width: 70%;
+    -unity-background-scale-mode: scale-and-crop;
+    background-size: 100% 80%;
+    background-position-y: bottom 0%;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    top: 0;
+    right: 0;
+}
+
+.Shadow {
+    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=734498035006322362&guid=65e90fd085f92db459b86e370aeff497&type=3#sanae_shadow");
+    background-color: rgba(0, 0, 0, 0);
+    flex-grow: 1;
+    width: 70%;
+    -unity-background-scale-mode: scale-and-crop;
+    background-size: 100% 80%;
+    background-position-y: bottom 0%;
+    align-self: flex-end;
+    position: absolute;
+    bottom: -5%;
+    left: auto;
+    top: 5%;
+    right: 15%;
+}
+
+.Expresion {
+    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=-7535890173591765725&guid=65e90fd085f92db459b86e370aeff497&type=3#all_48");
+    background-size: 70% 36%;
+    background-position-y: bottom 0%;
+    background-color: rgba(22, 111, 22, 0);
+    min-height: 0%;
+    max-height: 80%;
+    top: 20%;
+    position: relative;
+    -unity-background-scale-mode: scale-to-fit;
+    flex-grow: 1;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-position-x: left 28%;
+    transform-origin: center 80%;
+}
+
+.title {
+    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=5499279502772520267&guid=e6342438f41c13a46a87d302659e4514&type=3#player_select");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.description {
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: 40%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0);
+    width: 60%;
+}
+
+.BtnAnterior {
+    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=241075140&guid=e6342438f41c13a46a87d302659e4514&type=3#arrow_left");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.BtnSiguiente {
+    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-669340641&guid=e6342438f41c13a46a87d302659e4514&type=3#arrow_right");
+    -unity-background-scale-mode: scale-to-fit;
+}

@@ -13,7 +13,6 @@ public class BulletManager : MonoBehaviour
     private float shotTimerCooldown = 0f;
     public InputAction actionShot;
 
-    private bool flag_sound = true;
     private Sprite bulletsprite;
     private void Awake()
     {
