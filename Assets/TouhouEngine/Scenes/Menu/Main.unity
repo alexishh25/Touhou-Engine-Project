@@ -666,6 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81105ec9ee9df3b42aa15dc94cc63bac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectorScript
+  characterData: {fileID: 11400000, guid: dc8b714869e5aef4c95ae3874de18e73, type: 2}
 --- !u!4 &1644287920
 Transform:
   m_ObjectHideFlags: 0

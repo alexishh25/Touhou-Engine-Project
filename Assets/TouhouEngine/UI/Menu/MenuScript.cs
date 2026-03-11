@@ -49,6 +49,11 @@ public class MenuScript : ScreenLogic
             (Quit_button, OnQuitClicked)
         );
     }
+
+    protected override void LoadData()
+    {
+        // No data to load for the main menu
+    }
     private void OnGameStartClicked()
     {
         UIManager.Instance.ChangeScreen(ScreenType.SelectCharacter);

@@ -6,10 +6,15 @@ using System;
 public struct SelectCharacter
 {
     [CreateProperty] public string Name;
+    [CreateProperty] public Color colorName;
     [CreateProperty] public Sprite Sprite;
     [CreateProperty] public Sprite Sprite_shadow;
     [CreateProperty] public string subdesc;
+    [CreateProperty] public Color colorSubdes;
+
+    [TextArea(3, 6)]
     [CreateProperty] public string desc;
+    
 }
 
 [CreateAssetMenu(fileName = "SelectorCharacterData", menuName = "TouhouEngine/SelectorCharacterData")]

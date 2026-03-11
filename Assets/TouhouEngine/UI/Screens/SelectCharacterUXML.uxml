@@ -2,23 +2,21 @@
     <Style src="project://database/Assets/TouhouEngine/UI/Styles/SelecCharacterStyle.uss?fileID=7433441132597879392&amp;guid=8ba477d6ea8c9184899a3a51ea825ba7&amp;type=3#SelecCharacterStyle" />
     <Style src="project://database/Assets/TouhouEngine/UI/Styles/GlobalStyle.uss?fileID=7433441132597879392&amp;guid=5b973b1cb2c139c4a9b5d278c438e2c1&amp;type=3#GlobalStyle" />
     <ui:VisualElement class="background" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-        <ui:VisualElement name="Portrait" class="Portrait">
-            <ui:VisualElement name="Shadow" class="Shadow" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-position-y: bottom 0%; background-size: 100% 100%;" />
-            <ui:VisualElement name="Character" class="Character">
-                <ui:VisualElement name="Expresion" class="Expresion" style="background-size: 85% 38%; background-position-y: bottom 93%; -unity-background-image-tint-color: rgb(255, 255, 255); background-color: rgba(22, 111, 22, 0); background-position-x: left 25%; top: 11%; bottom: 0%; justify-content: flex-start; align-content: flex-start; opacity: 1; position: absolute; left: 0%; right: 0%; max-height: 100%;" />
-            </ui:VisualElement>
+        <ui:VisualElement name="Portrait" class="Portrait" style="top: 5%;">
+            <ui:VisualElement name="Shadow" class="Shadow" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-position-y: bottom 0%; background-size: 100% 100%; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:VisualElement name="Character" class="Character" />
         </ui:VisualElement>
         <ui:VisualElement name="Description" class="description" style="flex-grow: 1; flex-direction: row; flex-wrap: nowrap; flex-basis: auto;">
             <ui:Button text="Button" name="BtnAnterior" class="BtnAnterior" />
             <ui:VisualElement name="Content" class="Content">
                 <ui:VisualElement name="VisualElement" class="SubContent">
-                    <ui:Label text="MYSTERIOUS FLYING SHRINE MAIDEN" name="Subdes" class="Subdes" style="color: rgb(255, 0, 0); font-size: 30%; -unity-text-align: middle-center;" />
-                    <ui:Label text="REIMU HAKUREI" name="Title" class="Title" style="color: rgb(255, 0, 0); font-size: 50%; -unity-text-align: middle-center; white-space: normal;" />
-                    <ui:Label text="The soldiers from the Pure Land finally made an entrance. Their flawlessness rejected the life and death of living creatures." name="Description" class="Description" style="color: rgb(255, 255, 255); font-size: 50%; white-space: normal;" />
+                    <ui:Label text="MYSTERIOUS FLYING SHRINE MAIDEN" name="Subdes" data-source="project://database/Assets/TouhouEngine/ScriptableObjects/UI/SelectorCharacterData.asset?fileID=11400000&amp;guid=dc8b714869e5aef4c95ae3874de18e73&amp;type=2#SelectorCharacterData" class="Subdes" style="font-size: 30%; -unity-text-align: middle-center;" />
+                    <ui:Label text="REIMU HAKUREI" name="Title" data-source="project://database/Assets/TouhouEngine/ScriptableObjects/UI/SelectorCharacterData.asset?fileID=11400000&amp;guid=dc8b714869e5aef4c95ae3874de18e73&amp;type=2#SelectorCharacterData" class="Title" style="font-size: 50%; -unity-text-align: middle-center; white-space: normal;" />
+                    <ui:Label text="The soldiers from the Pure Land finally made an entrance. Their flawlessness rejected the life and death of living creatures." name="Description" data-source="project://database/Assets/TouhouEngine/ScriptableObjects/UI/SelectorCharacterData.asset?fileID=11400000&amp;guid=dc8b714869e5aef4c95ae3874de18e73&amp;type=2#SelectorCharacterData" enable-rich-text="false" class="Description" style="color: rgb(255, 255, 255); font-size: 50%; white-space: normal;" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:Button text="Button" name="BtnSiguiente" class="BtnSiguiente" />
         </ui:VisualElement>
-        <ui:VisualElement class="title" style="flex-grow: 1; width: 40%; height: 20%; background-position-y: center; justify-content: flex-start; align-self: center; position: absolute; top: 5%;" />
+        <ui:VisualElement class="title" style="flex-grow: 1; width: 40%; height: 20%; background-position-y: center; justify-content: flex-start; align-self: center; position: absolute; top: 5%; right: 2%;" />
     </ui:VisualElement>
 </ui:UXML>

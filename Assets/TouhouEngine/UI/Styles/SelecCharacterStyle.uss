@@ -13,57 +13,48 @@
 .Portrait {
     background-size: 100% 100%;
     background-color: rgba(255, 255, 255, 0);
-    width: 45%;
-    height: 100%;
+    justify-content: center;
+    width: 55%;
+    height: 90%;
     position: absolute;
+    top: 5%;
 }
 
 .Character {
-    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=-1021872555423717409&guid=65e90fd085f92db459b86e370aeff497&type=3#all_37");
+    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=-3993211317029401747&guid=65e90fd085f92db459b86e370aeff497&type=3#marisa");
     background-color: rgba(0, 0, 0, 0);
     flex-grow: 1;
-    width: 70%;
-    -unity-background-scale-mode: scale-and-crop;
-    background-size: 100% 80%;
-    background-position-y: bottom 0%;
+    width: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+    background-size: contain;
+    background-position-y: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.Shadow {
+    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=887505566864250341&guid=65e90fd085f92db459b86e370aeff497&type=3#marisa_shadow");
+    background-color: rgba(0, 0, 0, 0);
+    flex-grow: 1;
+    width: 100%;
+    background-size: contain;
+    background-position-y: top 0;
     align-self: flex-end;
     position: absolute;
     bottom: 0;
     left: auto;
     top: 0;
-    right: 0;
-}
-
-.Shadow {
-    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=734498035006322362&guid=65e90fd085f92db459b86e370aeff497&type=3#sanae_shadow");
-    background-color: rgba(0, 0, 0, 0);
-    flex-grow: 1;
-    width: 70%;
-    -unity-background-scale-mode: scale-and-crop;
-    background-size: 100% 80%;
-    background-position-y: bottom 0%;
-    align-self: flex-end;
-    position: absolute;
-    bottom: -5%;
-    left: auto;
-    top: 5%;
-    right: 15%;
-}
-
-.Expresion {
-    background-image: url("project://database/Assets/TouhouEngine/Art/Sprites/Characters/Playables/all.png?fileID=4834318778822992428&guid=65e90fd085f92db459b86e370aeff497&type=3#all_38");
-    background-size: 70% 36%;
-    background-position-y: bottom 0%;
-    background-color: rgba(22, 111, 22, 0);
-    min-height: 0%;
-    max-height: 80%;
-    top: 20%;
-    position: relative;
-    -unity-background-scale-mode: scale-to-fit;
-    flex-grow: 1;
-    -unity-background-image-tint-color: rgb(255, 255, 255);
-    background-position-x: left 28%;
-    transform-origin: center 80%;
+    right: 10%;
 }
 
 .title {
@@ -92,7 +83,7 @@
 }
 
 .Content {
-    background-color: rgba(0, 0, 0, 0.53);
+    background-color: rgba(0, 0, 0, 0.43);
     width: 100%;
     height: 100%;
     justify-content: center;

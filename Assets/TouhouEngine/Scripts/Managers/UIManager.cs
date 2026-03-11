@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Lista de screens (uxml)")]
     [SerializeField] public ScreenEntry[] screens;
+    private ScreenEntry currentEntry;
 
     private VisualElement root;
     public InputActionAsset navigateActions;
@@ -44,6 +45,9 @@ public class UIManager : MonoBehaviour
 
     public void ChangeScreen(ScreenType type)
     {
+        if (currentEntry.logicComponent != null)
+            currentEntry.logicComponent.Dispose();
+
         ScreenEntry entry = Array.Find(screens, s => s.type == type);
         if (entry.visualAsset == null)
         {
