@@ -11,6 +11,7 @@ public class ButtonManager : MonoBehaviour
 
     [SerializeField] public AudioClip sfx_buttonhover;
     [SerializeField] public AudioClip sfx_clickbutton;
+    [SerializeField] public AudioClip sfx_cancelbutton;
 
     private void Awake()
     {
@@ -31,6 +32,14 @@ public class ButtonManager : MonoBehaviour
             SoundManager.Instance.PlaySFX(sfx_clickbutton);
         else
             Debug.LogWarning("SoundManager no encontrado. No se puede reproducir el sonido de click.");
+    }
+
+    public void PlayCancelSFX()
+    {
+        if (SoundManager.Instance != null)
+            SoundManager.Instance.PlaySFX(sfx_cancelbutton);
+        else
+            Debug.LogWarning("SoundManager no encontrado. No se puede reproducir el sonido de cancelación.");
     }
 
 

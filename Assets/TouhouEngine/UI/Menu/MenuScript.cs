@@ -57,7 +57,7 @@ public class MenuScript : ScreenLogic
     private void OnGameStartClicked()
     {
         UIManager.Instance.ChangeScreen(ScreenType.SelectCharacter);
-        MenuButtonClicked("Game Start");
+        ButtonManager.Instance.PlayClickSFX();
     }
     private void OnExtraDataClicked() => MenuButtonClicked("Extra Start");
     private void OnPracticeStartClicked() => MenuButtonClicked("Practice Start");
@@ -69,8 +69,8 @@ public class MenuScript : ScreenLogic
 
     private void MenuButtonClicked(string message)
     {
+        ButtonManager.Instance.PlayCancelSFX();
         Debug.Log(message + " clicked");
-        ButtonManager.Instance.PlayClickSFX();
         if (message == "Quit") Application.Quit();
     }
 }

@@ -12,6 +12,13 @@ public class SelectorScript : ScreenLogic
     [Header("Variables")]
     [SerializeField] private float transitionDuration = 0.2f;
 
+    [Header("Animation Shadow")]
+    [SerializeField] private float TargetRight = 10f;
+    [SerializeField] private float duration = 0.3f;
+
+    [Header("Referencias")]
+    [SerializeField] private ParticleSystem VFX;
+
     private int currentIndex = 0;
     private VisualElement root;
 
@@ -21,7 +28,7 @@ public class SelectorScript : ScreenLogic
     VisualElement portrait;
     VisualElement subcontent;
 
-    private InputAction navigateAction;
+    private InputAction navigateAction, submitAction;
 
     private Coroutine updateDataCoroutine;
 
@@ -46,12 +53,19 @@ public class SelectorScript : ScreenLogic
 
     protected override void LoadData()
     {
+
         navigateAction = UIManager.Instance.navigateActions
             .FindActionMap("UI")
             .FindAction("Navigate");
+        submitAction = UIManager.Instance.navigateActions
+            .FindActionMap("UI")
+            .FindAction("Submit");
 
         navigateAction.performed += OnNavigate;
+        submitAction.performed += OnSubmit;
         ButtonManager.Instance.AlternateRegisterHoverSFX(false, buttons);
+
+        VFX.Play();
         UpdateData();
     }
 
@@ -63,6 +77,12 @@ public class SelectorScript : ScreenLogic
             SwitchingSelection(true);
         else if (input.x < -0.5f)
             SwitchingSelection(false);
+    }
+
+    private void OnSubmit(InputAction.CallbackContext ctx)
+    {
+        ButtonManager.Instance.PlayClickSFX();
+        
     }
 
     private void OnLeftClicked()
@@ -119,5 +139,28 @@ public class SelectorScript : ScreenLogic
 
         portrait.style.opacity = 1;
         subcontent.style.opacity = 1;
+
+        StartCoroutine(SlideShadow());
+    }
+
+    private IEnumerator SlideShadow()
+    {
+        var shadow = root.Q<VisualElement>("Shadow");
+
+        float current = 0f;
+        float elapsed = 0f;
+
+        shadow.style.right = new StyleLength(new Length(0f, LengthUnit.Percent));
+
+
+        while (elapsed < duration) 
+        {
+            elapsed += Time.deltaTime;
+            float value = Mathf.Lerp(current, TargetRight, elapsed / duration);
+            shadow.style.right = new StyleLength(new Length(value, LengthUnit.Percent));
+            yield return null;
+        }
+
+        Debug.Log("Terminé la animación del shadow");
     }
 }
