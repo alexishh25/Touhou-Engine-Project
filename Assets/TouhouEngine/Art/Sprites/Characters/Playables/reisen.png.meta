@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: 60055ce3ca823be48ab8b776a33c102a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2727863382441197304
+    second: reisen_0
+  - first:
+      213: -8128409339139617946
+    second: reisen_1
+  - first:
+      213: 8697549650379449897
+    second: reisen_2
+  - first:
+      213: -6419571000152061982
+    second: reisen_3
+  - first:
+      213: 4441765881990904741
+    second: reisen_4
+  - first:
+      213: -8940460259177518766
+    second: reisen_5
+  - first:
+      213: -8865642615885252380
+    second: reisen_6
+  - first:
+      213: -3175906921197319560
+    second: reisen_7
+  - first:
+      213: -8660792262914740555
+    second: reisen_8
+  - first:
+      213: 3322487853860755867
+    second: reisen_9
+  - first:
+      213: -3228722477509417089
+    second: reisen_10
+  - first:
+      213: 6734787782870064812
+    second: reisen_11
+  - first:
+      213: 1688951336938428965
+    second: reisen_12
+  - first:
+      213: 5517307430297071910
+    second: reisen_13
+  - first:
+      213: -5582625301175788596
+    second: reisen_14
+  - first:
+      213: 4097214189152575337
+    second: reisen_15
+  - first:
+      213: -4611603330960048372
+    second: reisen_16
+  - first:
+      213: -4313761095709404825
+    second: reisen_17
+  - first:
+      213: 2632262813341832631
+    second: reisen_18
+  - first:
+      213: 2067381978059276075
+    second: reisen_19
+  - first:
+      213: -3061027089489518847
+    second: reisen_20
+  - first:
+      213: -2836707937471694920
+    second: reisen_21
+  - first:
+      213: 3067835090493872245
+    second: reisen_22
+  - first:
+      213: 7540311013676115932
+    second: reisen_23
+  - first:
+      213: -1345747590924605078
+    second: reisen_24
+  - first:
+      213: -3814728394906851418
+    second: reisen_25
+  - first:
+      213: 1352796034083006528
+    second: reisen_26
+  - first:
+      213: -2529594626972721822
+    second: reisen_27
+  - first:
+      213: -7774296760818052579
+    second: reisen_28
+  - first:
+      213: -5295772348500050046
+    second: reisen_29
+  - first:
+      213: -582626940705657026
+    second: reisen_30
+  - first:
+      213: -5566770483326847100
+    second: reisen_31
+  - first:
+      213: -724670634441590728
+    second: reisen_32
+  - first:
+      213: 6048186496192351230
+    second: reisen_33
+  - first:
+      213: -3933311165737815145
+    second: reisen_34
+  - first:
+      213: 281733083690282276
+    second: reisen_35
+  - first:
+      213: 8374425915298432112
+    second: reisen_36
+  - first:
+      213: -3545096780594073689
+    second: reisen_37
+  - first:
+      213: 3390183723846039657
+    second: reisen_38
+  - first:
+      213: 1527308758382960567
+    second: reisen_39
+  - first:
+      213: -1046702790556107058
+    second: reisen_40
+  - first:
+      213: -525383080364429417
+    second: reisen_41
+  - first:
+      213: -3955984358437582979
+    second: reisen_42
+  - first:
+      213: -1305501741088470469
+    second: reisen_43
+  - first:
+      213: -970605817311093706
+    second: reisen_44
+  - first:
+      213: 1906432575916809407
+    second: reisen_45
+  - first:
+      213: -1248568546783889883
+    second: reisen_46
+  - first:
+      213: -2711967131332137701
+    second: reisen_47
+  - first:
+      213: 5362769048901176311
+    second: reisen_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reisen_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 365
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8010ccdd4bea42ad0800000000000000
+      internalID: -2727863382441197304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 317
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b8d9fa5c6123f80800000000000000
+      internalID: -8128409339139617946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 365
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926a03f4357e3b870800000000000000
+      internalID: 8697549650379449897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 317
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7898d003a19e6a0800000000000000
+      internalID: -6419571000152061982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 365
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab7483498254ad30800000000000000
+      internalID: 4441765881990904741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 365
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2592a3b43ca1de380800000000000000
+      internalID: -8940460259177518766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 365
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e838965309e6f480800000000000000
+      internalID: -8865642615885252380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 365
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a445a5b79ece3d0800000000000000
+      internalID: -3175906921197319560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_8
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 365
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bee38fd25faec780800000000000000
+      internalID: -8660792262914740555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_9
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 365
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b999beb8919db1e20800000000000000
+      internalID: 3322487853860755867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_10
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 328
+        width: 290
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f776bb163064133d0800000000000000
+      internalID: -3228722477509417089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_11
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 328
+        width: 290
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae5c9b5ec5c67d50800000000000000
+      internalID: 6734787782870064812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 269
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ad221ea4c507710800000000000000
+      internalID: 1688951336938428965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 318
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621fa7b30e9619c40800000000000000
+      internalID: 5517307430297071910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 318
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb1f49ddd78682b0800000000000000
+      internalID: -5582625301175788596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 319
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f1129d89a3cd830800000000000000
+      internalID: 4097214189152575337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_16
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 319
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f3e1d243b4000c0800000000000000
+      internalID: -4611603330960048372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_17
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 319
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761575483217224c0800000000000000
+      internalID: -4313761095709404825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_18
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 318
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5d5b8151da78420800000000000000
+      internalID: 2632262813341832631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_19
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 286
+        width: 77
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f7441a4f0d0bc10800000000000000
+      internalID: 2067381978059276075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_20
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 269
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f1123841c0585d0800000000000000
+      internalID: -3061027089489518847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_21
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 270
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7f77f092df1a8d0800000000000000
+      internalID: -2836707937471694920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_22
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 270
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5789d5eb2c3239a20800000000000000
+      internalID: 3067835090493872245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_23
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 271
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7612aaae094a860800000000000000
+      internalID: 7540311013676115932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_24
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 270
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69e99532b1f25de0800000000000000
+      internalID: -1345747590924605078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_25
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 271
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a72bf27cbc5f0bc0800000000000000
+      internalID: -3814728394906851418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_26
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 270
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048231953d816c210800000000000000
+      internalID: 1352796034083006528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_27
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 278
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ddd81d61315ecd0800000000000000
+      internalID: -2529594626972721822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_28
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 277
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1258f839462c1490800000000000000
+      internalID: -7774296760818052579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_29
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 287
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f71547b13a186b0800000000000000
+      internalID: -5295772348500050046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_30
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 278
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3faaa262e71ae7f0800000000000000
+      internalID: -582626940705657026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_31
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 287
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4877c2b4dbbdeb2b0800000000000000
+      internalID: -5566770483326847100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_32
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 278
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838b3feb5e371f5f0800000000000000
+      internalID: -724670634441590728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_33
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 245
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb0cd8d2997fe350800000000000000
+      internalID: 6048186496192351230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 245
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793be1795521a69c0800000000000000
+      internalID: -3933311165737815145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_35
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 245
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42da5d63fbae8e300800000000000000
+      internalID: 281733083690282276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_36
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 245
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07440371000f73470800000000000000
+      internalID: 8374425915298432112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_37
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 176
+        width: 32
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af2f42c2494dcec0800000000000000
+      internalID: -3545096780594073689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_38
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 176
+        width: 32
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9687727822a5c0f20800000000000000
+      internalID: 3390183723846039657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_39
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 176
+        width: 32
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf52c54937123510800000000000000
+      internalID: 1527308758382960567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_40
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 176
+        width: 32
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece3e7f8b5d5971f0800000000000000
+      internalID: -1046702790556107058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_41
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 217
+        width: 55
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fa0eb3fd675b8f0800000000000000
+      internalID: -525383080364429417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_42
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 217
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77835a8f258919c0800000000000000
+      internalID: -3955984358437582979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_43
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 196
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a84c4551de1ede0800000000000000
+      internalID: -1305501741088470469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_44
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 196
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c9e32d627b782f0800000000000000
+      internalID: -970605817311093706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_45
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 95
+        width: 40
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc11cbb352057a10800000000000000
+      internalID: 1906432575916809407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_46
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 101
+        width: 40
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526783b95813caee0800000000000000
+      internalID: -1248568546783889883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_47
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 105
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1da96e33482d5ad0800000000000000
+      internalID: -2711967131332137701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reisen_48
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 105
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fbc63c69026c6a40800000000000000
+      internalID: 5362769048901176311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      reisen_0: -2727863382441197304
+      reisen_1: -8128409339139617946
+      reisen_10: -3228722477509417089
+      reisen_11: 6734787782870064812
+      reisen_12: 1688951336938428965
+      reisen_13: 5517307430297071910
+      reisen_14: -5582625301175788596
+      reisen_15: 4097214189152575337
+      reisen_16: -4611603330960048372
+      reisen_17: -4313761095709404825
+      reisen_18: 2632262813341832631
+      reisen_19: 2067381978059276075
+      reisen_2: 8697549650379449897
+      reisen_20: -3061027089489518847
+      reisen_21: -2836707937471694920
+      reisen_22: 3067835090493872245
+      reisen_23: 7540311013676115932
+      reisen_24: -1345747590924605078
+      reisen_25: -3814728394906851418
+      reisen_26: 1352796034083006528
+      reisen_27: -2529594626972721822
+      reisen_28: -7774296760818052579
+      reisen_29: -5295772348500050046
+      reisen_3: -6419571000152061982
+      reisen_30: -582626940705657026
+      reisen_31: -5566770483326847100
+      reisen_32: -724670634441590728
+      reisen_33: 6048186496192351230
+      reisen_34: -3933311165737815145
+      reisen_35: 281733083690282276
+      reisen_36: 8374425915298432112
+      reisen_37: -3545096780594073689
+      reisen_38: 3390183723846039657
+      reisen_39: 1527308758382960567
+      reisen_4: 4441765881990904741
+      reisen_40: -1046702790556107058
+      reisen_41: -525383080364429417
+      reisen_42: -3955984358437582979
+      reisen_43: -1305501741088470469
+      reisen_44: -970605817311093706
+      reisen_45: 1906432575916809407
+      reisen_46: -1248568546783889883
+      reisen_47: -2711967131332137701
+      reisen_48: 5362769048901176311
+      reisen_5: -8940460259177518766
+      reisen_6: -8865642615885252380
+      reisen_7: -3175906921197319560
+      reisen_8: -8660792262914740555
+      reisen_9: 3322487853860755867
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

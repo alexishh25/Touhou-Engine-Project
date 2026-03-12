@@ -9,12 +9,10 @@ public class BulletController : MonoBehaviour
     public Transform puntoDisparo;
     public Vector2 Velocity;
     public SpriteRenderer _rendererbullet;
-    public AudioSource audioSource;
 
     private void Awake()
     {
         _rendererbullet = GetComponent<SpriteRenderer>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     private void Movement()
@@ -24,6 +22,7 @@ public class BulletController : MonoBehaviour
 
         transform.position += (Vector3)Velocity * Time.deltaTime;
         lifeTimer += Time.deltaTime;
+
 
         if (lifeTimer >= MAX_LIFE_TIME) Destroy();
     }

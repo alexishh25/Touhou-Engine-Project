@@ -37,3 +37,11 @@ MonoBehaviour:
     colorSubdes: {r: 0.8000001, g: 0.4666667, b: 0, a: 1}
     desc: The Lunar Capital's Power Stone appeared before anyone knew it. It held
       a power that could throw Gensokyo's society into chaos.
+  - Name: REISEN UDOGAWA
+    colorName: {r: 0.6142356, g: 0.3202206, b: 0.96981126, a: 1}
+    Sprite: {fileID: -6004362707538375403, guid: 65e90fd085f92db459b86e370aeff497, type: 3}
+    Sprite_shadow: {fileID: -2958205467540611984, guid: 65e90fd085f92db459b86e370aeff497, type: 3}
+    subdesc: AN ORDINARY MAGICIAN
+    colorSubdes: {r: 0.3726738, g: 0, b: 0.8, a: 1}
+    desc: The Lunar Capital's Power Stone appeared before anyone knew it. It held
+      a power that could throw Gensokyo's society into chaos.

@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/TouhouEngine/Scenes/Menu/Main.unity
+    guid: a73e2bf2a4aa10541ab7019b658917f4
+  - enabled: 1
+    path: Assets/TouhouEngine/Scenes/Gameplay.unity
+    guid: e073b2c2ece69ae46a18228aa9997187
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -29,9 +29,11 @@ public class PlayerStateManager : MonoBehaviour
         rgb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        var map = InputSystem.actions.FindActionMap("Player");
+        var map = GameManager.Instance.inputActions.FindActionMap("Player");
         moveAction = map.FindAction("Move");
         focusAction = map.FindAction("Focus");
+        if (moveAction == null || focusAction == null)
+            Debug.LogWarning("No se encontraron las acciones de movimiento o enfoque en el InputActionAsset. Asegúrate de que estén correctamente configuradas.");
 
         reimuState = new PlayerReimuState(this);
         marisaState = new PlayerMarisaState(this);
@@ -78,6 +80,7 @@ public class PlayerStateManager : MonoBehaviour
 
     private void Update()
     {
+
         currentStats.UpdateState();
     }
 

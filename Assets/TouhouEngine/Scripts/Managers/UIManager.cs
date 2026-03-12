@@ -30,17 +30,26 @@ public class UIManager : MonoBehaviour
     private ScreenEntry currentEntry;
 
     private VisualElement root;
-    public InputActionAsset navigateActions;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
         root = uIDocument.rootVisualElement;
     }
+
+    public void DisableUI()
+    {
+        uIDocument.gameObject.SetActive(false);
+    }
+
+    public void EnableUI()
+    {
+        uIDocument.gameObject.SetActive(true);
+    }
     private void Start()
     {
         ChangeScreen(ScreenType.MainMenu);
-        navigateActions.FindActionMap("UI").Enable();
+        GameManager.Instance.SwitchActionMap("UI");
     }
 
     public void ChangeScreen(ScreenType type)

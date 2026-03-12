@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sanae AOC
+  m_Controller: {fileID: 9100000, guid: 5085ea004736c3a47bda5618bae5ce91, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 84adf416c5f530a4cb2dc0392b21a2b8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0cf5e22205c26474a85dae4b87337263, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a93a9e7c521abd542a4bbc56862e6d4b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2bac2e175191fc844a2e8fe0b001597c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f5546b13404453a468ac10ab5143701d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: efa1e6316c7f1314e90be0e58fa7f73b, type: 2}

@@ -193,7 +193,9 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  animator: {fileID: 0}
   currentData: {fileID: 11400000, guid: 9af8980e42efc82498e726d116a573e0, type: 2}
+  bulletManager: {fileID: 0}
 --- !u!50 &6358244300612771122
 Rigidbody2D:
   serializedVersion: 5

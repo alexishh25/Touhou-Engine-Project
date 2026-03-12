@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 
 public class SelectorScript : ScreenLogic
@@ -19,6 +20,7 @@ public class SelectorScript : ScreenLogic
     [Header("Referencias")]
     [SerializeField] private ParticleSystem VFX;
 
+    private CharacterData personaje;
     private int currentIndex = 0;
     private VisualElement root;
 
@@ -39,6 +41,10 @@ public class SelectorScript : ScreenLogic
         right_button = currentRoot.Q<Button>("BtnSiguiente");
         portrait = currentRoot.Q<VisualElement>("Portrait");
         subcontent = currentRoot.Q<VisualElement>("SubContent");
+
+        left_button.focusable = false;
+        right_button.focusable = false;
+
         AddButtonIfNotNull(left_button);
         AddButtonIfNotNull(right_button);
     }
@@ -53,11 +59,10 @@ public class SelectorScript : ScreenLogic
 
     protected override void LoadData()
     {
-
-        navigateAction = UIManager.Instance.navigateActions
+        navigateAction = GameManager.Instance.inputActions
             .FindActionMap("UI")
             .FindAction("Navigate");
-        submitAction = UIManager.Instance.navigateActions
+        submitAction = GameManager.Instance.inputActions
             .FindActionMap("UI")
             .FindAction("Submit");
 
@@ -82,7 +87,10 @@ public class SelectorScript : ScreenLogic
     private void OnSubmit(InputAction.CallbackContext ctx)
     {
         ButtonManager.Instance.PlayClickSFX();
-        
+        GameManager.Instance.SwitchActionMap("Player");
+        UIManager.Instance.DisableUI();
+        SceneManager.LoadScene("Gameplay");
+        Debug.Log($"Selected character: {characterData.characterDataArray[currentIndex].Name}");
     }
 
     private void OnLeftClicked()
@@ -160,7 +168,12 @@ public class SelectorScript : ScreenLogic
             shadow.style.right = new StyleLength(new Length(value, LengthUnit.Percent));
             yield return null;
         }
+    }
 
-        Debug.Log("Terminé la animación del shadow");
+    public override void Dispose()
+    {
+        navigateAction.performed -= OnNavigate;
+        submitAction.performed -= OnSubmit;
+        base.Dispose();
     }
 }

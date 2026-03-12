@@ -9,14 +9,27 @@ public class BulletManager : MonoBehaviour
 {
     [SerializeField] private float shotCooldown;
     [SerializeField] private float bulletSpeed;
+    [SerializeField] public AudioClip bullet_sfx;
 
     private float shotTimerCooldown = 0f;
-    public InputAction actionShot;
+    private InputAction actionShot;
 
     private Sprite bulletsprite;
     private void Awake()
     {
-        actionShot = InputSystem.actions.FindAction("Shoot");
+        actionShot = GameManager.Instance.inputActions
+            .FindActionMap("Player")
+            .FindAction("Shoot");
+    }
+
+    private void OnEnable()
+    {
+        actionShot?.Enable();
+    }
+
+    private void OnDisable()
+    {
+        actionShot?.Disable();
     }
 
     public void SetAmmoSprite(Sprite newSprite)
@@ -36,6 +49,8 @@ public class BulletManager : MonoBehaviour
         }
 
         bullet.gameObject.SetActive(true);
+
+        SoundManager.Instance.PlaySFX(bullet_sfx);
     }
 
     private void Update()

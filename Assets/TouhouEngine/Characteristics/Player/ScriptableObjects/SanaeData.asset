@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b292bee7507796a4ba269d7dd7210151, type: 3}
   m_Name: SanaeData
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
-  characterName: 
+  characterName: SanaeData
   basemoveSpeed: 10
   focusSpeed: 3.33
   animatorController: {fileID: 0}
-  characterSprite: {fileID: 0}
+  bulletSprite: {fileID: 0}
+  bulletSound: {fileID: 0}
+  bulletFocusPrefab: {fileID: 0}

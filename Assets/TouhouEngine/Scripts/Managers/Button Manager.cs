@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -13,9 +14,18 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] public AudioClip sfx_clickbutton;
     [SerializeField] public AudioClip sfx_cancelbutton;
 
+    [Header("Variables")]
+    [SerializeField] public float DelayClick = 1.0f;
+
     private void Awake()
     {
-        if (Instance == null) Instance = this;
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public void PlayHoverSFX()

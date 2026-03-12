@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public abstract class ScreenLogic : MonoBehaviour
@@ -22,7 +23,7 @@ public abstract class ScreenLogic : MonoBehaviour
         LoadData();
     }
 
-    public void Dispose()
+    public virtual void Dispose()
     {
         ButtonActionAlterSusYUnsuscribe(false);
         ButtonManager.Instance.AlternateRegisterHoverSFX(false, buttons);
@@ -34,4 +35,5 @@ public abstract class ScreenLogic : MonoBehaviour
         if (btn != null)
             buttons.Add(btn);
     }
+
 }
