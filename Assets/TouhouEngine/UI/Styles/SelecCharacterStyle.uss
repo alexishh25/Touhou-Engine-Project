@@ -18,6 +18,10 @@
     height: 90%;
     position: absolute;
     top: 5%;
+
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .Character {
@@ -36,10 +40,6 @@
     left: 0;
     top: 0;
     right: 0;
-
-    transition-property: opacity;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
 }
 
 .Shadow {
@@ -77,9 +77,16 @@
     -unity-background-scale-mode: scale-to-fit;
 }
 
+.BtnAnterior:hover {
+    
+}
+
 .BtnSiguiente {
     background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-669340641&guid=e6342438f41c13a46a87d302659e4514&type=3#arrow_right");
     -unity-background-scale-mode: scale-to-fit;
+}
+.BtnSiguiente:hover {
+    
 }
 
 .Content {
@@ -106,4 +113,7 @@
 }
 
 .SubContent {
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }

@@ -9,7 +9,7 @@
         <ui:VisualElement name="Description" class="description" style="flex-grow: 1; flex-direction: row; flex-wrap: nowrap; flex-basis: auto;">
             <ui:Button text="Button" name="BtnAnterior" class="BtnAnterior" />
             <ui:VisualElement name="Content" class="Content">
-                <ui:VisualElement name="VisualElement" class="SubContent">
+                <ui:VisualElement name="SubContent" class="SubContent">
                     <ui:Label text="MYSTERIOUS FLYING SHRINE MAIDEN" name="Subdes" data-source="project://database/Assets/TouhouEngine/ScriptableObjects/UI/SelectorCharacterData.asset?fileID=11400000&amp;guid=dc8b714869e5aef4c95ae3874de18e73&amp;type=2#SelectorCharacterData" class="Subdes" style="font-size: 30%; -unity-text-align: middle-center;" />
                     <ui:Label text="REIMU HAKUREI" name="Title" data-source="project://database/Assets/TouhouEngine/ScriptableObjects/UI/SelectorCharacterData.asset?fileID=11400000&amp;guid=dc8b714869e5aef4c95ae3874de18e73&amp;type=2#SelectorCharacterData" class="Title" style="font-size: 50%; -unity-text-align: middle-center; white-space: normal;" />
                     <ui:Label text="The soldiers from the Pure Land finally made an entrance. Their flawlessness rejected the life and death of living creatures." name="Description" data-source="project://database/Assets/TouhouEngine/ScriptableObjects/UI/SelectorCharacterData.asset?fileID=11400000&amp;guid=dc8b714869e5aef4c95ae3874de18e73&amp;type=2#SelectorCharacterData" enable-rich-text="false" class="Description" style="color: rgb(255, 255, 255); font-size: 50%; white-space: normal;" />

@@ -12,8 +12,6 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] public AudioClip sfx_buttonhover;
     [SerializeField] public AudioClip sfx_clickbutton;
 
-    private List<Button> screen_buttons = new List<Button>();
-
     private void Awake()
     {
         if (Instance == null) Instance = this;
