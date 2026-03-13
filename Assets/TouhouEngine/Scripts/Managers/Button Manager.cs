@@ -28,6 +28,16 @@ public class ButtonManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void Disable()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Enable()
+    {
+        gameObject.SetActive(true);
+    }
+
     public void PlayHoverSFX()
     {
         if (SoundManager.Instance != null)

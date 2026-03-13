@@ -16,7 +16,6 @@ public class SoundManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
         AudioSource[] sources = GetComponents<AudioSource>();
 
         if (sources.Length < 2)

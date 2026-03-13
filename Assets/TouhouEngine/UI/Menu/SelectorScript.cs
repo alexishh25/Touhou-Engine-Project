@@ -1,9 +1,7 @@
-using System.Collections.Generic;
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
-using UnityEngine.SceneManagement;
 
 
 public class SelectorScript : ScreenLogic
@@ -34,11 +32,12 @@ public class SelectorScript : ScreenLogic
 
     private Coroutine updateDataCoroutine;
 
-    protected override void DefinirBotones(VisualElement currentRoot)
+    protected override void DefinirElementos(VisualElement currentRoot)
     {
         root = currentRoot;
         left_button = currentRoot.Q<Button>("BtnAnterior");
         right_button = currentRoot.Q<Button>("BtnSiguiente");
+
         portrait = currentRoot.Q<VisualElement>("Portrait");
         subcontent = currentRoot.Q<VisualElement>("SubContent");
 
@@ -70,6 +69,7 @@ public class SelectorScript : ScreenLogic
         submitAction.performed += OnSubmit;
         ButtonManager.Instance.AlternateRegisterHoverSFX(false, buttons);
 
+        VFX.Simulate(5f, true, false);
         VFX.Play();
         UpdateData();
     }
@@ -89,7 +89,8 @@ public class SelectorScript : ScreenLogic
         ButtonManager.Instance.PlayClickSFX();
         GameManager.Instance.SwitchActionMap("Player");
         UIManager.Instance.DisableUI();
-        SceneManager.LoadScene("Gameplay");
+        UIManager.Instance.InterpolateScreenLoad("Gameplay");
+        ButtonManager.Instance.Enable();
         Debug.Log($"Selected character: {characterData.characterDataArray[currentIndex].Name}");
     }
 
@@ -161,7 +162,7 @@ public class SelectorScript : ScreenLogic
         shadow.style.right = new StyleLength(new Length(0f, LengthUnit.Percent));
 
 
-        while (elapsed < duration) 
+        while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
             float value = Mathf.Lerp(current, TargetRight, elapsed / duration);
@@ -169,6 +170,8 @@ public class SelectorScript : ScreenLogic
             yield return null;
         }
     }
+
+
 
     public override void Dispose()
     {

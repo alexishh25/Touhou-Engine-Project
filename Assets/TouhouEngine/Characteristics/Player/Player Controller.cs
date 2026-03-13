@@ -14,15 +14,53 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] public float moveSpeed;
 
-    private void OnEnable() => moveAction?.Enable();
+    private void OnEnable() 
+    {
+        if (moveAction != null)
+        {
+            moveAction.Enable();
+            Debug.Log("PlayerController: moveAction habilitada");
+        }
+        if (focusAction != null)
+        {
+            focusAction.Enable();
+            Debug.Log("PlayerController: focusAction habilitada");
+        }
+    }
 
-    private void OnDisable() => moveAction?.Disable();
+    private void OnDisable() 
+    {
+        if (moveAction != null)
+            moveAction.Disable();
+        if (focusAction != null)
+            focusAction.Disable();
+    }
 
     private void Awake()
     {
-        moveAction = InputSystem.actions.FindAction("Move");
-        focusAction = InputSystem.actions.FindAction("Focus");
         rgdbody = GetComponent<Rigidbody2D>();
+        
+        // Usar el InputActionAsset del GameManager en lugar de InputSystem.actions
+        if (GameManager.Instance != null && GameManager.Instance.inputActions != null)
+        {
+            var map = GameManager.Instance.inputActions.FindActionMap("Player");
+            if (map != null)
+            {
+                moveAction = map.FindAction("Move");
+                focusAction = map.FindAction("Focus");
+                
+                if (moveAction == null || focusAction == null)
+                    Debug.LogWarning("No se encontraron las acciones de movimiento o enfoque en el InputActionAsset.");
+            }
+            else
+            {
+                Debug.LogError("No se encontró el Action Map 'Player' en el InputActionAsset.");
+            }
+        }
+        else
+        {
+            Debug.LogError("GameManager.Instance o inputActions es null. Asegúrate de que GameManager esté en la escena.");
+        }
     }
 
     [ContextMenu("Cambiar Sprites")]

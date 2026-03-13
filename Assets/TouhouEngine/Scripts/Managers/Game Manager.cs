@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     public InputActionAsset inputActions;
 
+    [SerializeField] private string currentActionMap = "";
+    [SerializeField] private GameObject[] ManagersToDisable;
     void Awake()
     {
         if (Instance == null)
@@ -20,6 +23,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        if (currentActionMap != null)
+            SwitchActionMap(currentActionMap);
+        else if (currentActionMap == "" || currentActionMap == null)
+            Debug.LogWarning($"No se encontró el Action Map: {currentActionMap}. Asegúrate de que el nombre sea correcto y que esté incluido en el InputActionAsset.");
+    }
+
+    private void Start()
+    {
+        foreach (var manager in ManagersToDisable)
+        {
+            if (manager != null)
+                manager.SetActive(false);
+            else
+                Debug.LogWarning("Uno de los objetos en ManagerstoDisable es null. Asegúrate de asignar todos los objetos correctamente en el inspector.");
+        }
+    }
 
     public void SwitchActionMap(string mapName)
     {
@@ -33,5 +54,7 @@ public class GameManager : MonoBehaviour
 
         if (inputActions.FindActionMap(mapName) == null)
             Debug.LogWarning($"No se encontró el Action Map: {mapName}. Asegúrate de que el nombre sea correcto y que esté incluido en el InputActionAsset.");
+
+        currentActionMap = mapName;
     }
 }

@@ -1,0 +1,43 @@
+:root {
+}
+
+.Background {
+    background-color: rgb(0, 0, 0);
+}
+
+.LoadingContent {
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+    background-color: rgba(255, 255, 255, 0);
+    width: 40%;
+    height: 30%;
+}
+
+.NowLoading {
+    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1303321742&guid=e6342438f41c13a46a87d302659e4514&type=3#Now_Loading");
+    -unity-background-scale-mode: scale-to-fit;
+    background-position-y: center;
+    background-position-x: center;
+    width: 60%;
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 0%;
+    right: 0%;
+    height: 30%;
+}
+
+.SubLoading {
+    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=952249807&guid=e6342438f41c13a46a87d302659e4514&type=3#Subtitle");
+    -unity-background-scale-mode: scale-to-fit;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    bottom: 0%;
+    right: 0%;
+    width: 80%;
+    height: 100%;
+}

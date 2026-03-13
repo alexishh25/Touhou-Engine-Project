@@ -6054,7 +6054,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_283
+      name: Subtitle
       rect:
         serializedVersion: 2
         x: 1243
@@ -6098,7 +6098,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_285
+      name: Now_Loading
       rect:
         serializedVersion: 2
         x: 1257
@@ -6120,7 +6120,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_286
+      name: leaf
       rect:
         serializedVersion: 2
         x: 1240
@@ -7008,7 +7008,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7236,10 +7236,7 @@ TextureImporter:
       Menu_UI_280: -1515494796
       Menu_UI_281: -1434262614
       Menu_UI_282: -670706040
-      Menu_UI_283: 952249807
       Menu_UI_284: 2146169152
-      Menu_UI_285: 1303321742
-      Menu_UI_286: -1796154075
       Menu_UI_287: 1156212215
       Menu_UI_289: -707031968
       Menu_UI_29: 2866993864454014191
@@ -7348,6 +7345,7 @@ TextureImporter:
       Music_Room_unfocus: 1720815248
       Normal_Focus: 285550080
       Normal_Unfocus: 781844543
+      Now_Loading: 1303321742
       Option: -1628037540
       Option_unfocus: -1032506176
       Player_Data: -107667240
@@ -7359,9 +7357,11 @@ TextureImporter:
       Replay: 1058759748
       Replay_unfocus: 1826028452
       SubBackground: 7221189118869618201
+      Subtitle: 952249807
       arrow_left: 241075140
       arrow_right: -8274363237862750152
       background: 2315263262455518574
+      leaf: -1796154075
       player_select: 5499279502772520267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

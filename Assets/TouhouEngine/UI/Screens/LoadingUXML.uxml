@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/LoadingStyle.uss?fileID=7433441132597879392&amp;guid=6ea96172f5aa4f1439b53234c7c754be&amp;type=3#LoadingStyle" />
+    <ui:VisualElement name="Background" class="Background" style="flex-grow: 1;">
+        <ui:VisualElement class="LoadingContent" style="flex-grow: 1; width: 50%;">
+            <ui:VisualElement name="VFX" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/UI/Components/Leaf%20VFX.renderTexture?fileID=8400000&amp;guid=352531d0e6ecb10418a35efff0094b76&amp;type=2#Leaf VFX&quot;); position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%; -unity-background-scale-mode: stretch-to-fill; background-position-x: left 0; -unity-background-image-tint-color: rgb(255, 255, 255); background-size: 80% 100%; background-color: rgba(255, 255, 255, 0); background-position-y: center;" />
+            <ui:VisualElement name="SubLoading" class="SubLoading" style="flex-grow: 1; width: 60%; height: 80%;" />
+            <ui:VisualElement name="NowLoading" class="NowLoading" style="flex-grow: 1; width: 40%; height: 40%; right: 20%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

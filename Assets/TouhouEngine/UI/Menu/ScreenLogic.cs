@@ -7,7 +7,7 @@ public abstract class ScreenLogic : MonoBehaviour
 {
     protected List<Button> buttons = new List<Button>();
 
-    protected abstract void DefinirBotones(VisualElement currentRoot);
+    protected abstract void DefinirElementos(VisualElement currentRoot);
     protected abstract void ButtonActionAlterSusYUnsuscribe(bool active);
 
     protected abstract void LoadData();
@@ -16,7 +16,7 @@ public abstract class ScreenLogic : MonoBehaviour
     {
         if (buttons.Count > 0) Dispose();
         Debug.Log($"Initializing {gameObject.name} screen logic.");
-        DefinirBotones(screenRoot);
+        DefinirElementos(screenRoot);
         ButtonActionAlterSusYUnsuscribe(true);
         ButtonManager.Instance.AlternateRegisterHoverSFX(true, buttons);
         if (buttons.Count != 0) buttons[0].Focus();

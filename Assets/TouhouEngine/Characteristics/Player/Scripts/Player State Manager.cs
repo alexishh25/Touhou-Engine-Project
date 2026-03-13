@@ -42,8 +42,25 @@ public class PlayerStateManager : MonoBehaviour
     }
     private void OnEnable()
     {
-        moveAction.Enable();
-        focusAction.Enable();
+        if (moveAction != null)
+        {
+            moveAction.Enable();
+            Debug.Log("PlayerStateManager: moveAction habilitada");
+        }
+        else
+        {
+            Debug.LogWarning("PlayerStateManager: moveAction es null en OnEnable");
+        }
+        
+        if (focusAction != null)
+        {
+            focusAction.Enable();
+            Debug.Log("PlayerStateManager: focusAction habilitada");
+        }
+        else
+        {
+            Debug.LogWarning("PlayerStateManager: focusAction es null en OnEnable");
+        }
     }
 
     private void OnDisable()

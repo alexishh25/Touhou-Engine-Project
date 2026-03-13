@@ -32,7 +32,6 @@ public class BulletController : MonoBehaviour
         if (_rendererbullet != null)
         {
             _rendererbullet.sprite = newSprite;
-            Debug.Log("Sprite de bala cambiado a: " + newSprite.name);
         }
         else
         {

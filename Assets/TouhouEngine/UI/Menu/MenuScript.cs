@@ -15,7 +15,7 @@ public class MenuScript : ScreenLogic
     Button Option_button;
     Button Quit_button;
 
-    protected override void DefinirBotones(VisualElement currentRoot)
+    protected override void DefinirElementos(VisualElement currentRoot)
     {
         GameStart_button = currentRoot.Q<Button>("GameStart");
         ExtraStart_button = currentRoot.Q<Button>("ExtraStart");

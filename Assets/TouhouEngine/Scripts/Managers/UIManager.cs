@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using Unity.Properties;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public enum ScreenType
@@ -49,7 +51,6 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         ChangeScreen(ScreenType.MainMenu);
-        GameManager.Instance.SwitchActionMap("UI");
     }
 
     public void ChangeScreen(ScreenType type)
@@ -71,6 +72,48 @@ public class UIManager : MonoBehaviour
         root.Add(screenInstance);
 
         InitializeCurrentScreen(type, screenInstance);
+    }
+
+    public void InterpolateScreenLoad(string targetScene)
+    {
+        StartCoroutine(LoadWithScreen(targetScene));
+    }
+
+    private IEnumerator LoadWithScreen(string targetScene)
+    {
+        Scene sceneToUnload = SceneManager.GetActiveScene();
+
+        yield return SceneManager.LoadSceneAsync("LoadingScreen", LoadSceneMode.Additive);
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
+        asyncLoad.allowSceneActivation = false;
+
+        while (asyncLoad.progress < 0.9f) 
+        {
+            float progress = asyncLoad.progress / 0.9f;
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(2.0f);
+
+        asyncLoad.allowSceneActivation = true;
+        yield return null;
+
+        yield return SceneManager.UnloadSceneAsync("LoadingScreen");
+
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(targetScene));
+
+        yield return SceneManager.UnloadSceneAsync(sceneToUnload);
+        
+        // Asegurar que el Action Map "Player" esté activo después de cargar la escena
+        if (targetScene == "Gameplay")
+        {
+            yield return new WaitForEndOfFrame(); // Esperar un frame para que los objetos se inicialicen
+            GameManager.Instance.SwitchActionMap("Player");
+            UIManager.Instance.DisableUI();
+
+            Debug.Log("Action Map 'Player' reactivado después de cargar la escena Gameplay");
+        }
     }
 
     private void InitializeCurrentScreen(ScreenType type, VisualElement screenRoot)
