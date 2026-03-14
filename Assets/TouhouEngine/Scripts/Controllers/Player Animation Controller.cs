@@ -25,6 +25,5 @@ public class PlayerAnimationController : MonoBehaviour
         }
         currentVal = Mathf.Lerp(currentVal, moveinput.x, 8 * Time.deltaTime);
         animator.SetFloat(nombre, currentVal);
-        Debug.Log("Blend Alterado a: " + currentVal);
     }
 }

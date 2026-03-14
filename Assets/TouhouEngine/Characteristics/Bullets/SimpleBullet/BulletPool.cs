@@ -5,8 +5,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Un almacen de balas apagadas que se pueden solicitar para ser activadas y usadas. 
-/// Esto mejora el rendimiento al evitar la necesidad de instanciar nuevas balas cada vez que se necesitan, reutilizando las existentes en su lugar.
+/// A pool of inactive bullets that can be requested to be activated and used.
+/// Improves performance by avoiding the need to instantiate new bullets every time they are needed, reusing existing ones instead.
 /// </summary>
 public class BulletPool : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class BulletPool : MonoBehaviour
         get
         {
             if (_instance == null)
-                Debug.LogError("La instancia de BulletPool es nula. Aseg�rese de que haya un BulletPool en la escena.");
+                Debug.LogError("BulletPool instance is null. Make sure there is a BulletPool in the scene.");
 
             return _instance;
         }

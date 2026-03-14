@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         if (currentActionMap != null)
             SwitchActionMap(currentActionMap);
         else if (currentActionMap == "" || currentActionMap == null)
-            Debug.LogWarning($"No se encontró el Action Map: {currentActionMap}. Asegúrate de que el nombre sea correcto y que esté incluido en el InputActionAsset.");
+            Debug.LogWarning($"Action Map not found: {currentActionMap}. Make sure the name is correct and included in the InputActionAsset.");
     }
 
     private void Start()
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
             if (manager != null)
                 manager.SetActive(false);
             else
-                Debug.LogWarning("Uno de los objetos en ManagerstoDisable es null. Asegúrate de asignar todos los objetos correctamente en el inspector.");
+                Debug.LogWarning("One of the objects in ManagersToDisable is null. Make sure all objects are correctly assigned in the inspector.");
         }
     }
 
@@ -47,13 +47,13 @@ public class GameManager : MonoBehaviour
         foreach (var map in inputActions.actionMaps)
         {
             map.Disable();
-            Debug.Log($"Deshabilitado Action Map: {map.name}"); 
+            Debug.Log($"Disabled Action Map: {map.name}"); 
         }
 
         inputActions.FindActionMap(mapName)?.Enable(); // activa solo el que necesitas
 
         if (inputActions.FindActionMap(mapName) == null)
-            Debug.LogWarning($"No se encontró el Action Map: {mapName}. Asegúrate de que el nombre sea correcto y que esté incluido en el InputActionAsset.");
+            Debug.LogWarning($"Action Map not found: {mapName}. Make sure the name is correct and included in the InputActionAsset.");
 
         currentActionMap = mapName;
     }

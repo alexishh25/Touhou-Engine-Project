@@ -43,7 +43,7 @@ public class ButtonManager : MonoBehaviour
         if (SoundManager.Instance != null)
             SoundManager.Instance.PlaySFX(sfx_buttonhover);
         else
-            Debug.LogWarning("SoundManager no encontrado. No se puede reproducir el sonido de hover.");
+            Debug.LogWarning("SoundManager not found. Cannot play hover sound.");
     }
 
     public void PlayClickSFX()
@@ -51,7 +51,7 @@ public class ButtonManager : MonoBehaviour
         if (SoundManager.Instance != null)
             SoundManager.Instance.PlaySFX(sfx_clickbutton);
         else
-            Debug.LogWarning("SoundManager no encontrado. No se puede reproducir el sonido de click.");
+            Debug.LogWarning("SoundManager not found. Cannot play click sound.");
     }
 
     public void PlayCancelSFX()
@@ -59,12 +59,12 @@ public class ButtonManager : MonoBehaviour
         if (SoundManager.Instance != null)
             SoundManager.Instance.PlaySFX(sfx_cancelbutton);
         else
-            Debug.LogWarning("SoundManager no encontrado. No se puede reproducir el sonido de cancelación.");
+            Debug.LogWarning("SoundManager not found. Cannot play cancel sound.");
     }
 
 
 
-    // Este método permite suscribir o desuscribir múltiples botones a sus respectivos manejadores de eventos de clic de manera eficiente.
+    // Allows subscribing or unsubscribing multiple buttons to their respective click event handlers efficiently.
     public void ManageButtonActions(bool suscribe, params (Button button, Action handler)[] buttonActions)
     {
         foreach (var (button, handler) in buttonActions)

@@ -1,9 +1,9 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Nueva Animación", menuName = "Animation / AnimationPlayerData")]
+[CreateAssetMenu(fileName = "New Animation", menuName = "Animation / AnimationPlayerData")]
 public class AnimationData : ScriptableObject
 {
-    [Header("Campos de Animacion")]
+    [Header("Animation Fields")]
     public string animationName;
     public float frameloop;
 }

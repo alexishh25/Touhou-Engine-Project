@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "Nuevo personaje", menuName = "TouhouEngine/Character Data")]
+[CreateAssetMenu(fileName = "New Character", menuName = "TouhouEngine/Character Data")]
 public class CharacterData : ScriptableObject
 {
-    [Header("Identidad")]
+    [Header("Identity")]
     public string characterName;
 
     [Header("Stats")]
     public float basemoveSpeed = 10f;
     public float focusSpeed = 2.3f;
 
-    [Header("Animaciones")]
+    [Header("Animations")]
     public AnimatorOverrideController animatorController;
 
     [Header("Bullets")]

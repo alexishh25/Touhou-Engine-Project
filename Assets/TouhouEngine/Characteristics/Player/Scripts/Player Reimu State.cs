@@ -6,7 +6,7 @@ public class PlayerReimuState : PlayerBaseState
 
     public override void EnterState()
     {
-        Debug.Log("Reimu State Ready");
+        Debug.Log(message: "Reimu State Ready");
 
         _ctx.LoadCharacterData(_ctx.currentData);
     }

@@ -61,7 +61,7 @@ public class UIManager : MonoBehaviour
         ScreenEntry entry = Array.Find(screens, s => s.type == type);
         if (entry.visualAsset == null)
         {
-            Debug.LogError($"No se encontró el screen para el tipo: {type}");
+            Debug.LogError($"Screen not found for type: {type}");
             return;
         }
 
@@ -105,14 +105,14 @@ public class UIManager : MonoBehaviour
 
         yield return SceneManager.UnloadSceneAsync(sceneToUnload);
         
-        // Asegurar que el Action Map "Player" esté activo después de cargar la escena
+        // Ensure the "Player" Action Map is active after loading the Gameplay scene
         if (targetScene == "Gameplay")
         {
-            yield return new WaitForEndOfFrame(); // Esperar un frame para que los objetos se inicialicen
+            yield return new WaitForEndOfFrame(); // Wait one frame for objects to initialize
             GameManager.Instance.SwitchActionMap("Player");
             UIManager.Instance.DisableUI();
 
-            Debug.Log("Action Map 'Player' reactivado después de cargar la escena Gameplay");
+            Debug.Log("Action Map 'Player' reactivated after loading Gameplay scene");
         }
     }
 
@@ -123,7 +123,7 @@ public class UIManager : MonoBehaviour
         if (entry.logicComponent != null)
             entry.logicComponent.Initialize(screenRoot);
         else
-            Debug.LogError($"No hay script asignado para {type}");
+            Debug.LogError($"No script assigned for {type}");
     }
 
 }

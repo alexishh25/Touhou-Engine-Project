@@ -88,8 +88,8 @@ public class SelectorScript : ScreenLogic
     {
         ButtonManager.Instance.PlayClickSFX();
         GameManager.Instance.SwitchActionMap("Player");
-        UIManager.Instance.DisableUI();
         UIManager.Instance.InterpolateScreenLoad("Gameplay");
+
         ButtonManager.Instance.Enable();
         Debug.Log($"Selected character: {characterData.characterDataArray[currentIndex].Name}");
     }

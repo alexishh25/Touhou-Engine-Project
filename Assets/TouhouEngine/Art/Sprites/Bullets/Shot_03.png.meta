@@ -842,9 +842,9 @@ TextureImporter:
       name: Shot_03_4
       rect:
         serializedVersion: 2
-        x: 332
+        x: 333
         y: 463
-        width: 129
+        width: 128
         height: 65
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1147,34 +1147,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shot_03_18
+      name: hitbox_sprite
       rect:
         serializedVersion: 2
-        x: 272
-        y: 498
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb8bcf6e369cf7510800000000000000
-      internalID: 1549178227753007292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shot_03_19
-      rect:
-        serializedVersion: 2
-        x: 277
+        x: 269
         y: 464
-        width: 57
+        width: 64
         height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1186,28 +1164,6 @@ TextureImporter:
       bones: []
       spriteID: b5dd1107592ef1fb0800000000000000
       internalID: -4674768756729062053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shot_03_20
-      rect:
-        serializedVersion: 2
-        x: 268
-        y: 484
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c59f0c34c8921a7a0800000000000000
-      internalID: -6367762715716290212
       vertices: []
       indices: 
       edges: []
@@ -2008,10 +1964,10 @@ TextureImporter:
       name: Shot_03_58
       rect:
         serializedVersion: 2
-        x: 299
-        y: 287
+        x: 301
+        y: 339
         width: 66
-        height: 79
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5771,7 +5727,6 @@ TextureImporter:
       Shot_03_187: -1654538584804227720
       Shot_03_188: -7808931153004620597
       Shot_03_189: 727013136223684959
-      Shot_03_19: -4674768756729062053
       Shot_03_190: 2907454755009405840
       Shot_03_191: -2408945379171628434
       Shot_03_192: 1062277408078248794
@@ -5893,6 +5848,7 @@ TextureImporter:
       Shot_03_97: 6962200194910047038
       Shot_03_98: -1323838235033564939
       Shot_03_99: 2451107397268417239
+      hitbox_sprite: -4674768756729062053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

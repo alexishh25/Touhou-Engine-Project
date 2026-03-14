@@ -35,7 +35,7 @@ public class BulletController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se encontr� SpriteRenderer en el BulletController para cambiar el sprite.");
+            Debug.LogWarning("No SpriteRenderer found in BulletController to change the sprite.");
         }
     }
 

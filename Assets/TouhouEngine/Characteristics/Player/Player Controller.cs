@@ -50,16 +50,16 @@ public class PlayerController : MonoBehaviour
                 focusAction = map.FindAction("Focus");
                 
                 if (moveAction == null || focusAction == null)
-                    Debug.LogWarning("No se encontraron las acciones de movimiento o enfoque en el InputActionAsset.");
+                    Debug.LogWarning("Move or Focus actions not found in InputActionAsset.");
             }
             else
             {
-                Debug.LogError("No se encontró el Action Map 'Player' en el InputActionAsset.");
+                Debug.LogError("Action Map 'Player' not found in InputActionAsset.");
             }
         }
         else
         {
-            Debug.LogError("GameManager.Instance o inputActions es null. Asegúrate de que GameManager esté en la escena.");
+            Debug.LogError("GameManager.Instance or inputActions is null. Make sure GameManager is in the scene.");
         }
     }
 
