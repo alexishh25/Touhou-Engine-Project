@@ -42,11 +42,11 @@ public class SoundManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlaySFX(AudioClip clip, float volume = 1f)
     {
         if (clip == null) return;
         float randomPitch = Random.Range(0.7f, 0.8f);
-        sfxSource.PlayOneShot(clip);
+        sfxSource.PlayOneShot(clip, volume);
     }
 
     private void Update()

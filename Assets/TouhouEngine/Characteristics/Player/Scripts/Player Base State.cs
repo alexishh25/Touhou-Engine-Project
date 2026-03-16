@@ -58,7 +58,7 @@ public abstract class PlayerBaseState
     {
         float startAlpha = _ctx.spriteRenderer.color.a;
         float targetAlpha = @switch ? 1f : 0f;
-        float duration = 0.2f;
+        float duration = 0.1f;
         float elapsed = 0f;
 
         while (elapsed < duration)

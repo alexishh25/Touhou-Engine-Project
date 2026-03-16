@@ -1,4 +1,3 @@
-using System.Globalization;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,14 +7,13 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class PlayerStateManager : MonoBehaviour
 {
-
     [HideInInspector] public Rigidbody2D rgb2D;
     [HideInInspector] public InputAction moveAction;
     [HideInInspector] public InputAction focusAction;
     [HideInInspector] public Animator animator;
     [HideInInspector] public Coroutine fadeCoroutine;
 
-    #region 1. References
+    #region References
     [Header("Components")]
     public CharacterData currentData;
     public BulletManager bulletManager;
@@ -32,52 +30,39 @@ public class PlayerStateManager : MonoBehaviour
     {
         rgb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+    }
 
+    private void Start()
+    {
+        // GameManager is guaranteed to exist by Start() since Bootstrap loads additively before scene Awake/Start
         var map = GameManager.Instance.inputActions.FindActionMap("Player");
         moveAction = map.FindAction("Move");
         focusAction = map.FindAction("Focus");
+
         if (moveAction == null || focusAction == null)
             Debug.LogWarning("Move or Focus actions not found in InputActionAsset. Make sure they are correctly configured.");
+
+        moveAction?.Enable();
+        focusAction?.Enable();
 
         reimuState = new PlayerReimuState(this);
         marisaState = new PlayerMarisaState(this);
         sanaeState = new PlayerSanaeState(this);
 
+        currentStats = reimuState;
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0);
+        currentStats.EnterState();
     }
+
     private void OnEnable()
     {
-        if (moveAction != null)
-        {
-            moveAction.Enable();
-            Debug.Log("PlayerStateManager: moveAction enabled");
-        }
-        else
-        {
-            Debug.LogWarning("PlayerStateManager: moveAction is null in OnEnable");
-        }
-        
-        if (focusAction != null)
-        {
-            focusAction.Enable();
-            Debug.Log("PlayerStateManager: focusAction enabled");
-        }
-        else
-        {
-            Debug.LogWarning("PlayerStateManager: focusAction is null in OnEnable");
-        }
+        moveAction?.Enable();
     }
 
     private void OnDisable()
     {
-        moveAction.Disable();
-        focusAction.Disable();
-    }
-
-    private void Start()
-    {
-        currentStats = reimuState;
-        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0);
-        currentStats.EnterState(); 
+        moveAction?.Disable();
+        focusAction?.Disable();
     }
 
     public void LoadCharacterData(CharacterData data)
@@ -90,7 +75,6 @@ public class PlayerStateManager : MonoBehaviour
 
         currentData = data;
 
-
         if (bulletManager != null && data.bulletSprite != null)
             bulletManager.SetAmmoSprite(data.bulletSprite);
         else
@@ -98,7 +82,6 @@ public class PlayerStateManager : MonoBehaviour
 
         if (currentData.animatorController != null)
             animator.runtimeAnimatorController = data.animatorController;
-
     }
 
     private void Update()

@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TouhouEngine/Scenes/Menu/Main.unity
+    path: Assets/TouhouEngine/Scenes/UI/Main.unity
     guid: a73e2bf2a4aa10541ab7019b658917f4
   - enabled: 1
-    path: Assets/TouhouEngine/Scenes/Menu/LoadingScreen.unity
+    path: Assets/TouhouEngine/Scenes/UI/LoadingScreen.unity
     guid: cedad62442f3a7a4caddcb59cb51b171
   - enabled: 1
     path: Assets/TouhouEngine/Scenes/Gameplay.unity
     guid: e073b2c2ece69ae46a18228aa9997187
+  - enabled: 1
+    path: Assets/TouhouEngine/Scenes/Bootstrap.unity
+    guid: 7ef7f673f99e36a4f80f90470f9f87f0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

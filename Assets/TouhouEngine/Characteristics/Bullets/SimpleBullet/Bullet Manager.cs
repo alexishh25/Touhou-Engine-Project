@@ -2,28 +2,29 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Handles bullet firing. Reads player input to determine when to shoot, then requests a bullet from the BulletPool to activate it and set the appropriate velocity.
-/// Can also change the bullet sprite if needed.
+/// Handles bullet firing for a single entity (player or enemy).
+/// Not a singleton - each shooter owns its own instance.
 /// </summary>
 public class BulletManager : MonoBehaviour
 {
     [SerializeField] private float shotCooldown;
     [SerializeField] private float bulletSpeed;
     [SerializeField] public AudioClip bullet_sfx;
+    [SerializeField] private Transform shootPoint; // Child GameObject placed at the desired shoot origin
+    [SerializeField] private BulletController bulletPrefab;
 
     private float shotTimerCooldown = 0f;
     private InputAction actionShot;
-
     private Sprite bulletsprite;
-    private void Awake()
+
+    private void Awake() { }
+
+    private void Start()
     {
         actionShot = GameManager.Instance.inputActions
             .FindActionMap("Player")
             .FindAction("Shoot");
-    }
 
-    private void OnEnable()
-    {
         actionShot?.Enable();
     }
 
@@ -36,20 +37,24 @@ public class BulletManager : MonoBehaviour
     {
         bulletsprite = newSprite;
     }
-
-    private void Shot(Vector2 origin, Vector2 velocity)
+    public static void RadialShot(Vector2 origin, Vector2 aimDirection, RadialShotSettings settings)
     {
-        BulletController bullet = BulletPool.Instance.RequestBullet();
+
+    }
+    private void Shot()
+    {
+        // Use shootPoint if assigned, otherwise fall back to this transform
+        Vector2 origin = shootPoint != null ? shootPoint.position : transform.position;
+        Vector2 velocity = transform.up * bulletSpeed;
+
+        BulletController bullet = BulletPoolManager.Instance.RequestBullet(bulletPrefab);
         bullet.transform.position = origin;
         bullet.Velocity = velocity;
 
-        if (bulletsprite != null)
-        {
-            bullet.ChangeSprite(bulletsprite);
-        }
+        //if (bulletsprite != null)
+        //    bullet.ChangeSprite(bulletsprite);
 
         bullet.gameObject.SetActive(true);
-
         SoundManager.Instance.PlaySFX(bullet_sfx);
     }
 
@@ -57,9 +62,9 @@ public class BulletManager : MonoBehaviour
     {
         if (shotTimerCooldown > 0) shotTimerCooldown -= Time.deltaTime;
 
-        if (shotTimerCooldown <= 0f && actionShot.ReadValue<float>() > 0.5f)
+        if (shotTimerCooldown <= 0f && actionShot != null && actionShot.ReadValue<float>() > 0.5f)
         {
-            Shot(transform.position, transform.up * bulletSpeed);
+            Shot();
             shotTimerCooldown = shotCooldown;
         }
     }

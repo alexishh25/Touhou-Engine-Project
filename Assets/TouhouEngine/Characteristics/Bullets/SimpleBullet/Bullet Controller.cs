@@ -6,23 +6,29 @@ public class BulletController : MonoBehaviour
     private const float MAX_LIFE_TIME = 10f;
     private float lifeTimer = 0f;
 
-    public Transform puntoDisparo;
     public Vector2 Velocity;
     public SpriteRenderer _rendererbullet;
+    private Sprite defaultSprite;
 
     private void Awake()
     {
         _rendererbullet = GetComponent<SpriteRenderer>();
+        if (_rendererbullet != null)
+            defaultSprite = _rendererbullet.sprite;
     }
+
+    private void OnEnable()
+    {
+        lifeTimer = 0f;
+        if (_rendererbullet != null && defaultSprite != null)
+            _rendererbullet.sprite = defaultSprite;
+    }
+
 
     private void Movement()
     {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = puntoDisparo.forward * Velocity;
-
         transform.position += (Vector3)Velocity * Time.deltaTime;
         lifeTimer += Time.deltaTime;
-
 
         if (lifeTimer >= MAX_LIFE_TIME) Destroy();
     }
