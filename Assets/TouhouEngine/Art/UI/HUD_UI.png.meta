@@ -913,8 +913,8 @@ TextureImporter:
       name: HUD_UI_ReturnToGame
       rect:
         serializedVersion: 2
-        x: 587
-        y: 482
+        x: 588
+        y: 481
         width: 202
         height: 30
       alignment: 0
