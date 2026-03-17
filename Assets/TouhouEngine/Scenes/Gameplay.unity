@@ -691,7 +691,7 @@ PrefabInstance:
     - target: {fileID: 5483577417110523626, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 5085ea004736c3a47bda5618bae5ce91, type: 2}
     - target: {fileID: 6790346336197958616, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
       propertyPath: m_Name
       value: Reimu
@@ -1268,8 +1268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8642f2737e5525b4187a533ba8a23e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletPool
-  bulletprefab: {fileID: 6461657805282677653, guid: af767f914766676498739a55d0eff07e, type: 3}
-  initialPoolSize: 5
   playerBulletPrefab: {fileID: -7341050640415145600, guid: 790f4992891d89a4fafac6f738f1850b, type: 3}
   enemyBulletPrefab: {fileID: 6461657805282677653, guid: af767f914766676498739a55d0eff07e, type: 3}
   playerPoolSize: 20

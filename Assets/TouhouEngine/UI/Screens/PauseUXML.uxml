@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/GlobalStyle.uss?fileID=7433441132597879392&amp;guid=5b973b1cb2c139c4a9b5d278c438e2c1&amp;type=3#GlobalStyle" />
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/PauseStyle.uss?fileID=7433441132597879392&amp;guid=c2ed5a9acdd3d9448b50b9ef878bd0cc&amp;type=3#PauseStyle" />
+    <ui:VisualElement style="flex-grow: 1; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgb(0, 0, 0); opacity: 0.4;" />
+    <ui:VisualElement style="flex-grow: 1; top: 40%; bottom: 10%; position: absolute; left: 10%; right: 10%;">
+        <ui:VisualElement style="flex-grow: 2; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=8967469138023070862&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_Pause&quot;); background-size: contain; background-position-x: left 0;" />
+        <ui:Button text="Button" class="Flex" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=-6547592848880139499&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_Continue&quot;);" />
+        <ui:Button text="Button" class="Flex" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=3471040480807307060&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_QuitAndReturnToSelect&quot;);" />
+        <ui:Button text="Button" class="Flex" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=1120382936839438301&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_RetryThisGame&quot;);" />
+    </ui:VisualElement>
+</ui:UXML>

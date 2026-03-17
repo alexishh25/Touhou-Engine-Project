@@ -1,0 +1,58 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="PauseModal" src="project://database/Assets/TouhouEngine/UI/Screens/PauseUXML.uxml?fileID=9197481963319205126&amp;guid=e036a9f3bdfdc1f42b1dd2e847e84c1e&amp;type=3#PauseUXML" />
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/HUDStyle.uss?fileID=7433441132597879392&amp;guid=57937025319920d478cb836f24aaf589&amp;type=3#HUDStyle" />
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/GlobalStyle.uss?fileID=7433441132597879392&amp;guid=5b973b1cb2c139c4a9b5d278c438e2c1&amp;type=3#GlobalStyle" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="Background" style="flex-grow: 1; position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%;">
+            <ui:VisualElement style="flex-grow: 1; position: absolute; top: 0%; bottom: 0%; left: 65%; right: 0%; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=2203502303667801118&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_BGUI_0&quot;);" />
+            <ui:VisualElement style="flex-grow: 1; position: absolute; top: 0%; bottom: 0%; left: 0%; right: 95%; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=1462549690&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_BGUI_1&quot;);" />
+            <ui:VisualElement style="flex-grow: 1; position: absolute; top: 96%; bottom: 0%; left: 5%; right: 35%; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=-755181367&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_BGUI_3&quot;);" />
+            <ui:VisualElement style="flex-grow: 1; position: absolute; top: 0%; bottom: 96%; left: 5%; right: 35%; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=1666459088&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_BGUI_2&quot;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="HUD" style="flex-grow: 1; position: absolute; top: 4%; bottom: 4%; left: 65%; right: 0%;">
+            <ui:VisualElement name="Mode" style="flex-grow: 0.15;">
+                <ui:VisualElement name="Mode" style="flex-grow: 0.1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=-604501002&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_NORMAL&quot;); -unity-background-scale-mode: stretch-to-fill; background-size: contain; position: absolute; top: 20%; bottom: 20%; left: 10%; right: 10%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Score" style="flex-grow: 0.3;">
+                <ui:VisualElement name="HiScore" style="flex-grow: 1; position: relative; top: 0%; bottom: 0%; left: 0%; right: 0%; flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 0.6;">
+                        <ui:VisualElement style="flex-grow: 0.6; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=-1304720275&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_HiScore&quot;); background-size: contain; background-position-x: right 0; position: absolute; top: 20%; left: 0%; bottom: 20%; right: 0%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1;">
+                        <ui:Label text="0000000000" name="Label" style="position: absolute; top: 10%; right: 10%; bottom: 10%; left: 0%; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/TouhouEngine/Fonts/HappyMarker-xg98.ttf?fileID=12800000&amp;guid=caa7d73d25759194c9bc6c90b346eabd&amp;type=3#HappyMarker-xg98&quot;); padding-bottom: 7px; -unity-text-align: middle-right; font-size: 40%; -unity-font-style: bold; -unity-text-outline-width: 1px; text-overflow: clip; -unity-text-outline-color: rgb(0, 0, 0);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="HiScore" style="flex-grow: 1; position: relative; top: 0%; bottom: 0%; left: 0%; right: 0%; flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 0.6;">
+                        <ui:VisualElement style="flex-grow: 0.6; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=-3563261310076284545&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_Score&quot;); background-size: contain; background-position-x: right 0; position: absolute; top: 20%; left: 0%; bottom: 20%; right: 0%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1;">
+                        <ui:Label text="0000000000" name="Label" style="position: absolute; top: 10%; right: 10%; bottom: 10%; left: 0%; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/TouhouEngine/Fonts/HappyMarker-xg98.ttf?fileID=12800000&amp;guid=caa7d73d25759194c9bc6c90b346eabd&amp;type=3#HappyMarker-xg98&quot;); padding-bottom: 7px; -unity-text-align: middle-right; font-size: 40%; -unity-font-style: bold; -unity-text-outline-width: 1px; text-overflow: clip; -unity-text-outline-color: rgb(0, 0, 0);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 0.3;">
+                <ui:VisualElement name="Player" style="flex-grow: 1; position: relative; top: 0%; bottom: 0%; left: 0%; right: 0%; flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 0.6;">
+                        <ui:VisualElement style="flex-grow: 0.6; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=1318305411&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_Player&quot;); background-size: contain; background-position-x: right 0; position: absolute; top: 20%; left: 0%; bottom: 20%; right: 0%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1;">
+                        <ui:VisualElement style="flex-grow: 1; position: absolute; top: 0%; left: 12%; bottom: 0%; right: 0%; flex-direction: row;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=6490255806944270100&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_STAR&quot;); background-size: contain; background-position-x: left 0; position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%; width: 20%;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="HiScore" style="flex-grow: 1; position: relative; top: 0%; bottom: 0%; left: 0%; right: 0%; flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 0.6;">
+                        <ui:VisualElement style="flex-grow: 0.6; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=1820125087&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_Power&quot;); background-size: contain; background-position-x: right 0; position: absolute; top: 20%; left: 0%; bottom: 20%; right: 0%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1;">
+                        <ui:Label text="5.00" name="Label" style="position: absolute; top: 10%; right: 10%; bottom: 10%; left: 12%; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/TouhouEngine/Fonts/PixelCyrillic_normal.ttf?fileID=12800000&amp;guid=85d52f22840a2bc4bac7c5c59fd0ba96&amp;type=3#PixelCyrillic_normal&quot;); padding-bottom: 7px; -unity-text-align: middle-left; font-size: 40%; -unity-font-style: bold; -unity-text-outline-width: 3px; text-overflow: clip; -unity-text-outline-color: rgb(0, 0, 0);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:Instance template="PauseModal" name="PauseModal" style="position: absolute; top: 4%; left: 5%; bottom: 4%; right: 35%; opacity: 1;" />
+    </ui:VisualElement>
+</ui:UXML>
