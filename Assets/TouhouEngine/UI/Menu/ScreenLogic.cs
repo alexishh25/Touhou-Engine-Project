@@ -19,7 +19,6 @@ public abstract class ScreenLogic : MonoBehaviour
         DefinirElementos(screenRoot);
         ButtonActionAlterSusYUnsuscribe(true);
         ButtonManager.Instance.AlternateRegisterHoverSFX(true, buttons);
-        if (buttons.Count != 0) buttons[0].Focus();
         LoadData();
     }
 

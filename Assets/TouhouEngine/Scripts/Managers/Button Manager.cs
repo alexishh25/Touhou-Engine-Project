@@ -14,9 +14,6 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] public AudioClip sfx_clickbutton;
     [SerializeField] public AudioClip sfx_cancelbutton;
 
-    [Header("Variables")]
-    [SerializeField] public float DelayClick = 1.0f;
-
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -97,6 +94,16 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-    private void OnHoverPointer(PointerEnterEvent evt) => PlayHoverSFX();
-    private void OnHoverFocus(FocusInEvent evt) => PlayHoverSFX();
+    private void OnHoverPointer(PointerEnterEvent evt)
+    {
+        if (evt.target is Button button)
+            AnimationUIManager.Instance.Shake(button);
+        PlayHoverSFX();
+    }
+    private void OnHoverFocus(FocusInEvent evt)
+    {
+        if (evt.target is Button button)
+            AnimationUIManager.Instance.Shake(button);
+        PlayHoverSFX();
+    }
 }

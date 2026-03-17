@@ -21,7 +21,7 @@ public class BulletManager : MonoBehaviour
 
     private void Start()
     {
-        actionShot = GameManager.Instance.inputActions
+        actionShot = InputManager.Instance.inputActions
             .FindActionMap("Player")
             .FindAction("Shoot");
 

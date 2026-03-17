@@ -39,11 +39,11 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rgdbody = GetComponent<Rigidbody2D>();
-        
-        // Usar el InputActionAsset del GameManager en lugar de InputSystem.actions
-        if (GameManager.Instance != null && GameManager.Instance.inputActions != null)
+
+        // Usar el InputActionAsset del InputManager en lugar de InputSystem.actions
+        if (InputManager.Instance != null && InputManager.Instance.inputActions != null)
         {
-            var map = GameManager.Instance.inputActions.FindActionMap("Player");
+            var map = InputManager.Instance.inputActions.FindActionMap("Player");
             if (map != null)
             {
                 moveAction = map.FindAction("Move");

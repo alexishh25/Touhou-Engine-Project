@@ -1,15 +1,15 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" schemaLocation="UnityEngine.UIElements ../UIElementsSchema/UnityEngine.UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/TouhouEngine/UI/Menu/MenuUSS.uss?fileID=7433441132597879392&amp;guid=256ec4efde9b87543b2453e394ef62f3&amp;type=3#MenuUSS" />
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/MenuStyle.uss?fileID=7433441132597879392&amp;guid=256ec4efde9b87543b2453e394ef62f3&amp;type=3#MenuStyle" />
     <ui:VisualElement name="ContenedorPrincipal" class="main-content">
-        <ui:VisualElement class="button-content">
-            <ui:Button name="GameStart" class="menu-button btn-gamestart" />
-            <ui:Button name="ExtraStart" class="menu-button btn-extradata" />
-            <ui:Button name="PracticeStart" class="menu-button btn-practicestart" />
-            <ui:Button name="Replay" class="menu-button btn-replay" />
-            <ui:Button name="PlayerData" class="menu-button btn-playerdata" />
-            <ui:Button name="MusicRoom" class="menu-button btn-musicroom" />
-            <ui:Button name="Option" class="menu-button btn-option" />
-            <ui:Button name="Quit" class="menu-button btn-quit" />
+        <ui:VisualElement class="button-content" style="bottom: 5%;">
+            <ui:Button name="GameStart" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=267434774&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Game_Start&quot;);" />
+            <ui:Button name="ExtraStart" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-947062696&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Extra_Start&quot;);" />
+            <ui:Button name="PracticeStart" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=785455657&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Practice_Start&quot;);" />
+            <ui:Button name="Replay" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1058759748&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Replay&quot;);" />
+            <ui:Button name="PlayerData" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-107667240&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Player_Data&quot;);" />
+            <ui:Button name="MusicRoom" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1473469023&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Music_Room&quot;);" />
+            <ui:Button name="Option" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-1628037540&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Option&quot;);" />
+            <ui:Button name="Quit" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1669703784&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Quit&quot;);" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

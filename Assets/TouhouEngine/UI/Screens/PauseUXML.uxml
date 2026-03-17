@@ -4,8 +4,8 @@
     <ui:VisualElement style="flex-grow: 1; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgb(0, 0, 0); opacity: 0.4;" />
     <ui:VisualElement style="flex-grow: 1; top: 40%; bottom: 10%; position: absolute; left: 10%; right: 10%;">
         <ui:VisualElement style="flex-grow: 2; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=8967469138023070862&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_Pause&quot;); background-size: contain; background-position-x: left 0;" />
-        <ui:Button text="Button" class="Flex" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=-6547592848880139499&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_Continue&quot;);" />
-        <ui:Button text="Button" class="Flex" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=3471040480807307060&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_QuitAndReturnToSelect&quot;);" />
-        <ui:Button text="Button" class="Flex" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=1120382936839438301&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_RetryThisGame&quot;);" />
+        <ui:Button text="Button" name="Continue" class="Flex" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=-6547592848880139499&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_Continue&quot;);" />
+        <ui:Button text="Button" name="QaRtS" class="Flex" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=3471040480807307060&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_QuitAndReturnToSelect&quot;);" />
+        <ui:Button text="Button" name="RTG" class="Flex" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/HUD_UI.png?fileID=1120382936839438301&amp;guid=9387e1b27499b0641b3089f9fe05686b&amp;type=3#HUD_UI_RetryThisGame&quot;);" />
     </ui:VisualElement>
 </ui:UXML>

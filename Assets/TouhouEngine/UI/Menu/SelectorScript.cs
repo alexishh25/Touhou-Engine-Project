@@ -22,51 +22,50 @@ public class SelectorScript : ScreenLogic
     private int currentIndex = 0;
     private VisualElement root;
 
-    Button left_button;
-    Button right_button;
+    VisualElement left_button;
+    VisualElement right_button;
 
     VisualElement portrait;
     VisualElement subcontent;
 
-    private InputAction navigateAction, submitAction;
+    private InputAction navigateAction, submitAction, cancelAction;
 
     private Coroutine updateDataCoroutine;
 
     protected override void DefinirElementos(VisualElement currentRoot)
     {
         root = currentRoot;
-        left_button = currentRoot.Q<Button>("BtnAnterior");
-        right_button = currentRoot.Q<Button>("BtnSiguiente");
+        left_button = currentRoot.Q<VisualElement>("BtnAnterior");
+        right_button = currentRoot.Q<VisualElement>("BtnSiguiente");
 
         portrait = currentRoot.Q<VisualElement>("Portrait");
         subcontent = currentRoot.Q<VisualElement>("SubContent");
-
-        left_button.focusable = false;
-        right_button.focusable = false;
-
-        AddButtonIfNotNull(left_button);
-        AddButtonIfNotNull(right_button);
     }
 
     protected override void ButtonActionAlterSusYUnsuscribe(bool active)
     {
-        ButtonManager.Instance.ManageButtonActions(active,
-            (left_button, OnLeftClicked),
-            (right_button, OnRightClicked)
-        );
+        if (active)
+        {
+            left_button.RegisterCallback<ClickEvent>(OnLeftClicked);
+            right_button.RegisterCallback<ClickEvent>(OnRightClicked); 
+        }
+        else
+        {
+            left_button.UnregisterCallback<ClickEvent>(OnLeftClicked);
+            right_button.UnregisterCallback<ClickEvent>(OnRightClicked);
+        }
     }
 
     protected override void LoadData()
     {
-        navigateAction = GameManager.Instance.inputActions
-            .FindActionMap("UI")
-            .FindAction("Navigate");
-        submitAction = GameManager.Instance.inputActions
-            .FindActionMap("UI")
-            .FindAction("Submit");
+        var map = InputManager.Instance.inputActions.FindActionMap("UI");
+        navigateAction = map.FindAction("Navigate");
+        submitAction = map.FindAction("Submit");
+        cancelAction = map.FindAction("Cancel");
 
         navigateAction.performed += OnNavigate;
         submitAction.performed += OnSubmit;
+        cancelAction.performed += OnCancel;
         ButtonManager.Instance.AlternateRegisterHoverSFX(false, buttons);
 
         VFX.Simulate(5f, true, false);
@@ -87,19 +86,25 @@ public class SelectorScript : ScreenLogic
     private void OnSubmit(InputAction.CallbackContext ctx)
     {
         ButtonManager.Instance.PlayClickSFX();
-        GameManager.Instance.SwitchActionMap("Player");
+        InputManager.Instance.SwitchActionMap("Player");
         UIManager.Instance.InterpolateScreenLoad("Gameplay");
 
         ButtonManager.Instance.Enable();
         Debug.Log($"Selected character: {characterData.characterDataArray[currentIndex].Name}");
     }
 
-    private void OnLeftClicked()
+    private void OnCancel(InputAction.CallbackContext ctx)
+    {
+        ButtonManager.Instance.PlayCancelSFX();
+        UIManager.Instance.ChangeScreen(ScreenType.MainMenu);
+    }
+
+    private void OnLeftClicked(ClickEvent evt)
     {
         SwitchingSelection(false);
     }
 
-    private void OnRightClicked()
+    private void OnRightClicked(ClickEvent evt)
     {
         SwitchingSelection(true);
     }
@@ -171,12 +176,11 @@ public class SelectorScript : ScreenLogic
         }
     }
 
-
-
     public override void Dispose()
     {
         navigateAction.performed -= OnNavigate;
         submitAction.performed -= OnSubmit;
+        cancelAction.performed -= OnCancel;
         base.Dispose();
     }
 }

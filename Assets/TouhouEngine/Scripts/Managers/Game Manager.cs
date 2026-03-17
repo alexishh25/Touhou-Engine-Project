@@ -4,57 +4,37 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager Instance { get; private set; }
 
-    public InputActionAsset inputActions;
+    [SerializeField] private GameObject[] managersToDisable;
 
-    [SerializeField] private string currentActionMap = "";
-    [SerializeField] private GameObject[] ManagersToDisable;
     void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private void OnEnable()
-    {
-        if (currentActionMap != null)
-            SwitchActionMap(currentActionMap);
-        else if (currentActionMap == "" || currentActionMap == null)
-            Debug.LogWarning($"Action Map not found: {currentActionMap}. Make sure the name is correct and included in the InputActionAsset.");
+        if (Instance != null) { Destroy(gameObject); return; }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
-        foreach (var manager in ManagersToDisable)
+        foreach (var manager in managersToDisable)
         {
             if (manager != null)
                 manager.SetActive(false);
             else
-                Debug.LogWarning("One of the objects in ManagersToDisable is null. Make sure all objects are correctly assigned in the inspector.");
+                Debug.LogWarning("GameManager: A manager in managersToDisable is null.");
         }
     }
 
-    public void SwitchActionMap(string mapName)
+    public void PauseGame()
     {
-        foreach (var map in inputActions.actionMaps)
-        {
-            map.Disable();
-            Debug.Log($"Disabled Action Map: {map.name}"); 
-        }
+        Time.timeScale = 0f;
+        InputManager.Instance.SwitchActionMap("UI");
+    }
 
-        inputActions.FindActionMap(mapName)?.Enable(); // activa solo el que necesitas
-
-        if (inputActions.FindActionMap(mapName) == null)
-            Debug.LogWarning($"Action Map not found: {mapName}. Make sure the name is correct and included in the InputActionAsset.");
-
-        currentActionMap = mapName;
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        InputManager.Instance.SwitchActionMap("Gameplay");
     }
 }

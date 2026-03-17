@@ -35,7 +35,7 @@ public class PlayerStateManager : MonoBehaviour
     private void Start()
     {
         // GameManager is guaranteed to exist by Start() since Bootstrap loads additively before scene Awake/Start
-        var map = GameManager.Instance.inputActions.FindActionMap("Player");
+        var map = InputManager.Instance.inputActions.FindActionMap("Player");
         moveAction = map.FindAction("Move");
         focusAction = map.FindAction("Focus");
 

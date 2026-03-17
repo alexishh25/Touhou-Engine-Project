@@ -118,7 +118,7 @@ public class UIManager : MonoBehaviour
         if (targetScene == "Gameplay")
         {
             yield return new WaitForEndOfFrame();
-            GameManager.Instance.SwitchActionMap("Player");
+            InputManager.Instance.SwitchActionMap("Player");
             DisableUI();
             Debug.Log("Action Map 'Player' reactivated after loading Gameplay scene");
         }

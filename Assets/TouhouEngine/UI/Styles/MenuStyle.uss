@@ -1,5 +1,4 @@
 .main-content {
-    background-color: rgba(253, 118, 110, 0);
     background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=2315263262455518574&guid=e6342438f41c13a46a87d302659e4514&type=3#background");
     background-size: 100% 100%;
     width: 100%;
@@ -9,153 +8,47 @@
 .button-content {
     flex-grow: 1;
     width: 40%;
-    -unity-text-align: upper-left;
-    white-space: normal;
-    text-overflow: clip;
-    -unity-background-scale-mode: stretch-to-fill;
-    background-position-x: center;
-    background-position-y: center;
     position: relative;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: stretch;
     align-self: flex-end;
     justify-content: flex-end;
-    align-content: flex-start;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
     padding-left: 10%;
 }
 
 Button {
     background-color: rgba(0, 0, 0, 0);
-    color: rgba(27, 27, 27, 0);
     -unity-background-scale-mode: scale-to-fit;
     height: 7%;
-    background-position-x: left 0;
-    transition-property: background-color;
-    transition-duration: 0.5s;
+    transition-property: -unity-background-image-tint-color;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
-    transition-delay: 0s;
 }
 
 .menu-button {
+    -unity-background-image-tint-color: rgb(59, 59, 59);
     border-left-color: rgba(0, 0, 0, 0);
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
+    background-position-x: left 0%;
+    transition-property: background-position-x;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
 }
 
-.btn-gamestart {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=3926089593197971618&guid=e6342438f41c13a46a87d302659e4514&type=3#Game_Start_unfocus");
-    background-color: rgba(0, 0, 0, 0);
-    align-self: auto;
-    align-items: stretch;
-    justify-content: space-between;
-    margin-right: 0;
-    margin-left: 0%;
-    transition-property: -unity-background-image-tint-color;
-    transition-duration: 0s;
+.menu-button:hover {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-position-x: left 10%;
+    transition-property: background-position-x;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
 }
 
-.btn-gamestart:focus {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=267434774&guid=e6342438f41c13a46a87d302659e4514&type=3#Game_Start");
-}
-
-.btn-gamestart:hover {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=267434774&guid=e6342438f41c13a46a87d302659e4514&type=3#Game_Start");
-}
-
-.btn-extradata {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1615203544&guid=e6342438f41c13a46a87d302659e4514&type=3#Extra_Start_unfocus");
-    margin-left: 5%;
-}
-
-.btn-extradata:focus {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-947062696&guid=e6342438f41c13a46a87d302659e4514&type=3#Extra_Start");
-}
-
-.btn-extradata:hover {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-947062696&guid=e6342438f41c13a46a87d302659e4514&type=3#Extra_Start");
-}
-
-.btn-practicestart {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-562431276&guid=e6342438f41c13a46a87d302659e4514&type=3#Practice_Start_unfocus");
-    margin-left: 10%;
-}
-
-.btn-practicestart:focus {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=785455657&guid=e6342438f41c13a46a87d302659e4514&type=3#Practice_Start");
-}
-
-.btn-practicestart:hover {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=785455657&guid=e6342438f41c13a46a87d302659e4514&type=3#Practice_Start");
-}
-
-.btn-replay {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1826028452&guid=e6342438f41c13a46a87d302659e4514&type=3#Replay_unfocus");
-    margin-left: 15%;
-}
-
-.btn-replay:focus {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1058759748&guid=e6342438f41c13a46a87d302659e4514&type=3#Replay");
-}
-
-.btn-replay:hover {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1058759748&guid=e6342438f41c13a46a87d302659e4514&type=3#Replay");
-}
-
-.btn-playerdata {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-849249885&guid=e6342438f41c13a46a87d302659e4514&type=3#Player_Data_unfocus");
-    margin-left: 20%;
-}
-
-.btn-playerdata:focus {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-107667240&guid=e6342438f41c13a46a87d302659e4514&type=3#Player_Data");
-}
-
-.btn-playerdata:hover {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-107667240&guid=e6342438f41c13a46a87d302659e4514&type=3#Player_Data");
-}
-
-.btn-musicroom {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1720815248&guid=e6342438f41c13a46a87d302659e4514&type=3#Music_Room_unfocus");
-    margin-left: 25%;
-}
-
-.btn-musicroom:focus {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1473469023&guid=e6342438f41c13a46a87d302659e4514&type=3#Music_Room");
-}
-
-.btn-musicroom:hover {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1473469023&guid=e6342438f41c13a46a87d302659e4514&type=3#Music_Room");
-}
-
-.btn-option {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-1032506176&guid=e6342438f41c13a46a87d302659e4514&type=3#Option_unfocus");
-    margin-left: 30%;
-}
-
-.btn-option:focus {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-1628037540&guid=e6342438f41c13a46a87d302659e4514&type=3#Option");
-}
-
-.btn-option:hover {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-1628037540&guid=e6342438f41c13a46a87d302659e4514&type=3#Option");
-}
-
-.btn-quit {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1923125006&guid=e6342438f41c13a46a87d302659e4514&type=3#Quit_unfocus");
-    margin-left: 35%;
-}
-
-.btn-quit:focus {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1669703784&guid=e6342438f41c13a46a87d302659e4514&type=3#Quit");
-}
-
-.btn-quit:hover {
-    background-image: url("project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1669703784&guid=e6342438f41c13a46a87d302659e4514&type=3#Quit");
+.menu-button:focus {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-position-x: left 10%;
+    transition-property: background-position-x;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
 }
