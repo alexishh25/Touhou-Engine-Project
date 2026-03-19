@@ -1,182 +1,182 @@
 # Touhou Engine Project
 
-Prototipo técnico de un engine tipo **bullet-hell (danmaku)** desarrollado en Unity 6 con C#. El proyecto funciona como un experimento de arquitectura y gameplay programming, priorizando la escalabilidad, separación de responsabilidades y reutilización de código.
+A technical prototype of a **bullet-hell (danmaku) engine** built in Unity 6 with C#. This project serves as an architecture and gameplay programming experiment, prioritizing scalability, separation of concerns, and code reusability.
 
-No es un juego terminado — es una **base técnica extensible** que implementa los sistemas core de un danmaku: control de jugador con múltiples personajes, sistema de disparo con object pooling, enemigos, UI completa con UI Toolkit, y una pipeline de carga de escenas.
+This is not a finished game — it is an **extensible technical foundation** that implements the core systems of a danmaku: player control with multiple characters, a shooting system with object pooling, enemies, a full UI built with UI Toolkit, and an async scene loading pipeline.
 
 ---
 
-## Arquitectura
+## Architecture
 
-El proyecto separa el código en dos capas principales:
+The project splits code into two main layers:
 
-- **`Scripts/`** — Código reutilizable e independiente del engine (managers, controllers, data, utils). Puede extraerse a otros proyectos sin modificaciones.
-- **`Characteristics/`** — Lógica específica del danmaku (player state machine, bullets, enemigos). Depende de los sistemas base de `Scripts/`.
+- **`Scripts/`** — Reusable, engine-independent code (managers, controllers, data, utils). Can be extracted into other projects without modifications.
+- **`Characteristics/`** — Danmaku-specific logic (player state machine, bullets, enemies). Depends on the base systems in `Scripts/`.
 
-### Managers Persistentes (Bootstrap)
+### Persistent Managers (Bootstrap)
 
-El sistema de **Bootstrap** garantiza que los managers globales estén siempre disponibles, sin importar qué escena se abra primero en el editor:
+The **Bootstrap** system guarantees that global managers are always available, regardless of which scene is opened first in the editor:
 
 ```
 PerformBootStrap (static)
-│   Se ejecuta antes de cualquier Awake() via [RuntimeInitializeOnLoadMethod]
-│   Carga la escena "Bootstrap" de forma aditiva si no existe
+│   Executes before any Awake() via [RuntimeInitializeOnLoadMethod]
+│   Additively loads the "Bootstrap" scene if not already present
 │
 └── Bootstrap Scene
     ├── BootstrapLoader      → Singleton, DontDestroyOnLoad
-    ├── GameManager          → Control de pausa (TimeScale) y flujo general
-    ├── InputManager         → Centraliza el InputActionAsset, switch de Action Maps
-    ├── SoundManager         → Reproducción de SFX y música
-    ├── UIManager            → Sistema de pantallas con UI Toolkit
-    └── ButtonManager        → Registro de hover/click SFX en botones UI
+    ├── GameManager          → Pause control (TimeScale) and general flow
+    ├── InputManager         → Centralizes InputActionAsset, Action Map switching
+    ├── SoundManager         → SFX and music playback
+    ├── UIManager            → Screen system with UI Toolkit
+    └── ButtonManager        → Hover/click SFX registration for UI buttons
 ```
 
-Todos los managers implementan el patrón **Singleton** con `DontDestroyOnLoad`, asegurando una única instancia persistente durante toda la ejecución.
+All managers implement the **Singleton** pattern with `DontDestroyOnLoad`, ensuring a single persistent instance throughout the entire runtime.
 
-### State Machine del Jugador
+### Player State Machine
 
-El control del jugador utiliza una **State Machine personalizada** que permite múltiples personajes con lógica compartida y diferenciada:
+Player control uses a **custom State Machine** that supports multiple characters with shared and differentiated logic:
 
 ```
 PlayerBaseState (abstract)
-│   Define: EnterState(), UpdateState(), OnCollisionEnter()
-│   Implementa lógica común: LogicMoverse(), LogicFocus(), FadeBox()
+│   Defines: EnterState(), UpdateState(), OnCollisionEnter()
+│   Implements shared logic: LogicMoverse(), LogicFocus(), FadeBox()
 │
-├── PlayerReimuState    → Estado concreto de Reimu
-├── PlayerMarisaState   → Estado concreto de Marisa
-└── PlayerSanaeState    → Estado concreto de Sanae
+├── PlayerReimuState    → Reimu's concrete state
+├── PlayerMarisaState   → Marisa's concrete state
+└── PlayerSanaeState    → Sanae's concrete state
 
 PlayerStateManager (MonoBehaviour)
-│   Mantiene referencias: Rigidbody2D, Animator, InputActions, CharacterData
-│   Instancia los tres estados en Start()
-│   Delega Update() al estado activo: currentState.UpdateState()
-│   Expone SwitchState() para cambiar de personaje
-│   LoadCharacterData() aplica datos del ScriptableObject al personaje
+│   Holds references: Rigidbody2D, Animator, InputActions, CharacterData
+│   Instantiates all three states in Start()
+│   Delegates Update() to the active state: currentState.UpdateState()
+│   Exposes SwitchState() for character switching
+│   LoadCharacterData() applies ScriptableObject data to the character
 ```
 
-Cada personaje hereda la lógica base de movimiento y focus, pero puede sobrescribir cualquier método para agregar comportamiento propio. La configuración de cada personaje (velocidad, sprites, animaciones, balas) está desacoplada en `CharacterData` (ScriptableObject).
+Each character inherits base movement and focus logic but can override any method to add custom behavior. Per-character configuration (speed, sprites, animations, bullets) is decoupled through `CharacterData` (ScriptableObject).
 
-### Sistema de Disparo y Object Pooling
+### Shooting System & Object Pooling
 
 ```
 BulletPoolManager (Singleton)
-│   Pool por tipo de prefab (Dictionary<BulletController, List<BulletController>>)
-│   WarmPool() pre-instancia balas al inicio
-│   RequestBullet() retorna una bala inactiva o crea una nueva si el pool se agota
+│   Pool per prefab type (Dictionary<BulletController, List<BulletController>>)
+│   WarmPool() pre-instantiates bullets at startup
+│   RequestBullet() returns an inactive bullet or creates a new one if the pool is exhausted
 │
-BulletManager (por entidad)
-│   Cada shooter (jugador/enemigo) tiene su propio BulletManager
-│   Controla cooldown, velocidad y punto de disparo
-│   Solicita balas al BulletPoolManager
+BulletManager (per entity)
+│   Each shooter (player/enemy) owns its own BulletManager
+│   Controls cooldown, speed, and shoot point
+│   Requests bullets from BulletPoolManager
 │
 BulletController
-│   Controla movimiento (velocity * deltaTime) y ciclo de vida (MAX_LIFE_TIME)
-│   Se desactiva en lugar de destruirse para volver al pool
+│   Controls movement (velocity * deltaTime) and lifecycle (MAX_LIFE_TIME)
+│   Deactivates instead of destroying to return to the pool
 │
 EnemyShooter
-    Dispara hacia el jugador usando el mismo sistema de pooling
-    Calcula dirección: (player.position - transform.position).normalized
+    Shoots towards the player using the same pooling system
+    Calculates direction: (player.position - transform.position).normalized
 ```
 
-### Sistema de UI (UI Toolkit)
+### UI System (UI Toolkit)
 
-La UI utiliza **UI Toolkit** (UXML/USS) con un sistema de pantallas intercambiables:
+The UI uses **UI Toolkit** (UXML/USS) with a swappable screen system:
 
 ```
 ScreenLogic (abstract MonoBehaviour)
-│   Template base para cada pantalla
-│   Define: DefinirElementos(), ButtonActionAlterSusYUnsuscribe(), LoadData()
-│   Initialize() / Dispose() para ciclo de vida
+│   Base template for each screen
+│   Defines: DefinirElementos(), ButtonActionAlterSusYUnsuscribe(), LoadData()
+│   Initialize() / Dispose() for lifecycle management
 │
-├── MenuScript           → Menú principal (Game Start, Extra, Practice, Quit...)
-├── SelectorScript       → Selector de personaje con navegación y transiciones
-├── LoadingScript        → Pantalla de carga con VFX
-├── HUDScript            → HUD de gameplay
-└── PauseUIScript        → Menú de pausa (Continue, Quit and Restart, Return to Game)
+├── MenuScript           → Main menu (Game Start, Extra, Practice, Quit...)
+├── SelectorScript       → Character selector with navigation and transitions
+├── LoadingScript        → Loading screen with VFX
+├── HUDScript            → Gameplay HUD
+└── PauseUIScript        → Pause menu (Continue, Quit and Restart, Return to Game)
 
-MenuUIController (por escena)
-│   Define qué pantallas (ScreenEntry[]) están disponibles en la escena
-│   Registra las pantallas en UIManager al iniciar
+MenuUIController (per scene)
+│   Defines which screens (ScreenEntry[]) are available in the scene
+│   Registers screens with UIManager on startup
 │
-UIManager (Singleton persistente)
-    Controla el cambio entre pantallas: ChangeScreen(ScreenType)
-    Maneja la carga interpolada de escenas: InterpolateScreenLoad()
-    Gestiona el UIDocument activo
+UIManager (persistent Singleton)
+    Controls screen switching: ChangeScreen(ScreenType)
+    Handles interpolated scene loading: InterpolateScreenLoad()
+    Manages the active UIDocument
 ```
 
 ---
 
-## Flujo de Ejecución
+## Execution Flow
 
 ```
-1. INICIO
+1. STARTUP
    └── PerformBootStrap.Execute()
-       └── Carga escena "Bootstrap" (aditiva)
-           └── Se inicializan todos los Managers (DontDestroyOnLoad)
+       └── Loads "Bootstrap" scene (additive)
+           └── All Managers initialize (DontDestroyOnLoad)
 
-2. MENÚ PRINCIPAL (Escena: UI/Menu)
-   └── MenuUIController registra pantallas en UIManager
-       └── UIManager muestra MainMenu (MenuScript)
-           └── Jugador presiona "Game Start"
-               └── UIManager cambia a SelectCharacter (SelectorScript)
+2. MAIN MENU (Scene: UI/Menu)
+   └── MenuUIController registers screens with UIManager
+       └── UIManager displays MainMenu (MenuScript)
+           └── Player presses "Game Start"
+               └── UIManager switches to SelectCharacter (SelectorScript)
 
-3. SELECCIÓN DE PERSONAJE
-   └── SelectorScript carga datos de SelectorCharacterData
-       └── Jugador navega entre personajes (Navigate input)
-           └── Al confirmar (Submit):
-               ├── InputManager cambia Action Map: "UI" → "Player"
+3. CHARACTER SELECTION
+   └── SelectorScript loads data from SelectorCharacterData
+       └── Player navigates between characters (Navigate input)
+           └── On confirm (Submit):
+               ├── InputManager switches Action Map: "UI" → "Player"
                └── UIManager.InterpolateScreenLoad("Gameplay")
 
-4. CARGA DE ESCENA
-   └── Se carga "LoadingScreen" (aditiva)
-       └── Se carga "Gameplay" (aditiva, async)
-           └── Al completar:
-               ├── Se descarga LoadingScreen
-               ├── Se descarga la escena anterior
-               ├── InputManager activa Action Map "Player"
-               └── UIManager desactiva el UIDocument
+4. SCENE LOADING
+   └── "LoadingScreen" loads (additive)
+       └── "Gameplay" loads (additive, async)
+           └── On completion:
+               ├── LoadingScreen unloads
+               ├── Previous scene unloads
+               ├── InputManager activates "Player" Action Map
+               └── UIManager disables the UIDocument
 
-5. GAMEPLAY (Escena: Gameplay)
-   └── PlayerStateManager inicializa estado del personaje
-       ├── Carga CharacterData → Aplica stats, animator, bullet sprite
-       ├── Estado activo ejecuta UpdateState() cada frame
+5. GAMEPLAY (Scene: Gameplay)
+   └── PlayerStateManager initializes character state
+       ├── Loads CharacterData → Applies stats, animator, bullet sprite
+       ├── Active state runs UpdateState() every frame
        │   ├── LogicMoverse() → Input + Rigidbody2D + Animation Blend
-       │   └── LogicFocus() → Reduce velocidad + Fade hitbox
-       ├── BulletManager dispara balas desde el pool (Input: Shoot)
-       └── EnemyShooter dispara hacia el jugador desde el pool
+       │   └── LogicFocus() → Reduces speed + Fades hitbox
+       ├── BulletManager fires bullets from the pool (Input: Shoot)
+       └── EnemyShooter fires towards the player from the pool
 ```
 
 ---
 
-## Estructura de Carpetas
+## Folder Structure
 
 ```
 Assets/TouhouEngine/
 │
-├── Characteristics/                  # Lógica específica del danmaku
+├── Characteristics/                  # Danmaku-specific logic
 │   ├── Bullets/
 │   │   ├── SimpleBullet/             # BulletController, BulletManager, BulletPoolManager
-│   │   └── RadialShotSettings.cs     # Configuración para patrones radiales
+│   │   └── RadialShotSettings.cs     # Radial pattern configuration
 │   ├── Enemy/
 │   │   └── Scripts/                  # EnemyShooter, EnemyBulletManager
 │   └── Player/
-│       ├── Player Controller.cs      # Controller original (pre-refactorización)
+│       ├── Player Controller.cs      # Original controller (pre-refactor)
 │       └── Scripts/
-│           ├── Player Base State.cs      # Clase abstracta base
-│           ├── Player State Manager.cs   # Cerebro de la state machine
-│           ├── Player Reimu State.cs     # Estado concreto
-│           ├── Player Marisa State.cs    # Estado concreto
-│           ├── Player Sanae State.cs     # Estado concreto
+│           ├── Player Base State.cs      # Abstract base class
+│           ├── Player State Manager.cs   # State machine brain
+│           ├── Player Reimu State.cs     # Concrete state
+│           ├── Player Marisa State.cs    # Concrete state
+│           ├── Player Sanae State.cs     # Concrete state
 │           ├── Core/Hitbox.cs
-│           └── Data/CharacterData.cs     # ScriptableObject de personaje
+│           └── Data/CharacterData.cs     # Character ScriptableObject
 │
-├── Scripts/                          # Código reutilizable
+├── Scripts/                          # Reusable code
 │   ├── Controllers/                  # AnimationUI, Audio, Editor, Enemy, PlayerAnimation
 │   ├── Core/                         # BootstrapLoader
 │   ├── Data/                         # AnimationData, BulletPatternData, SelectorCharacterData
 │   ├── Managers/                     # GameManager, InputManager, SoundManager, UIManager
-│   ├── Services/                     # (Espacio reservado)
-│   ├── Systems/                      # (Espacio reservado)
+│   ├── Services/                     # (Reserved)
+│   ├── Systems/                      # (Reserved)
 │   └── Utils/                        # BoxColliderFit
 │
 ├── UI/                               # UI Toolkit
@@ -185,34 +185,34 @@ Assets/TouhouEngine/
 │   ├── HUD/                          # HUDScript, PauseUIScript
 │   └── Menu/                         # MenuScript, SelectorScript, LoadingScript, ScreenLogic
 │
-├── ScriptableObjects/                # Assets de datos configurables
-│   ├── Characters/                   # CharacterData por personaje
-│   ├── Bullets/                      # Configuración de balas
-│   ├── Patterns/                     # Patrones de disparo
-│   └── Audio/                        # Configuración de audio
+├── ScriptableObjects/                # Configurable data assets
+│   ├── Characters/                   # CharacterData per character
+│   ├── Bullets/                      # Bullet configuration
+│   ├── Patterns/                     # Shooting patterns
+│   └── Audio/                        # Audio configuration
 │
 ├── Shaders/                          # Shader Graph (ScrollingBackground, Leaf)
 ├── Prefabs/                          # Player, Enemies, Bullets, Effects, VFX
 ├── Scenes/                           # Bootstrap, Gameplay
-├── Art/                              # Assets visuales
-├── Sounds/                           # Assets de audio
-└── Fonts/                            # Tipografías
+├── Art/                              # Visual assets
+├── Sounds/                           # Audio assets
+└── Fonts/                            # Fonts
 ```
 
 ---
 
-## Tecnologías
+## Technologies
 
 - **Unity 6** (URP)
 - **C#**
-- **Unity Input System** — Action Maps múltiples (Player, UI, Gameplay)
-- **UI Toolkit** — UXML/USS para toda la interfaz
-- **Shader Graph** — Shaders visuales personalizados
-- **ScriptableObjects** — Desacoplamiento de datos de configuración
-- **Object Pooling** — Optimización de instanciaciones en el sistema de balas
+- **Unity Input System** — Multiple Action Maps (Player, UI, Gameplay)
+- **UI Toolkit** — UXML/USS for the entire interface
+- **Shader Graph** — Custom visual shaders
+- **ScriptableObjects** — Configuration data decoupling
+- **Object Pooling** — Instantiation optimization for the bullet system
 
 ---
 
-## Estado del Proyecto
+## Project Status
 
-Proyecto en evolución activa. Los sistemas core están implementados y funcionales. Áreas preparadas para expansión: `Services/`, `Systems/`, patrones de balas avanzados (radial shots), y lógica diferenciada por personaje.
+Actively evolving project. Core systems are implemented and functional. Areas prepared for expansion: `Services/`, `Systems/`, advanced bullet patterns (radial shots), and per-character differentiated logic.
