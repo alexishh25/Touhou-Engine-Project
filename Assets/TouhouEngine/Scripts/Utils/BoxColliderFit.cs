@@ -7,13 +7,13 @@ public class BoxColliderFit : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Camera cam;
 
-    [Header("Values")]
+    [Header("Values")] //Percentage of the screen to offset the collider from each side (0 = no offset, 0.5 = half the screen, 0.99 = almost the entire screen)
     [SerializeField][Range(0f, 0.99f)] private float bottomOffset = 0f;
     [SerializeField][Range(0f, 0.99f)] private float topOffset = 0f;
     [SerializeField][Range(0f, 0.99f)] private float rightOffset = 0f;
     [SerializeField][Range(0f, 0.99f)] private float leftOffset = 0f;
 
-    // Cache de valores anteriores de la cámara
+    // Cache of values to detect changes in the camera or screen size
     private float cachedOrthographicSize;
     private float cachedAspect;
     private int cachedScreenWidth;
