@@ -13,19 +13,42 @@ public class BoxColliderFit : MonoBehaviour
     [SerializeField][Range(0f, 0.99f)] private float rightOffset = 0f;
     [SerializeField][Range(0f, 0.99f)] private float leftOffset = 0f;
 
+    // Cache de valores anteriores de la cámara
+    private float cachedOrthographicSize;
+    private float cachedAspect;
+    private int cachedScreenWidth;
+    private int cachedScreenHeight;
 
     private void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         boxCollider.offset = Vector2.zero;
         cam = Camera.main;
+        CacheValues();
         FitToScreen();
+    }
+
+    private void CacheValues()
+    {
+        if (cam == null) return;
+        cachedOrthographicSize = cam.orthographicSize;
+        cachedAspect = cam.aspect;
+        cachedScreenWidth = Screen.width;
+        cachedScreenHeight = Screen.height;
+    }
+
+    private bool CameraChanged()
+    {
+        if (cam == null) return false;
+        return cam.orthographicSize != cachedOrthographicSize
+            || cam.aspect != cachedAspect
+            || Screen.width != cachedScreenWidth
+            || Screen.height != cachedScreenHeight;
     }
 
     private void FitToScreen()
     {
-        Camera cam = Camera.main;
-
+        if (cam == null) cam = Camera.main;
         if (cam == null) return;
 
         float screenHeight = 2f * cam.orthographicSize;
@@ -45,18 +68,23 @@ public class BoxColliderFit : MonoBehaviour
         boxCollider.size = new Vector2(finalWidth, finalHeight);
         boxCollider.offset = new Vector2(offsetX, offsetY);
 
+        CacheValues();
     }
 
     private void OnValidate()
     {
         if (boxCollider == null)
             boxCollider = GetComponent<BoxCollider2D>();
+        cam = Camera.main;
+        CacheValues();
         FitToScreen();
     }
 
     private void Update()
     {
-        if (!Application.isPlaying)
+        if (cam == null) cam = Camera.main;
+
+        if (!Application.isPlaying || CameraChanged())
             FitToScreen();
     }
 }
