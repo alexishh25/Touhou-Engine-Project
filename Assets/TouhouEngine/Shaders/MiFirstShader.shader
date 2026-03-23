@@ -1,10 +1,23 @@
 Shader "Custom/MiFirstShader"
 {
     Properties {
-        
+        _MainTex ("Texture", 2D) = "white" {}
+        _TintColor ("Tint Color", Color) = (1,1,1,1)
+        _Transparency ("Transparency", Range(0.0, 1.0)) = 0.25
+        _CutoutThresh ("Coutout Threshold", Range(0.0, 1.0)) = 0.2
+        _Distance("Distance", float) = 1
+        _Amplitude("Amplitude", float) = 1
+        _Speed("Speed", float) = 1
+        _Amount("Amount", float) = 1
     }
 
-    SubShader{
+    SubShader {
+
+        Tags {"Queue"="Transparent" "RenderType" = "Transparent" }
+
+        ZWrite Off
+        Blend SrcAlpha OneMinusSrcAlpha
+
         Pass{
             CGPROGRAM
                 #pragma vertex vertexFunction
@@ -12,24 +25,45 @@ Shader "Custom/MiFirstShader"
 
                 #include "UnityCG.cginc"
 
-                struct appdata{
+                struct appdata
+                {
                     float4 vertex : POSITION;
                     float2 uv : TEXCOORD0;
                 };
 
-                struct v2f{
+                struct v2f
+                {
                     float4 position : SV_POSITION;
                     float2 uv : TEXCOORD0;
                 };
 
-                v2f vertexFunction (appdata IN) {
+                sampler2D _MainTex;
+                float4 _MainTex_ST;
+                float4 _TintColor;
+                float _Transparency;
+                float _CutoutThresh;
+                float _Distance;
+                float _Amplitude;
+                float _Speed;
+                float _Amount;
+
+                v2f vertexFunction (appdata IN) 
+                {
                    v2f OUT;
-                   
+                   OUT.position = UnityObjectToClipPos(IN.vertex);
+                   OUT.uv = TRANSFORM_TEX(IN.uv, _MainTex);
                    return OUT;
                 }
 
-                fixed4 fragmentFunction (v2f IN) : SV_TARGET {
-                    
+                fixed4 fragmentFunction (v2f IN) : SV_TARGET 
+                {
+                    float2 uv = IN.uv;
+                    uv.x += sin(_Time.y * _Speed + uv.y * _Amplitude) * _Amount;
+
+                    fixed4 col = tex2D(_MainTex, uv) * _TintColor;
+                    col.a *= _Transparency;
+                    clip(col.r - _CutoutThresh);
+                    return col;
                 }
             ENDCG
         }    

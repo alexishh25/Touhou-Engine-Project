@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Playables;
 using UnityEngine.UIElements;
 
 public class MenuScript : ScreenLogic
 {
-
     Button GameStart_button;
     Button ExtraStart_button;
     Button PracticeStart_button;
@@ -61,8 +61,16 @@ public class MenuScript : ScreenLogic
     }
     private void OnExtraDataClicked() => MenuButtonClicked("Extra Start");
     private void OnPracticeStartClicked() => MenuButtonClicked("Practice Start");
-    private void OnReplayClicked() => MenuButtonClicked("Replay");
-    private void OnPlayerDataClicked() => MenuButtonClicked("Player Data");
+    private void OnReplayClicked() 
+    {
+        // Llamada limpia y directa al nuevo Controller, reproduciendo hacia adelante
+        TimelineController.Instance.PlayMainTransition(false);
+    }
+    private void OnPlayerDataClicked()
+    {
+        // Llamada limpia y directa al nuevo Controller, reproduciendo en reversa
+        TimelineController.Instance.PlayMainTransition(true);
+    }
     private void OnMusicRoomClicked() => MenuButtonClicked("Music Room");
     private void OnOptionClicked() => MenuButtonClicked("Option");
     private void OnQuitClicked() => MenuButtonClicked("Quit");

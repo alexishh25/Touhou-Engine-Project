@@ -1,6 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/TouhouEngine/UI/Styles/SelecCharacterStyle.uss?fileID=7433441132597879392&amp;guid=8ba477d6ea8c9184899a3a51ea825ba7&amp;type=3#SelecCharacterStyle" />
-    <Style src="project://database/Assets/TouhouEngine/UI/Styles/GlobalStyle.uss?fileID=7433441132597879392&amp;guid=5b973b1cb2c139c4a9b5d278c438e2c1&amp;type=3#GlobalStyle" />
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/SelecCharacterStyle.uss?fileID=7433441132597879392&amp;guid=8ba477d6ea8c9184899a3a51ea825ba7&amp;type=3" />
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/GlobalStyle.uss?fileID=7433441132597879392&amp;guid=5b973b1cb2c139c4a9b5d278c438e2c1&amp;type=3" />
     <ui:VisualElement class="background" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
         <ui:VisualElement name="VFX" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/UI/Components/Leaf%20VFX.renderTexture?fileID=8400000&amp;guid=352531d0e6ecb10418a35efff0094b76&amp;type=2#Leaf VFX&quot;); position: absolute; top: 0%; bottom: 0%; right: 0%; left: 0%;" />
         <ui:VisualElement name="Portrait" class="Portrait" style="top: 5%;">

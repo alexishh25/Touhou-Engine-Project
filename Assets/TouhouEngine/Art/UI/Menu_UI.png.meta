@@ -5746,7 +5746,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_267
+      name: Menu_UI_title
       rect:
         serializedVersion: 2
         x: 43
@@ -7156,7 +7156,6 @@ TextureImporter:
       Menu_UI_196: 334789732
       Menu_UI_197: 1954893112
       Menu_UI_198: 811030257
-      Menu_UI_2: -2777352646514433629
       Menu_UI_20: -5075899594895364572
       Menu_UI_200: -951782803
       Menu_UI_202: 1701166064
@@ -7218,7 +7217,6 @@ TextureImporter:
       Menu_UI_264: -246564402
       Menu_UI_265: 1239914443
       Menu_UI_266: 1177202409
-      Menu_UI_267: 747554706
       Menu_UI_268: -705892696
       Menu_UI_269: 1795239965
       Menu_UI_27: -1097856509076162739
@@ -7341,6 +7339,7 @@ TextureImporter:
       Menu_UI_97: 902199488851226751
       Menu_UI_98: 3830157723455700255
       Menu_UI_99: 1073957323981764889
+      Menu_UI_title: 747554706
       Music_Room: 1473469023
       Music_Room_unfocus: 1720815248
       Normal_Focus: 285550080
