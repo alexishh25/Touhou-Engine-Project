@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Threading;
 
 /// <summary>
 /// The brain of the player states. Contains references to necessary components, character data, and instances of each specific state.
@@ -11,7 +12,7 @@ public class PlayerStateManager : MonoBehaviour
     [HideInInspector] public InputAction moveAction;
     [HideInInspector] public InputAction focusAction;
     [HideInInspector] public Animator animator;
-    [HideInInspector] public Coroutine fadeCoroutine;
+    [HideInInspector] public CancellationTokenSource fadeCts;
 
     #region References
     [Header("Components")]

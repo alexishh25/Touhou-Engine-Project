@@ -53,6 +53,6 @@
             </ui:VisualElement>
             <ui:VisualElement style="flex-grow: 1;" />
         </ui:VisualElement>
-        <ui:Instance template="PauseModal" name="PauseModal" style="position: absolute; top: 4%; left: 5%; bottom: 4%; right: 35%; opacity: 1;" />
+        <ui:Instance template="PauseModal" name="PauseModal" style="position: absolute; top: 4%; left: 5%; bottom: 4%; right: 35%; opacity: 1; visibility: hidden;" />
     </ui:VisualElement>
 </ui:UXML>

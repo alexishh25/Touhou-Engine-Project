@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Menu-Selector
   m_EditorClassIdentifier: Assembly-CSharp::TransitionScreenData
   Screen1:
-    transition: {fileID: 0}
+    transition: {fileID: 11400000, guid: 5a924e1ddd46a8a4d98637c8079d921b, type: 2}
     Reverse: 0
+  intervalue: 0.1642
   Screen2:
-    transition: {fileID: 0}
+    transition: {fileID: 11400000, guid: 80f64ad14fa907744b7cc71c6242e85b, type: 2}
     Reverse: 0

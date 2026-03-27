@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using Cysharp.Threading.Tasks;
+using System.Threading;
 
 public class UIManager : MonoBehaviour
 {
@@ -87,37 +89,37 @@ public class UIManager : MonoBehaviour
 
     public void InterpolateScreenLoad(string targetScene)
     {
-        StartCoroutine(LoadWithScreen(targetScene));
+        LoadWithScreen(targetScene).Forget();
     }
 
-    private IEnumerator LoadWithScreen(string targetScene)
+    private async UniTaskVoid LoadWithScreen(string targetScene)
     {
         Scene sceneToUnload = SceneManager.GetActiveScene();
 
-        yield return SceneManager.LoadSceneAsync("LoadingScreen", LoadSceneMode.Additive);
+        await SceneManager.LoadSceneAsync("LoadingScreen", LoadSceneMode.Additive);
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
         asyncLoad.allowSceneActivation = false;
 
         while (asyncLoad.progress < 0.9f)
         {
-            yield return null;
+            await UniTask.Yield(PlayerLoopTiming.Update);
         }
 
-        yield return new WaitForSeconds(2.0f);
+        await UniTask.WaitForSeconds(2.0f);
 
         asyncLoad.allowSceneActivation = true;
-        yield return asyncLoad;
+        await asyncLoad;
 
-        yield return SceneManager.UnloadSceneAsync("LoadingScreen");
+        await SceneManager.UnloadSceneAsync("LoadingScreen");
 
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(targetScene));
 
-        yield return SceneManager.UnloadSceneAsync(sceneToUnload);
+        await SceneManager.UnloadSceneAsync(sceneToUnload);
 
         if (targetScene == "Gameplay")
         {
-            yield return new WaitForEndOfFrame();
+            await UniTask.WaitForEndOfFrame(this);
             InputManager.Instance.SwitchActionMap("Player");
             DisableUI();
             Debug.Log("Action Map 'Player' reactivated after loading Gameplay scene");

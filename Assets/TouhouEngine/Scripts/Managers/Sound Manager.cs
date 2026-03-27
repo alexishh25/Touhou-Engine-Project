@@ -46,6 +46,7 @@ public class SoundManager : MonoBehaviour
     {
         if (clip == null) return;
         float randomPitch = Random.Range(0.7f, 0.8f);
+        sfxSource.pitch = randomPitch;
         sfxSource.PlayOneShot(clip, volume);
     }
 
@@ -57,6 +58,10 @@ public class SoundManager : MonoBehaviour
     private void CheckLoop()
     {
         if (musicSource.isPlaying && musicSource.time >= loop_end_time)
-            musicSource.time = loop_start_time;
+        {
+            float overshoot = musicSource.time - loop_end_time;
+            musicSource.time = loop_start_time + overshoot;
+
+        }
     }
 }

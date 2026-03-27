@@ -1,5 +1,6 @@
-using System.Collections;
 using UnityEngine;
+using Cysharp.Threading.Tasks;
+using System.Threading;
 
 /// <summary>
 /// Abstract template that defines the basic structure of a player state.
@@ -48,13 +49,17 @@ public abstract class PlayerBaseState
 
         _ctx.isFocus = shouldFocus;
 
-        if (_ctx.fadeCoroutine != null)
-            _ctx.StopCoroutine(_ctx.fadeCoroutine);
+        if (_ctx.fadeCts != null)
+        {
+            _ctx.fadeCts.Cancel();
+            _ctx.fadeCts.Dispose();
+        }
 
-        _ctx.fadeCoroutine = _ctx.StartCoroutine(FadeBox(_ctx.isFocus));
+        _ctx.fadeCts = new CancellationTokenSource();
+        FadeBox(_ctx.isFocus, _ctx.fadeCts.Token).Forget();
     }
 
-    protected IEnumerator FadeBox(bool @switch)
+    protected async UniTaskVoid FadeBox(bool @switch, CancellationToken token)
     {
         float startAlpha = _ctx.spriteRenderer.color.a;
         float targetAlpha = @switch ? 1f : 0f;
@@ -68,12 +73,12 @@ public abstract class PlayerBaseState
             float alpha = Mathf.Lerp(startAlpha, targetAlpha, t);
             Color c = _ctx.spriteRenderer.color;
             _ctx.spriteRenderer.color = new Color(c.r, c.g, c.b, alpha);
-            yield return null;
+            await UniTask.Yield(PlayerLoopTiming.Update, cancellationToken: token);
         }
 
         Color final = _ctx.spriteRenderer.color;
         _ctx.spriteRenderer.color = new Color(final.r, final.g, final.b, targetAlpha);
-        _ctx.fadeCoroutine = null;
+        _ctx.fadeCts = null;
     }
 
 }

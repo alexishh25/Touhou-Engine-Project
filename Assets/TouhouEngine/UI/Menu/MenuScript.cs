@@ -15,6 +15,8 @@ public class MenuScript : ScreenLogic
     Button Option_button;
     Button Quit_button;
 
+    [SerializeField] private TransitionScreenData transitionScreenData; 
+
     protected override void DefinirElementos(VisualElement currentRoot)
     {
         GameStart_button = currentRoot.Q<Button>("GameStart");
@@ -64,12 +66,12 @@ public class MenuScript : ScreenLogic
     private void OnReplayClicked() 
     {
         // Llamada limpia y directa al nuevo Controller, reproduciendo hacia adelante
-        TimelineController.Instance.PlayMainTransition(false);
+        TimelineController.Instance.ReproducirTransicionUI(transitionScreenData);
     }
     private void OnPlayerDataClicked()
     {
         // Llamada limpia y directa al nuevo Controller, reproduciendo en reversa
-        TimelineController.Instance.PlayMainTransition(true);
+        TimelineController.Instance.ReproducirTransicionUI(transitionScreenData);
     }
     private void OnMusicRoomClicked() => MenuButtonClicked("Music Room");
     private void OnOptionClicked() => MenuButtonClicked("Option");

@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections;
+using Cysharp.Threading.Tasks;
+using System.Threading;
 
 public class AnimationUIManager : MonoBehaviour
 {
@@ -19,10 +21,10 @@ public class AnimationUIManager : MonoBehaviour
 
     public void Shake(VisualElement element)
     {
-        StartCoroutine(ShakeRoutine(element, duration, magnitude));
+        ShakeRoutine(element, duration, magnitude).Forget();
     }
 
-    private IEnumerator ShakeRoutine(VisualElement element,
+    private async UniTaskVoid ShakeRoutine(VisualElement element,
                                      float duration,
                                      float magnitude)
     {
@@ -39,7 +41,7 @@ public class AnimationUIManager : MonoBehaviour
             );
 
             elapsed += Time.deltaTime;
-            yield return null;
+            await UniTask.Yield(PlayerLoopTiming.Update);
         }
 
         ResetTranslate(element);

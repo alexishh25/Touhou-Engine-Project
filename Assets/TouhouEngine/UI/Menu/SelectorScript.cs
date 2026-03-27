@@ -2,6 +2,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
+using System.Threading;
+using Cysharp.Threading.Tasks;
 
 
 public class SelectorScript : ScreenLogic
@@ -30,7 +32,7 @@ public class SelectorScript : ScreenLogic
 
     private InputAction navigateAction, submitAction, cancelAction;
 
-    private Coroutine updateDataCoroutine;
+    private CancellationTokenSource updateDataCts;
 
     protected override void DefinirElementos(VisualElement currentRoot)
     {
@@ -128,20 +130,24 @@ public class SelectorScript : ScreenLogic
 
     private void UpdateData()
     {
-        if (updateDataCoroutine != null)
-            StopCoroutine(updateDataCoroutine);
+        if (updateDataCts != null)
+        {
+            updateDataCts.Cancel();
+            updateDataCts.Dispose();
+        }
 
-        updateDataCoroutine = StartCoroutine(UpdateDataCoroutine());
+        updateDataCts = new CancellationTokenSource();
+        UpdateDataCoroutine(updateDataCts.Token).Forget();
     }
 
-    private IEnumerator UpdateDataCoroutine()
+    private async UniTaskVoid UpdateDataCoroutine(CancellationToken token)
     {
         var data = characterData.characterDataArray[currentIndex];
 
         portrait.style.opacity = 0;
         subcontent.style.opacity = 0;
 
-        yield return new WaitForSeconds(transitionDuration);
+        await UniTask.WaitForSeconds(transitionDuration, cancellationToken: token);
 
         root.Q<Label>("Subdes").text = data.subdesc;
         root.Q<Label>("Subdes").style.color = new StyleColor(data.colorSubdes);
@@ -154,10 +160,10 @@ public class SelectorScript : ScreenLogic
         portrait.style.opacity = 1;
         subcontent.style.opacity = 1;
 
-        StartCoroutine(SlideShadow());
+        SlideShadow(token).Forget();
     }
 
-    private IEnumerator SlideShadow()
+    private async UniTaskVoid SlideShadow(CancellationToken token)
     {
         var shadow = root.Q<VisualElement>("Shadow");
 
@@ -172,7 +178,7 @@ public class SelectorScript : ScreenLogic
             elapsed += Time.deltaTime;
             float value = Mathf.Lerp(current, TargetRight, elapsed / duration);
             shadow.style.right = new StyleLength(new Length(value, LengthUnit.Percent));
-            yield return null;
+            await UniTask.Yield(PlayerLoopTiming.Update, cancellationToken: token);
         }
     }
 

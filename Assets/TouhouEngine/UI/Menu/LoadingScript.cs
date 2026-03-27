@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -15,8 +14,6 @@ public class LoadingScript : ScreenLogic
 
     [Header("Referencias")]
     [SerializeField] private ParticleSystem VFX;
-
-    private Coroutine Coroutine;
 
     protected override void DefinirElementos(VisualElement currentroot)
     {

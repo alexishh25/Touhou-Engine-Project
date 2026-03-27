@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 
 public class TransitionElement : MonoBehaviour
 {
@@ -24,19 +25,19 @@ public class TransitionElement : MonoBehaviour
 
         // Botón de Screen A dispara la transición
         root.Q<Button>("btn-go")
-            .RegisterCallback<ClickEvent>(evt => StartCoroutine(PlayTransition()));
+            .RegisterCallback<ClickEvent>(evt => PlayTransition().Forget());
     }
 
-    IEnumerator PlayTransition()
+    async UniTaskVoid PlayTransition()
     {
         // ── Fase 1: slash entra (scale X de 0 → 1) ──────────
         SetTransition(slash1, "width", 0.25f);
         slash1.style.width = Length.Percent(50);
-        yield return new WaitForSeconds(0.25f);
+        await UniTask.WaitForSeconds(0.25f);
 
         SetTransition(slash2, "width", 0.2f);
         slash2.style.width = Length.Percent(100);
-        yield return new WaitForSeconds(0.2f);
+        await UniTask.WaitForSeconds(0.2f);
 
         // ── Fase 2: ocultar Screen A ─────────────────────────
         screenA.style.display = DisplayStyle.None;
@@ -53,7 +54,7 @@ public class TransitionElement : MonoBehaviour
         SetTransition(screenB, "opacity", 0.4f);
         screenB.style.opacity = 1;
 
-        yield return new WaitForSeconds(0.4f);
+        await UniTask.WaitForSeconds(0.4f);
         // ── Transición completa ───────────────────────────────
     }
 
