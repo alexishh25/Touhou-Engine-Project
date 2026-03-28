@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -51,6 +52,7 @@ public class UIManager : MonoBehaviour
 
     public void ChangeScreen(ScreenType type, TransitionScreenData data = null, bool firstscreen = false)
     {
+
         // Cancel inputs on the old screen to prevent clicking bugs
         if (currentLogic != null)
         {
@@ -58,12 +60,10 @@ public class UIManager : MonoBehaviour
         }
 
         // Store existing VisualElements so we can remove them later without affecting the new screen
-        var oldElements = new System.Collections.Generic.List<VisualElement>(root.Children());
+        var oldElements = new List<VisualElement>(root.Children());
 
         void PerformChange()
         {
-            root.tabIndex = 2;
-
             ScreenEntry entry = Array.Find(registeredScreens, s => s.type == type);
             if (entry.visualAsset == null)
             {
@@ -80,7 +80,7 @@ public class UIManager : MonoBehaviour
             screenInstance.style.top = 0;
             screenInstance.style.bottom = 0;
 
-            root.Insert(root.tabIndex - 1, screenInstance);
+            root.Insert(0, screenInstance);
 
             currentLogic = entry.logicComponent;
 
@@ -109,6 +109,7 @@ public class UIManager : MonoBehaviour
             PerformChange();
             CleanupOldScreens();
         }
+
     }
 
     public void DisableUI()

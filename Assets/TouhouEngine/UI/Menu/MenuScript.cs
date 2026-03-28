@@ -65,11 +65,9 @@ public class MenuScript : ScreenLogic
     private void OnPracticeStartClicked() => MenuButtonClicked("Practice Start");
     private void OnReplayClicked() 
     {
-        TimelineController.Instance.ReproducirTransicionUI(transitionScreenData);
     }
     private void OnPlayerDataClicked()
     {
-        TimelineController.Instance.ReproducirTransicionUI(transitionScreenData);
     }
     private void OnMusicRoomClicked() => MenuButtonClicked("Music Room");
     private void OnOptionClicked() => MenuButtonClicked("Option");
