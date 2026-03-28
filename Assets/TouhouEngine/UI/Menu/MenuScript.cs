@@ -58,19 +58,17 @@ public class MenuScript : ScreenLogic
     }
     private void OnGameStartClicked()
     {
-        UIManager.Instance.ChangeScreen(ScreenType.SelectCharacter);
+        UIManager.Instance.ChangeScreen(ScreenType.SelectCharacter, transitionScreenData);
         ButtonManager.Instance.PlayClickSFX();
     }
     private void OnExtraDataClicked() => MenuButtonClicked("Extra Start");
     private void OnPracticeStartClicked() => MenuButtonClicked("Practice Start");
     private void OnReplayClicked() 
     {
-        // Llamada limpia y directa al nuevo Controller, reproduciendo hacia adelante
         TimelineController.Instance.ReproducirTransicionUI(transitionScreenData);
     }
     private void OnPlayerDataClicked()
     {
-        // Llamada limpia y directa al nuevo Controller, reproduciendo en reversa
         TimelineController.Instance.ReproducirTransicionUI(transitionScreenData);
     }
     private void OnMusicRoomClicked() => MenuButtonClicked("Music Room");

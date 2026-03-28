@@ -20,7 +20,7 @@ public class TransitionScreenData : ScriptableObject
     [SerializeField] public Transition_Screen enterTransition;
 
     [Header("Timing")]
-    [SerializeField][Range(0f, 1f)] public float interval; 
+    [SerializeField][Range(0f, 3f)] public float interval; 
     [SerializeField] bool waitForExit; 
 
     [Header("Input")]

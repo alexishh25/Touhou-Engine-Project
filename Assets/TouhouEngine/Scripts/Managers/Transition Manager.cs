@@ -18,23 +18,34 @@ public class TransitionManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void PlayTransition(TransitionScreenData data, Action onMiddle = null)
+    public void PlayTransition(TransitionScreenData data, Action onMiddle = null, Action onFinish = null)
     {
-        var director = TimelineController.Instance.director;
-        director.playableAsset = data.exitTransition.transition;
-        TimelineManager.Instance.PlayForward(director, data.exitTransition.Reverse);
+        var exitTransition = TransitionController.Instance.exitTransition;
+        exitTransition.playableAsset = data.exitTransition.transition;
+        TimelineManager.Instance.PlayForward(exitTransition, data.exitTransition.Reverse);
 
-        TransitionRoutine(director, data, onMiddle).Forget();
+        TransitionRoutine(data, onMiddle, onFinish).Forget();
     }
 
-    private async UniTaskVoid TransitionRoutine(PlayableDirector director, TransitionScreenData data, Action onMiddle)
+    private async UniTaskVoid TransitionRoutine(TransitionScreenData data, Action onMiddle, Action onFinish)
     {
-        await UniTask.WaitForSeconds((float)director.duration + data.interval);
-
         onMiddle?.Invoke();
 
-        director.playableAsset = data.enterTransition.transition;
-        TimelineManager.Instance.PlayForward(director, data.enterTransition.Reverse);
+        var enterTransition = TransitionController.Instance.enterTransition;
+        enterTransition.playableAsset = data.enterTransition.transition;
+        TimelineManager.Instance.PlayForward(enterTransition, data.enterTransition.Reverse);
+
+        await UniTask.WaitForSeconds(data.interval);
+
+        // Calculate how long to wait until BOTH transitions are completely done
+        var exitTransition = TransitionController.Instance.exitTransition;
+        float remainingExit = Mathf.Max(0, (float)exitTransition.duration - data.interval);
+        float enterDuration = (float)enterTransition.duration;
+        float waitTime = Mathf.Max(remainingExit, enterDuration);
+
+        await UniTask.WaitForSeconds(waitTime);
+
+        onFinish?.Invoke();
     }
 
 

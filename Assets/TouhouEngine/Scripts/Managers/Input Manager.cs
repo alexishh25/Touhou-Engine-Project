@@ -23,6 +23,11 @@ public class InputManager : MonoBehaviour
             Debug.LogWarning("InputManager: No initial action map assigned.");
     }
 
+    public void DisableCurrentMap()
+    {
+        inputActions.Disable();
+    }
+
     public void SwitchActionMap(string mapName)
     {
         foreach (var map in inputActions.actionMaps)

@@ -19,6 +19,7 @@ public class SelectorScript : ScreenLogic
 
     [Header("Referencias")]
     [SerializeField] private ParticleSystem VFX;
+    [SerializeField] private TransitionScreenData transitionScreenData;
 
     private CharacterData personaje;
     private int currentIndex = 0;
@@ -98,7 +99,7 @@ public class SelectorScript : ScreenLogic
     private void OnCancel(InputAction.CallbackContext ctx)
     {
         ButtonManager.Instance.PlayCancelSFX();
-        UIManager.Instance.ChangeScreen(ScreenType.MainMenu);
+        UIManager.Instance.ChangeScreen(ScreenType.MainMenu, transitionScreenData);
     }
 
     private void OnLeftClicked(ClickEvent evt)

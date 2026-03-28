@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 265f3c7a8cf0f4b4b98439a8f901a5db, type: 3}
-  m_Name: Menu-Selector
+  m_Name: Selector-Menu
   m_EditorClassIdentifier: Assembly-CSharp::TransitionScreenData
   exitTransition:
-    transition: {fileID: 11400000, guid: 5a924e1ddd46a8a4d98637c8079d921b, type: 2}
+    transition: {fileID: 11400000, guid: 80f64ad14fa907744b7cc71c6242e85b, type: 2}
     Reverse: 0
   enterTransition:
-    transition: {fileID: 11400000, guid: 80f64ad14fa907744b7cc71c6242e85b, type: 2}
+    transition: {fileID: 11400000, guid: 5a924e1ddd46a8a4d98637c8079d921b, type: 2}
     Reverse: 1
-  interval: 0.29
+  interval: 0.87
   waitForExit: 0
   blockInputDuring: 0

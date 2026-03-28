@@ -46,33 +46,69 @@ public class UIManager : MonoBehaviour
         if (uIDocument != null)
             root = uIDocument.rootVisualElement;
 
-        ChangeScreen(initialScreen);
+        ChangeScreen(initialScreen, null , true);
     }
 
-    public void ChangeScreen(ScreenType type)
+    public void ChangeScreen(ScreenType type, TransitionScreenData data = null, bool firstscreen = false)
     {
+        // Cancel inputs on the old screen to prevent clicking bugs
         if (currentLogic != null)
-            currentLogic.Dispose();
-
-        ScreenEntry entry = Array.Find(registeredScreens, s => s.type == type);
-        if (entry.visualAsset == null)
         {
-            Debug.LogError($"Screen not found for type: {type}");
-            return;
+            currentLogic.Dispose();
         }
 
-        root.Clear();
+        // Store existing VisualElements so we can remove them later without affecting the new screen
+        var oldElements = new System.Collections.Generic.List<VisualElement>(root.Children());
 
-        VisualElement screenInstance = entry.visualAsset.Instantiate();
-        screenInstance.style.flexGrow = 1f;
-        root.Add(screenInstance);
+        void PerformChange()
+        {
+            root.tabIndex = 2;
 
-        currentLogic = entry.logicComponent;
+            ScreenEntry entry = Array.Find(registeredScreens, s => s.type == type);
+            if (entry.visualAsset == null)
+            {
+                Debug.LogError($"Screen not found for type: {type}");
+                return;
+            }
 
-        if (currentLogic != null)
-            currentLogic.Initialize(screenInstance);
+            VisualElement screenInstance = entry.visualAsset.Instantiate();
+            screenInstance.style.flexGrow = 1f;
+
+            screenInstance.style.position = Position.Absolute;
+            screenInstance.style.left = 0;
+            screenInstance.style.right = 0;
+            screenInstance.style.top = 0;
+            screenInstance.style.bottom = 0;
+
+            root.Insert(root.tabIndex - 1, screenInstance);
+
+            currentLogic = entry.logicComponent;
+
+            if (currentLogic != null)
+                currentLogic.Initialize(screenInstance);
+            else
+                Debug.LogError($"No script assigned for {type}");
+        }
+
+        void CleanupOldScreens()
+        {
+            // Remove only the screens that were there before the transition started
+            foreach (var el in oldElements)
+            {
+                if (root.Contains(el))
+                    root.Remove(el);
+            }
+        }
+
+        if (data != null && TransitionManager.Instance != null)
+        {
+            TransitionManager.Instance.PlayTransition(data, PerformChange, CleanupOldScreens);
+        }
         else
-            Debug.LogError($"No script assigned for {type}");
+        {
+            PerformChange();
+            CleanupOldScreens();
+        }
     }
 
     public void DisableUI()

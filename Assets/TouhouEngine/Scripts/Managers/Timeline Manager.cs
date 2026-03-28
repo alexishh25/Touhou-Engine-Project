@@ -49,6 +49,7 @@ public class TimelineManager : MonoBehaviour
 
             // Reproducción hacia adelante normal
             timeline.time = 0;
+            timeline.Evaluate(); // Forzamos evaluación inmediata para evitar el parpadeo
             timeline.Play();
             if (timeline.playableGraph.IsValid())
             {
