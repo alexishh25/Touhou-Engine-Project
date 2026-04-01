@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/GlobalStyle.uss?fileID=7433441132597879392&amp;guid=5b973b1cb2c139c4a9b5d278c438e2c1&amp;type=3#GlobalStyle" />
+    <ui:VisualElement style="flex-grow: 1; position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%;">
+        <UIT_VFX.RotatingElement name="Gear" style="flex-grow: 1; position: absolute; top: 50%; left: 0%; bottom: 0%; right: 55%; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/SVG/gear%20final.svg?fileID=7388822144124034973&amp;guid=3208db4c6399d3f4f9070efe68da00f2&amp;type=3#gear final&quot;); -unity-background-scale-mode: scale-to-fit; transform-origin: center;" />
+    </ui:VisualElement>
+</ui:UXML>

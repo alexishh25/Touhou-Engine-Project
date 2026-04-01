@@ -232,7 +232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &358390820
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -684,6 +684,10 @@ PrefabInstance:
       value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 4119365176880602350, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
+      propertyPath: bullet_sfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b0f2f26dde880b40ae154e608896cf7, type: 3}
+    - target: {fileID: 4119365176880602350, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 6461657805282677653, guid: af767f914766676498739a55d0eff07e, type: 3}
@@ -846,7 +850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1037219788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1012,7 +1016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6817fc21379d3934aa877724cc36aa44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioController
-  musicClip: {fileID: 8300000, guid: b6b1eefaa5fa43740aab0f28da3e73cf, type: 3}
+  musicClip: {fileID: 8300000, guid: 4c164aedbcf35ea40b3f0a82fb9e00a8, type: 3}
   loopStartTime: 0
   loopEndTime: 200
 --- !u!4 &1140071189
@@ -1212,7 +1216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1638483221
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1496,7 +1500,8 @@ Transform:
   m_LocalPosition: {x: -4.5118, y: -0.37626, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2119375287}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2119375286
@@ -1524,7 +1529,7 @@ Transform:
   m_GameObject: {fileID: 2119375286}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.5118, y: 0.37626, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1532,7 +1537,7 @@ Transform:
   - {fileID: 1896688384}
   - {fileID: 1510246048}
   - {fileID: 235960535}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1909860269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1478592578993691043
 MonoBehaviour:
@@ -1595,4 +1600,3 @@ SceneRoots:
   - {fileID: 1638483224}
   - {fileID: 1432361654}
   - {fileID: 1909860269}
-  - {fileID: 2119375287}

@@ -37,13 +37,13 @@ public class TransitionManager : MonoBehaviour
 
         await UniTask.WaitForSeconds(data.interval);
 
-        //// Calculate how long to wait until BOTH transitions are completely done
+        // Calculate how long to wait until BOTH transitions are completely done
         //var exitTransition = TransitionController.Instance.exitTransition;
         //float remainingExit = Mathf.Max(0, (float)exitTransition.duration - data.interval);
         //float enterDuration = (float)enterTransition.duration;
         //float waitTime = Mathf.Max(remainingExit, enterDuration);
 
-        //await UniTask.WaitForSeconds(remainingExit);
+        //await UniTask.WaitForSeconds(waitTime);
 
         onFinish?.Invoke();
     }

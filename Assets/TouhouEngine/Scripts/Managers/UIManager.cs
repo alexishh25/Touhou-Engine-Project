@@ -47,10 +47,10 @@ public class UIManager : MonoBehaviour
         if (uIDocument != null)
             root = uIDocument.rootVisualElement;
 
-        ChangeScreen(initialScreen, null , true);
+        ChangeScreen(initialScreen, null);
     }
 
-    public void ChangeScreen(ScreenType type, TransitionScreenData data = null, bool firstscreen = false)
+    public void ChangeScreen(ScreenType type, TransitionScreenData data = null)
     {
 
         // Cancel inputs on the old screen to prevent clicking bugs

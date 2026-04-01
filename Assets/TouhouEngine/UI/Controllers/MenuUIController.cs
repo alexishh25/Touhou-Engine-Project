@@ -6,7 +6,8 @@ public enum ScreenType
 {
     MainMenu,
     SelectCharacter,
-    LoadScreen
+    LoadScreen,
+    Settings
 }
 
 [Serializable]
@@ -22,10 +23,17 @@ public struct ScreenEntry
 /// </summary>
 public class MenuUIController : MonoBehaviour
 {
+    public static MenuUIController Instance { get; private set; }
+
     [Header("Screens available in this scene")]
     [SerializeField] private ScreenType initialScreen;
     [SerializeField] private UIDocument uIDocument;
     [SerializeField] private ScreenEntry[] screens;
+
+    public void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {

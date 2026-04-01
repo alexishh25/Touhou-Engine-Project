@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Name: UITPositionClip
   m_EditorClassIdentifier: UITTimeline::UITTimeline.UITPositionClip
   _template:
-    Position: {x: 0, y: 0}
+    Position: {x: 800, y: 0}
 --- !u!114 &-7344487940134548649
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1178,7 +1178,7 @@ MonoBehaviour:
   m_Name: UITOpacityClip
   m_EditorClassIdentifier: UITTimeline::UITTimeline.UITOpacityClip
   _template:
-    Opacity: -0.028
+    Opacity: -1
 --- !u!114 &-2374358359935722922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1747,7 +1747,7 @@ MonoBehaviour:
   m_Name: UITOpacityClip
   m_EditorClassIdentifier: UITTimeline::UITTimeline.UITOpacityClip
   _template:
-    Opacity: 0
+    Opacity: -0.006195308
 --- !u!74 &6821063374796513339
 AnimationClip:
   m_ObjectHideFlags: 0

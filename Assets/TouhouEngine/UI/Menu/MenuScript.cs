@@ -3,15 +3,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
 using UnityEngine.UIElements;
+using Cysharp.Threading.Tasks;
 
 public class MenuScript : ScreenLogic
 {
     Button GameStart_button;
-    Button ExtraStart_button;
     Button PracticeStart_button;
-    Button Replay_button;
-    Button PlayerData_button;
-    Button MusicRoom_button;
     Button Option_button;
     Button Quit_button;
 
@@ -20,20 +17,12 @@ public class MenuScript : ScreenLogic
     protected override void DefinirElementos(VisualElement currentRoot)
     {
         GameStart_button = currentRoot.Q<Button>("GameStart");
-        ExtraStart_button = currentRoot.Q<Button>("ExtraStart");
         PracticeStart_button = currentRoot.Q<Button>("PracticeStart");
-        Replay_button = currentRoot.Q<Button>("Replay");
-        PlayerData_button = currentRoot.Q<Button>("PlayerData");
-        MusicRoom_button = currentRoot.Q<Button>("MusicRoom");
         Option_button = currentRoot.Q<Button>("Option");
         Quit_button = currentRoot.Q<Button>("Quit");
 
         AddButtonIfNotNull(GameStart_button);
-        AddButtonIfNotNull(ExtraStart_button);
         AddButtonIfNotNull(PracticeStart_button);
-        AddButtonIfNotNull(Replay_button);
-        AddButtonIfNotNull(PlayerData_button);
-        AddButtonIfNotNull(MusicRoom_button);
         AddButtonIfNotNull(Option_button);
         AddButtonIfNotNull(Quit_button);
     }
@@ -42,11 +31,7 @@ public class MenuScript : ScreenLogic
     {
         ButtonManager.Instance.ManageButtonActions(active,
             (GameStart_button, OnGameStartClicked),
-            (ExtraStart_button, OnExtraDataClicked),
             (PracticeStart_button, OnPracticeStartClicked),
-            (Replay_button, OnReplayClicked),
-            (PlayerData_button, OnPlayerDataClicked),
-            (MusicRoom_button, OnMusicRoomClicked),
             (Option_button, OnOptionClicked),
             (Quit_button, OnQuitClicked)
         );
@@ -61,22 +46,30 @@ public class MenuScript : ScreenLogic
         UIManager.Instance.ChangeScreen(ScreenType.SelectCharacter, transitionScreenData);
         ButtonManager.Instance.PlayClickSFX();
     }
-    private void OnExtraDataClicked() => MenuButtonClicked("Extra Start");
     private void OnPracticeStartClicked() => MenuButtonClicked("Practice Start");
-    private void OnReplayClicked() 
+
+    private void OnOptionClicked()
     {
+        UIManager.Instance.ChangeScreen(ScreenType.Settings, transitionScreenData);
+        ButtonManager.Instance.PlayClickSFX();
     }
-    private void OnPlayerDataClicked()
+    private void OnQuitClicked()
     {
+        async UniTaskVoid QuitRoutine()
+        {
+            ButtonManager.Instance.PlayCancelSFX();
+            await UniTask.Delay(500);
+            Application.Quit();
+            Debug.Log("Quit button clicked, exiting application...");
+        }
+        QuitRoutine().Forget();
     }
-    private void OnMusicRoomClicked() => MenuButtonClicked("Music Room");
-    private void OnOptionClicked() => MenuButtonClicked("Option");
-    private void OnQuitClicked() => MenuButtonClicked("Quit");
 
     private void MenuButtonClicked(string message)
     {
         ButtonManager.Instance.PlayCancelSFX();
         Debug.Log(message + " clicked");
-        if (message == "Quit") Application.Quit();
     }
+
+    
 }

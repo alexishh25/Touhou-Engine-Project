@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AnimationUIController : MonoBehaviour
@@ -5,6 +6,10 @@ public class AnimationUIController : MonoBehaviour
     [Header("Animation of Button")]
     [SerializeField] public float duration = 0.4f;
     [SerializeField] public float magnitude = 10f;
+
+    [Header("Animation On Click")]
+    [SerializeField] public float delay = 0.8f;
+    [SerializeField] public float cps = 10f;
     void Start()
     {
         if (AnimationUIManager.Instance == null)

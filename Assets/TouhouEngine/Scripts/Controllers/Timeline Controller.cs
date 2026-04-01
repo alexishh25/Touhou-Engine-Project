@@ -17,6 +17,11 @@ public class TimelineController : MonoBehaviour
         director = GetComponent<PlayableDirector>();
     }
 
+    public void Start()
+    {
+        director.playableAsset = null;
+    }
+
     public void SetSpeed(float speed)
     {
         if (director.playableGraph.IsValid())   
