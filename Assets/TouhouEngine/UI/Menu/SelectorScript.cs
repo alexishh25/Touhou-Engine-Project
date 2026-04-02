@@ -188,6 +188,7 @@ public class SelectorScript : ScreenLogic
         navigateAction.performed -= OnNavigate;
         submitAction.performed -= OnSubmit;
         cancelAction.performed -= OnCancel;
+        VFX.Stop();
         base.Dispose();
     }
 }
