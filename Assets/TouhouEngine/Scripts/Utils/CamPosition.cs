@@ -38,7 +38,7 @@ public class CamPosition : MonoBehaviour
         float offsetX = (anchorx - 0.5f) * size.x;
         float offsetY = (anchory - 0.5f) * size.y;
 
-        newpos -= new Vector3(offsetX, offsetY, newpos.z);
+        newpos -= new Vector3(offsetX, offsetY, posObject.z);
         return newpos;
     }
 

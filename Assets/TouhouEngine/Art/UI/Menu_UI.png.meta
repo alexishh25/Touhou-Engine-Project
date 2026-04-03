@@ -5152,28 +5152,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_239
-      rect:
-        serializedVersion: 2
-        x: 976
-        y: 1098
-        width: 89
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9178626e367fc649965b0fc416538cd
-      internalID: 1197251253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Menu_UI_240
       rect:
         serializedVersion: 2
@@ -5460,7 +5438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_253
+      name: Menu_UI_Window
       rect:
         serializedVersion: 2
         x: 688
@@ -5570,13 +5548,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_258
+      name: Menu_UI_BGMVolume
       rect:
         serializedVersion: 2
-        x: 691
-        y: 970
-        width: 72
-        height: 31
+        x: 692
+        y: 971
+        width: 169
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5587,28 +5565,6 @@ TextureImporter:
       bones: []
       spriteID: b66e64af65b88bc4a9d567f9d4e43da9
       internalID: -1709613634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_UI_259
-      rect:
-        serializedVersion: 2
-        x: 767
-        y: 970
-        width: 95
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc34020bf7d022247bc336e7a4e0f7d8
-      internalID: 150864607
       vertices: []
       indices: 
       edges: []
@@ -5636,13 +5592,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_261
+      name: Menu_UI_SEVolume
       rect:
         serializedVersion: 2
-        x: 690
-        y: 938
-        width: 41
-        height: 30
+        x: 691
+        y: 939
+        width: 136
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5653,28 +5609,6 @@ TextureImporter:
       bones: []
       spriteID: 2231bcd6de090cc4d83ea7e89c3a753b
       internalID: -410456089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_UI_262
-      rect:
-        serializedVersion: 2
-        x: 691
-        y: 906
-        width: 137
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed147caa647761b478b9494ebd72e846
-      internalID: -281581184
       vertices: []
       indices: 
       edges: []
@@ -5790,13 +5724,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_271
+      name: Menu_UI_KeyConfig
       rect:
         serializedVersion: 2
         x: 691
-        y: 844
-        width: 50
-        height: 60
+        y: 872
+        width: 142
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5829,28 +5763,6 @@ TextureImporter:
       bones: []
       spriteID: d502237dd49bc7b43b5fea59890eb4ff
       internalID: 530440051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_UI_273
-      rect:
-        serializedVersion: 2
-        x: 743
-        y: 844
-        width: 90
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68bead71c1a623a4f90b20622ad8514c
-      internalID: 1316698771
       vertices: []
       indices: 
       edges: []
@@ -7021,6 +6933,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Menu_UI_Default
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 907
+        width: 102
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680fa7e0603050046bac7cb999413132
+      internalID: 436996511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -7202,16 +7136,13 @@ TextureImporter:
       Menu_UI_250: -1966403441
       Menu_UI_251: -231517789
       Menu_UI_252: -856996357
-      Menu_UI_253: -532836549
       Menu_UI_254: 1613391222
       Menu_UI_255: -1373877365
       Menu_UI_256: 836648935
       Menu_UI_257: -297687296
-      Menu_UI_258: -1709613634
       Menu_UI_259: 150864607
       Menu_UI_26: -6356090426590305413
       Menu_UI_260: -20136952
-      Menu_UI_261: -410456089
       Menu_UI_262: -281581184
       Menu_UI_263: -367279776
       Menu_UI_264: -246564402
@@ -7221,7 +7152,6 @@ TextureImporter:
       Menu_UI_269: 1795239965
       Menu_UI_27: -1097856509076162739
       Menu_UI_270: 1166303216
-      Menu_UI_271: 599459923
       Menu_UI_272: 530440051
       Menu_UI_273: 1316698771
       Menu_UI_274: -626139259
@@ -7339,6 +7269,11 @@ TextureImporter:
       Menu_UI_97: 902199488851226751
       Menu_UI_98: 3830157723455700255
       Menu_UI_99: 1073957323981764889
+      Menu_UI_BGMVolume: -1709613634
+      Menu_UI_Default: 436996511
+      Menu_UI_KeyConfig: 599459923
+      Menu_UI_SEVolume: -410456089
+      Menu_UI_Window: -532836549
       Menu_UI_title: 747554706
       Music_Room: 1473469023
       Music_Room_unfocus: 1720815248

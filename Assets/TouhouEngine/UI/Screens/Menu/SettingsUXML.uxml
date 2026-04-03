@@ -3,5 +3,31 @@
     <ui:VisualElement style="flex-grow: 1; position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%;">
         <ui:VisualElement name="Background" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/PC%20_%20Computer%20-%20Touhou%20Seirensen%20(Undefined%20Fantastic%20Object)%20-%20Miscellaneous%20-%20Title%20Screen.png?fileID=5296276666347861678&amp;guid=7a246d201fa1a114492acb79342e2154&amp;type=3#Background_Secondary&quot;); -unity-background-image-tint-color: rgb(96, 96, 96);" />
         <ui:VisualElement name="VFX" style="flex-grow: 1; position: absolute; top: 0%; left: 0%; bottom: 0%; right: 0%; background-image: url(&quot;project://database/Assets/TouhouEngine/UI/Components/Gear%20RenderTexture.renderTexture?fileID=8400000&amp;guid=18c7f0065f8ed2c4b9b89ffdf3228c9f&amp;type=2#Gear RenderTexture&quot;); background-size: contain; -unity-background-scale-mode: stretch-to-fill; background-position-x: center; background-position-y: center; width: 100%; height: 100%;" />
+        <ui:VisualElement name="Content" style="flex-grow: 1; position: absolute; top: 10%; left: 20%; bottom: 10%; right: 20%;">
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-1709613634&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_BGMVolume&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
+                <ui:VisualElement text="Button" style="position: absolute; top: 0; left: 40%; bottom: 0; right: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-410456089&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_SEVolume&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
+                <ui:VisualElement text="Button" style="position: absolute; top: 0; left: 40%; bottom: 0; right: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-532836549&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_Window&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
+                <ui:VisualElement text="Button" style="position: absolute; top: 0; left: 40%; bottom: 0; right: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=436996511&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_Default&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
+                <ui:VisualElement text="Button" style="position: absolute; top: 0; left: 40%; bottom: 0; right: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=599459923&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_KeyConfig&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
+                <ui:VisualElement text="Button" style="position: absolute; top: 0; left: 40%; bottom: 0; right: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1669703784&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Quit&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
+                <ui:VisualElement text="Button" style="position: absolute; top: 0; left: 40%; bottom: 0; right: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

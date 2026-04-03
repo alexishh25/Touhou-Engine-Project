@@ -5,6 +5,10 @@ using UnityEngine.UIElements;
 
 public class SettingsScript : ScreenLogic
 {
+    [Header("VFX")]
+    [SerializeField] private GameObject[] gear = new GameObject[2];
+    [SerializeField] private ParticleSystem leafs;
+
     private Action OnLoadStarted;
     private RotatingElement gear_bck;
 
@@ -21,7 +25,8 @@ public class SettingsScript : ScreenLogic
 
     protected override void LoadData()
     {
-        // Simulate loading data with a delay
+        leafs.Simulate(3f, true, false);
+        leafs.Play();
         OnLoadStarted?.Invoke();
     }
 
