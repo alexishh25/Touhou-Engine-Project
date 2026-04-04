@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     private ScreenEntry[] registeredScreens;
     private ScreenLogic currentLogic;
     private VisualElement root;
+    private bool _isTransitioning = false;
 
     [Header("Efectos de sonido")]
 
@@ -52,6 +53,9 @@ public class UIManager : MonoBehaviour
 
     public void ChangeScreen(ScreenType type, TransitionScreenData data = null)
     {
+        // Bug #2 fix: block re-entrant calls during an active transition
+        if (_isTransitioning) return;
+
 
         // Cancel inputs on the old screen to prevent clicking bugs
         if (currentLogic != null)
@@ -80,7 +84,9 @@ public class UIManager : MonoBehaviour
             screenInstance.style.top = 0;
             screenInstance.style.bottom = 0;
 
-            root.Insert(0, screenInstance);
+            // Bug #5 fix: Add() appends to the end so the new screen renders on top of existing elements.
+            // If you have permanent overlays (e.g. a HUD layer), insert at the specific index they live at instead.
+            root.Add(screenInstance);
 
             currentLogic = entry.logicComponent;
 
@@ -92,7 +98,9 @@ public class UIManager : MonoBehaviour
 
         void CleanupOldScreens()
         {
-            // Remove only the screens that were there before the transition started
+            // Remove only the screens that were there before the transition started.
+            // IMPORTANT: this runs BEFORE the enter animation is set up so that
+            // UITVisualElementTrack only queries elements from the NEW screen.
             foreach (var el in oldElements)
             {
                 if (root.Contains(el))
@@ -102,7 +110,10 @@ public class UIManager : MonoBehaviour
 
         if (data != null && TransitionManager.Instance != null)
         {
-            TransitionManager.Instance.PlayTransition(data, PerformChange, CleanupOldScreens);
+            _isTransitioning = true;
+            // onComplete releases the lock only after the enter animation finishes,
+            // preventing any new transition from firing while enter is still playing.
+            TransitionManager.Instance.PlayTransition(data, PerformChange, CleanupOldScreens, () => _isTransitioning = false);
         }
         else
         {

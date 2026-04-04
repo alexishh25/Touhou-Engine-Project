@@ -1178,7 +1178,7 @@ MonoBehaviour:
   m_Name: UITOpacityClip
   m_EditorClassIdentifier: UITTimeline::UITTimeline.UITOpacityClip
   _template:
-    Opacity: -1
+    Opacity: 0
 --- !u!114 &-2374358359935722922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1491,7 +1491,7 @@ MonoBehaviour:
     m_AnimationCurves: {fileID: -4966383439285690713}
     m_Recordable: 0
     m_PostExtrapolationMode: 4
-    m_PreExtrapolationMode: 4
+    m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 0.3333333333333333
     m_DisplayName: UITOpacityClip

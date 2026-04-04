@@ -1593,7 +1593,7 @@ MonoBehaviour:
   m_Name: UITPositionClip(Clone)
   m_EditorClassIdentifier: UITTimeline::UITTimeline.UITPositionClip
   _template:
-    Position: {x: -579.1386, y: 0}
+    Position: {x: -236.66418, y: 0}
 --- !u!114 &1896278601015637535
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1635,7 +1635,7 @@ MonoBehaviour:
   m_Name: UITPositionClip
   m_EditorClassIdentifier: UITTimeline::UITTimeline.UITPositionClip
   _template:
-    Position: {x: 1800, y: 0}
+    Position: {x: 236.66418, y: 0}
 --- !u!74 &3373416630348519149
 AnimationClip:
   m_ObjectHideFlags: 1
@@ -1760,7 +1760,7 @@ MonoBehaviour:
   m_Name: UITOpacityClip
   m_EditorClassIdentifier: UITTimeline::UITTimeline.UITOpacityClip
   _template:
-    Opacity: 0
+    Opacity: -0.07433193
 --- !u!74 &4862772905225531926
 AnimationClip:
   m_ObjectHideFlags: 1
@@ -2018,7 +2018,7 @@ MonoBehaviour:
     m_AnimationCurves: {fileID: 3373416630348519149}
     m_Recordable: 0
     m_PostExtrapolationMode: 4
-    m_PreExtrapolationMode: 4
+    m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 0.5666666666666667
     m_DisplayName: UITOpacityClip
