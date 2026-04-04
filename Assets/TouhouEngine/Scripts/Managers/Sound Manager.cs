@@ -30,8 +30,6 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-
-
     public void PlayMusic(AudioClip clip, float start, float end)
     {
         loop_start_time = start;
@@ -48,6 +46,8 @@ public class SoundManager : MonoBehaviour
         sfxSource.PlayOneShot(clip, volume);
     }
 
+    public void SetVolumeSFX(float value) => sfxSource.volume = value;
+    public void SetVolumeBGM(float value) => musicSource.volume = value;
     private void Update()
     {
         CheckLoop();

@@ -45,7 +45,7 @@ public class SelectorScript : ScreenLogic
         subcontent = currentRoot.Q<VisualElement>("SubContent");
     }
 
-    protected override void ButtonActionAlterSusYUnsuscribe(bool active)
+    protected override void ElementsActionAlterSusYUnsuscribe(bool active)
     {
         if (active)
         {

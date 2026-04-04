@@ -20,7 +20,7 @@ public class LoadingScript : ScreenLogic
         root = currentroot;
     }
 
-    protected override void ButtonActionAlterSusYUnsuscribe(bool active)
+    protected override void ElementsActionAlterSusYUnsuscribe(bool active)
     {
         
     }

@@ -22,7 +22,7 @@ public class PauseUIScript : ScreenLogic
         AddButtonIfNotNull(RTG_button);
     }
 
-    protected override void ButtonActionAlterSusYUnsuscribe(bool active)
+    protected override void ElementsActionAlterSusYUnsuscribe(bool active)
     {
         ButtonManager.Instance.ManageButtonActions(active,
             (Continue_button, OnContinueClicked),

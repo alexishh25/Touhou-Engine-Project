@@ -8,7 +8,7 @@ public abstract class ScreenLogic : MonoBehaviour
     protected List<Button> buttons = new List<Button>();
 
     protected abstract void DefinirElementos(VisualElement currentRoot);
-    protected abstract void ButtonActionAlterSusYUnsuscribe(bool active);
+    protected abstract void ElementsActionAlterSusYUnsuscribe(bool active);
 
     protected abstract void LoadData();
 
@@ -17,14 +17,14 @@ public abstract class ScreenLogic : MonoBehaviour
         if (buttons.Count > 0) Dispose();
         Debug.Log($"Initializing {gameObject.name} screen logic.");
         DefinirElementos(screenRoot);
-        ButtonActionAlterSusYUnsuscribe(true);
+        ElementsActionAlterSusYUnsuscribe(true);
         ButtonManager.Instance.AlternateRegisterHoverSFX(true, buttons);
         LoadData();
     }
 
     public virtual void Dispose()
     {
-        ButtonActionAlterSusYUnsuscribe(false);
+        ElementsActionAlterSusYUnsuscribe(false);
         ButtonManager.Instance.AlternateRegisterHoverSFX(false, buttons);
         buttons.Clear();
     }

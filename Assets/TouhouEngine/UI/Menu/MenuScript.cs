@@ -27,7 +27,7 @@ public class MenuScript : ScreenLogic
         AddButtonIfNotNull(Quit_button);
     }
 
-    protected override void ButtonActionAlterSusYUnsuscribe(bool active)
+    protected override void ElementsActionAlterSusYUnsuscribe(bool active)
     {
         ButtonManager.Instance.ManageButtonActions(active,
             (GameStart_button, OnGameStartClicked),

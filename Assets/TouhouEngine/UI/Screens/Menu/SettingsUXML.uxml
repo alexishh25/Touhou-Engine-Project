@@ -9,13 +9,13 @@
             <ui:Button name="BGMButton" class="normal-subbutton" style="flex-grow: 1;">
                 <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-1709613634&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_BGMVolume&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
                 <ui:VisualElement text="Button" style="position: absolute; top: 0; left: 40%; bottom: 0; right: 0; justify-content: center;">
-                    <TouhouEngine.UI.Components.FilledSlider label="Slider" value="13.2" high-value="100" style="height: 50%; color: rgb(27, 27, 27); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                    <TouhouEngine.UI.Components.FilledSlider label="Slider" value="13.2" high-value="1" name="MusicSlider" style="height: 50%; color: rgb(27, 27, 27); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
                 </ui:VisualElement>
             </ui:Button>
             <ui:Button name="SFXButton" class="normal-subbutton" style="flex-grow: 1;">
                 <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-410456089&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_SEVolume&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
                 <ui:VisualElement text="Button" style="position: absolute; top: 0; left: 40%; bottom: 0; right: 0; justify-content: center;">
-                    <TouhouEngine.UI.Components.FilledSlider label="Slider" value="42" high-value="100" style="height: 50%;" />
+                    <TouhouEngine.UI.Components.FilledSlider label="Slider" value="1" high-value="1" name="SFXSlider" style="height: 50%;" />
                 </ui:VisualElement>
             </ui:Button>
             <ui:VisualElement style="flex-grow: 1;">

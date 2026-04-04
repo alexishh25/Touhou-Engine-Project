@@ -11,7 +11,7 @@ public class HUDScript : ScreenLogic
     {
         _root = currentRoot;
     }
-    protected override void ButtonActionAlterSusYUnsuscribe(bool active)
+    protected override void ElementsActionAlterSusYUnsuscribe(bool active)
     {
         // No buttons to manage in the HUD
     }
