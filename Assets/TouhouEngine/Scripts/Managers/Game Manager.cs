@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-
     [SerializeField] private GameObject[] managersToDisable;
 
     void Awake()
@@ -24,6 +23,8 @@ public class GameManager : MonoBehaviour
             else
                 Debug.LogWarning("GameManager: A manager in managersToDisable is null.");
         }
+
+        SettingsManager.LoadSettings();
     }
 
     public void PauseGame()

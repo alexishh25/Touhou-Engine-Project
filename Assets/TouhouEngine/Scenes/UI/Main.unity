@@ -174,7 +174,7 @@ PlayableDirector:
   m_GameObject: {fileID: 57118185}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 80f64ad14fa907744b7cc71c6242e85b, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: af6ed587da2aeb845a53436b6558ece8, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -361,7 +361,7 @@ PlayableDirector:
   m_GameObject: {fileID: 224511125}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 38dd82597a478f742a9fba013c120bb3, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: af6ed587da2aeb845a53436b6558ece8, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -426,7 +426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c77f3a3c4e90d4d9025772114d0456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuScript
-  transitionScreenData: {fileID: 11400000, guid: ad69c30bb2a63e646a1a8b79dca63d5e, type: 2}
+  Selector: {fileID: 11400000, guid: ad69c30bb2a63e646a1a8b79dca63d5e, type: 2}
+  Settings: {fileID: 11400000, guid: e60f7cc77b3dfba47930df74b5b95fae, type: 2}
 --- !u!1 &519556634
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +461,7 @@ MonoBehaviour:
   - {fileID: 1992687990}
   - {fileID: 2076346735}
   leafs: {fileID: 2123077537}
+  menu: {fileID: 11400000, guid: 8b087007d40483a4dbc76a765bc7fbfb, type: 2}
 --- !u!4 &519556636
 Transform:
   m_ObjectHideFlags: 0

@@ -25,9 +25,6 @@
             <ui:Button name="DefButton" class="normal-subbutton" style="flex-grow: 1;">
                 <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=436996511&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_Default&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
             </ui:Button>
-            <ui:Button name="KeyButton" class="normal-subbutton" style="flex-grow: 1;">
-                <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=599459923&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_KeyConfig&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
-            </ui:Button>
             <ui:Button name="QuitButton" class="normal-subbutton" style="flex-grow: 1;">
                 <ui:VisualElement style="flex-grow: 1; left: 0%; top: 30%; right: 70%; bottom: 30%; position: absolute; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1669703784&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Quit&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: left 0; background-size: contain;" />
             </ui:Button>

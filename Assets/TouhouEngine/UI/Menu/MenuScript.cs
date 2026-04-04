@@ -12,7 +12,9 @@ public class MenuScript : ScreenLogic
     Button Option_button;
     Button Quit_button;
 
-    [SerializeField] private TransitionScreenData transitionScreenData; 
+    [Header("Transitions Data")]
+    [SerializeField] private TransitionScreenData Selector; 
+    [SerializeField] private TransitionScreenData Settings; 
 
     protected override void DefinirElementos(VisualElement currentRoot)
     {
@@ -25,6 +27,8 @@ public class MenuScript : ScreenLogic
         AddButtonIfNotNull(PracticeStart_button);
         AddButtonIfNotNull(Option_button);
         AddButtonIfNotNull(Quit_button);
+
+        defaultCancelButton = Quit_button;
     }
 
     protected override void ElementsActionAlterSusYUnsuscribe(bool active)
@@ -43,14 +47,14 @@ public class MenuScript : ScreenLogic
     }
     private void OnGameStartClicked()
     {
-        UIManager.Instance.ChangeScreen(ScreenType.SelectCharacter, transitionScreenData);
+        UIManager.Instance.ChangeScreen(ScreenType.SelectCharacter, Selector);
         ButtonManager.Instance.PlayClickSFX();
     }
     private void OnPracticeStartClicked() => MenuButtonClicked("Practice Start");
 
     private void OnOptionClicked()
     {
-        UIManager.Instance.ChangeScreen(ScreenType.Settings, transitionScreenData);
+        UIManager.Instance.ChangeScreen(ScreenType.Settings, Settings);
         ButtonManager.Instance.PlayClickSFX();
     }
     private void OnQuitClicked()
@@ -60,7 +64,6 @@ public class MenuScript : ScreenLogic
             ButtonManager.Instance.PlayCancelSFX();
             await UniTask.Delay(500);
             Application.Quit();
-            Debug.Log("Quit button clicked, exiting application...");
         }
         QuitRoutine().Forget();
     }

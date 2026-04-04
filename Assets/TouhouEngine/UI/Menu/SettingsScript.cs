@@ -10,28 +10,33 @@ public class SettingsScript : ScreenLogic
     [SerializeField] private GameObject[] gear = new GameObject[2];
     [SerializeField] private ParticleSystem leafs;
 
+    [Header("Transition Data")]
+    [SerializeField] private TransitionScreenData menu;
+
     private FilledSlider musicVolumeSlider, sfxVolumeSlider;
 
-    private Button windowButton, fullButton, defButton, keyButton, quitButton;
-
-    private Action OnLoadStarted;
+    private Button bgmButton, sfxButton, windowButton, fullButton, defButton, quitButton;
 
     protected override void DefinirElementos(VisualElement currentRoot)
     {
         musicVolumeSlider = currentRoot.Q<FilledSlider>("MusicSlider");
         sfxVolumeSlider = currentRoot.Q<FilledSlider>("SFXSlider");
 
+        bgmButton = currentRoot.Q<Button>("BGMButton");
+        sfxButton = currentRoot.Q<Button>("SFXButton");
         windowButton = currentRoot.Q<Button>("WindowButton");
         fullButton = currentRoot.Q<Button>("FullButton");
         defButton = currentRoot.Q<Button>("DefButton");
-        keyButton = currentRoot.Q<Button>("KeyButton");
         quitButton = currentRoot.Q<Button>("QuitButton");
 
+        AddButtonIfNotNull(bgmButton);
+        AddButtonIfNotNull(sfxButton);
         AddButtonIfNotNull(windowButton);
         AddButtonIfNotNull(fullButton);
         AddButtonIfNotNull(defButton);
-        AddButtonIfNotNull(keyButton);
         AddButtonIfNotNull(quitButton);
+
+        defaultCancelButton = quitButton;
     }
 
     protected override void ElementsActionAlterSusYUnsuscribe(bool active)
@@ -44,54 +49,95 @@ public class SettingsScript : ScreenLogic
             (windowButton, OnWindowButtonClicked),
             (fullButton, OnFullButtonClicked),
             (defButton, OnDefButtonClicked),
-            (keyButton, OnKeyButtonClicked),
             (quitButton, OnQuitButtonClicked)
         );
+        bgmButton.RegisterCallback<FocusEvent>(OnButtonFocus);
+        sfxButton.RegisterCallback<FocusEvent>(OnButtonFocus);
+    }
+
+    protected override void LoadData()
+    {
+        LoadValuesElements();
+
+        leafs.Simulate(3f, true, false);
+        leafs.Play();
+    }
+
+    private void LoadValuesElements()
+    {
+        musicVolumeSlider.value = SettingsManager.BGMVolume;
+        sfxVolumeSlider.value = SettingsManager.SFXVolume;
+    }
+
+    private void OnButtonFocus(FocusEvent evt)
+    {
+        if (evt.target is Button button)
+        {
+            FilledSlider targetSlider = null;
+
+            if (button.name == "BGMButton")
+                targetSlider = musicVolumeSlider;
+            else if (button.name == "SFXButton")
+                targetSlider = sfxVolumeSlider;
+
+            if (targetSlider == null) return;
+
+            button.RegisterCallback<NavigationMoveEvent>(evt =>
+            {
+                if (evt.direction == NavigationMoveEvent.Direction.Left)
+                {
+                    targetSlider.value = Mathf.Clamp(targetSlider.value - 0.02f, 0f, 1f);
+                    evt.StopPropagation();
+                }
+                else if (evt.direction == NavigationMoveEvent.Direction.Right)
+                {
+                    targetSlider.value = Mathf.Clamp(targetSlider.value + 0.02f, 0f, 1f);
+                    evt.StopPropagation();
+                }
+            });
+        }
     }
 
     private void OnWindowButtonClicked()
     {
-        Screen.fullScreenMode = FullScreenMode.Windowed;
+        ButtonManager.Instance.PlayClickSFX();
+        SettingsManager.WindowMode = false;
         Debug.Log($"Resolucion actual: {Screen.width}x{Screen.height}");
     }
 
     private void OnFullButtonClicked()
     {
-        Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
+        ButtonManager.Instance.PlayClickSFX();
+        SettingsManager.WindowMode = true;
         Debug.Log($"Resolucion actual: {Screen.width}x{Screen.height}");
     }
 
     private void OnDefButtonClicked()
     {
-
-    }
-    private void OnKeyButtonClicked()
-    {
-
+        SettingsManager.ResetSettings();
+        LoadValuesElements();
+        ButtonManager.Instance.PlayClickSFX();
     }
     private void OnQuitButtonClicked()
     {
-
+        UIManager.Instance.ChangeScreen(ScreenType.MainMenu, menu);
+        SettingsManager.SaveSettings();
+        ButtonManager.Instance.PlayCancelSFX();
     }
     private void OnMusicVolumeChanged(ChangeEvent<float> evt)
     {
-        SoundManager.Instance.SetVolumeBGM(evt.newValue);
+        SettingsManager.BGMVolume = evt.newValue;
     }
 
     private void OnSFXVolumeChanged(ChangeEvent<float> evt)
     {
-        SoundManager.Instance.SetVolumeSFX(evt.newValue);
-    }
-
-    protected override void LoadData()
-    {
-        leafs.Simulate(3f, true, false);
-        leafs.Play();
-        OnLoadStarted?.Invoke();
+        SettingsManager.SFXVolume = evt.newValue;
     }
 
     public override void Dispose()
     {
+        bgmButton.UnregisterCallback<FocusEvent>(OnButtonFocus);
+        sfxButton.UnregisterCallback<FocusEvent>(OnButtonFocus);
         base.Dispose();
     }
 }
