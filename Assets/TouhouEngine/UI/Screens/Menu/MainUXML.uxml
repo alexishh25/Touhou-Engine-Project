@@ -1,14 +1,15 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" schemaLocation="UnityEngine.UIElements ../UIElementsSchema/UnityEngine.UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/TouhouEngine/UI/Styles/MenuStyle.uss?fileID=7433441132597879392&amp;guid=256ec4efde9b87543b2453e394ef62f3&amp;type=3#MenuStyle" />
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/Screens/MenuStyle.uss?fileID=7433441132597879392&amp;guid=256ec4efde9b87543b2453e394ef62f3&amp;type=3#MenuStyle" />
     <Style src="project://database/Assets/TouhouEngine/UI/Styles/TransitionStyle.uss?fileID=7433441132597879392&amp;guid=38a9be21770f9de4b85b2e584814852a&amp;type=3#TransitionStyle" />
+    <Style src="project://database/Assets/TouhouEngine/UI/Styles/Components/ComButtonStyle.uss?fileID=7433441132597879392&amp;guid=6b4eb11155a4ebc48a6093da64324aaa&amp;type=3#ComButtonStyle" />
     <ui:VisualElement name="ContenedorPrincipal" class="main-content" style="opacity: 1; background-image: none;">
         <ui:VisualElement name="Background" style="flex-grow: 1; position: absolute; top: 0%; bottom: 0%; left: 0%; right: 0%; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=2315263262455518574&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#background&quot;);" />
         <ui:VisualElement name="Content" style="flex-grow: 1;">
             <ui:VisualElement class="button-content downtransition" style="bottom: 5%;">
-                <ui:Button name="GameStart" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=267434774&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Game_Start&quot;);" />
-                <ui:Button name="PracticeStart" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=785455657&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Practice_Start&quot;);" />
-                <ui:Button name="Option" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-1628037540&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Option&quot;);" />
-                <ui:Button name="Quit" class="menu-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1669703784&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Quit&quot;);" />
+                <ui:Button name="GameStart" class="normal-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=267434774&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Game_Start&quot;);" />
+                <ui:Button name="PracticeStart" class="normal-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=785455657&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Practice_Start&quot;);" />
+                <ui:Button name="Option" class="normal-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=-1628037540&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Option&quot;);" />
+                <ui:Button name="Quit" class="normal-button" style="background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=1669703784&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Quit&quot;);" />
             </ui:VisualElement>
             <ui:VisualElement name="TitleMenu" style="flex-grow: 1; position: absolute; top: 0%; left: 5%; bottom: 0%; right: 40%; background-image: url(&quot;project://database/Assets/TouhouEngine/Art/UI/Menu_UI.png?fileID=747554706&amp;guid=e6342438f41c13a46a87d302659e4514&amp;type=3#Menu_UI_title&quot;); -unity-background-scale-mode: scale-to-fit; background-position-x: center; background-position-y: bottom 10%;" />
         </ui:VisualElement>
