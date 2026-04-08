@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+    <ui:VisualElement style="padding: 10px;">
+        <ui:Label text="Simulador de Nivel (UI Builder)" style="font-size: 16px; -unity-font-style: bold; margin-bottom: 15px;" />
+        
+        <!-- Los elementos tienen la propiedad 'name'. El C# buscará estos nombres. -->
+        <uie:ObjectField label="Nivel a Simular" name="levelSelector" />
+        
+        <ui:Slider label="Cronómetro (Segundos)" name="timeSlider" high-value="60" low-value="0" style="margin-top: 20px;" />
+        
+        <ui:Label text="Tiempo actual: 0.00s" name="timeLabel" style="-unity-text-align: middle-center; margin-top: 5px; font-size: 14px;" />
+    </ui:VisualElement>
+</ui:UXML>

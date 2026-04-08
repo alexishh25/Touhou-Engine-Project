@@ -18,6 +18,6 @@ MonoBehaviour:
   enterTransition:
     transition: {fileID: 11400000, guid: 5a924e1ddd46a8a4d98637c8079d921b, type: 2}
     Reverse: 1
-  interval: 0.1
+  interval: 0.2
   waitForExit: 0
   blockInputDuring: 0

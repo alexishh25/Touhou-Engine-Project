@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2822a811add3ae45adad25186e7c2d9, type: 3}
+  m_Name: TimeData
+  m_EditorClassIdentifier: Assembly-CSharp::GameplayLevelTimeData
+  audioSource: {fileID: 8300000, guid: 4c164aedbcf35ea40b3f0a82fb9e00a8, type: 3}
+  timedata:
+  - time: 3.1
+    spawns:
+    - prefab: {fileID: 265745303334568406, guid: c2f43bba0efe1f24db6faa428649d82b, type: 3}
+      position: {x: -9.43, y: 3.59, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      movementOrigin: 1
+      trajectory:
+        type: 1
+        targetDirection: {x: 1.48, y: 0, z: 0}
+        speed: 1
+        amplitude: 0
+        frequency: 0
+      pathData: {fileID: 11400000, guid: ba863782c29d9c942b173f5498300e6b, type: 2}
+      duration: 5
+      bullet:
+        velocity: {x: 0, y: 0, z: 0}
+        speed: 0
+        stream: 0

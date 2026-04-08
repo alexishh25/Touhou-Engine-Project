@@ -1760,7 +1760,7 @@ MonoBehaviour:
   m_Name: UITOpacityClip
   m_EditorClassIdentifier: UITTimeline::UITTimeline.UITOpacityClip
   _template:
-    Opacity: -0.07433193
+    Opacity: 0
 --- !u!74 &4862772905225531926
 AnimationClip:
   m_ObjectHideFlags: 1
