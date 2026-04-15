@@ -8,6 +8,17 @@ using System.Threading;
 /// </summary>
 public class PlayerStateManager : MonoBehaviour
 {
+    public static PlayerStateManager Instance { get; private set; }
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(transform.root.gameObject);
+            return;
+        }
+        Instance = this;
+    }
+
     [HideInInspector] public Rigidbody2D rgb2D;
     [HideInInspector] public InputAction moveAction;
     [HideInInspector] public InputAction focusAction;
@@ -26,12 +37,6 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerReimuState reimuState;
     public PlayerMarisaState marisaState;
     public PlayerSanaeState sanaeState;
-
-    private void Awake()
-    {
-        rgb2D = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-    }
 
     private void Start()
     {
@@ -83,11 +88,6 @@ public class PlayerStateManager : MonoBehaviour
 
         if (currentData.animatorController != null)
             animator.runtimeAnimatorController = data.animatorController;
-    }
-
-    private void Update()
-    {
-        currentStats.UpdateState();
     }
 
     public void SwitchState(PlayerBaseState state)

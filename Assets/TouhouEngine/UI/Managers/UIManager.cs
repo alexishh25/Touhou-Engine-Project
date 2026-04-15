@@ -17,12 +17,6 @@ public class UIManager : MonoBehaviour
     private VisualElement root;
     private bool _isTransitioning = false;
 
-    [Header("Efectos de sonido")]
-
-    [SerializeField] public AudioClip sfx_buttonhover;
-    [SerializeField] public AudioClip sfx_clickbutton;
-    [SerializeField] public AudioClip sfx_cancelbutton;
-
     private void Awake()
     {
         if (Instance == null)

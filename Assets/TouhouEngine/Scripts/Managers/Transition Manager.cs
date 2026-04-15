@@ -11,11 +11,10 @@ public class TransitionManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject);
+            Destroy(transform.root.gameObject);
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     // onMiddle  : called after exit anim → instantiates new screen
