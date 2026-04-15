@@ -11,11 +11,10 @@ public class TransitionManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject);
+            Destroy(transform.root.gameObject);
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     public void PlayTransition(TransitionScreenData data, Action onMiddle = null, Action onFinish = null, Action onComplete = null)

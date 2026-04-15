@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: ReimuData
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: ReimuData
-  basemoveSpeed: 10
+  basemoveSpeed: 8
   focusSpeed: 3.33
   animatorController: {fileID: 22100000, guid: 047659a76389cbe4892a4cb5b31dc3c0, type: 2}
   bulletSprite: {fileID: -4530932756991735275, guid: 60092df62e84fb34697deed03414eb0b, type: 3}
+  bulletSound: {fileID: 0}
+  bulletFocusPrefab: {fileID: 0}

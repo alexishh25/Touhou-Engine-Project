@@ -14,9 +14,12 @@ public class AnimationUIManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance != null) { Destroy(gameObject); return; }
+        if (Instance != null && Instance != this)
+        {
+            Destroy(transform.root.gameObject);
+            return;
+        }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     public void Shake(VisualElement element)

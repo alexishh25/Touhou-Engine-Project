@@ -55,7 +55,7 @@ public class BulletManager : MonoBehaviour
         //    bullet.ChangeSprite(bulletsprite);
 
         bullet.gameObject.SetActive(true);
-        SoundManager.Instance.PlaySFX(bullet_sfx);
+        SoundManager.Instance.PlaySFX(bullet_sfx, 0.6f);
     }
 
     private void Update()
