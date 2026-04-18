@@ -8,13 +8,12 @@ public class PlayerAnimationController : MonoBehaviour
     public static PlayerAnimationController Instance { get; private set; }
     private void Awake()
     {
-        if (Instance == null)
+        if (Instance != null && Instance != this)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
             Destroy(gameObject);
+            return;
+        }
+        Instance = this;
     }
     public void AlterarProgresivamenteBlend(Animator animator, string nombre, Vector2 moveinput)
     {
@@ -26,4 +25,6 @@ public class PlayerAnimationController : MonoBehaviour
         currentVal = Mathf.Lerp(currentVal, moveinput.x, 8 * Time.deltaTime);
         animator.SetFloat(nombre, currentVal);
     }
+
+    
 }

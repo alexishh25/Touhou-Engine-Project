@@ -13,8 +13,4 @@ public class PlayerMarisaState : PlayerBaseState
     {
         LogicMoverse();
     }
-    public override void OnCollisionEnter()
-    {
-        // Handle Marisa-specific collision logic here
-    }
 }

@@ -224,15 +224,17 @@ GameObject:
   m_Component:
   - component: {fileID: 358390821}
   - component: {fileID: 358390820}
-  - component: {fileID: 358390822}
   - component: {fileID: 358390823}
+  - component: {fileID: 358390822}
+  - component: {fileID: 358390825}
+  - component: {fileID: 358390824}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &358390820
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -318,7 +320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9340c93813542e14f9f3db2e8c3aabfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
-  shotCooldown: 0.3
   bulletSpeed: 10
   bulletPrefab: {fileID: -7341050640415145600, guid: 790f4992891d89a4fafac6f738f1850b, type: 3}
   bulletSfx: {fileID: 8300000, guid: cee342e722798824b96644ded61b1af4, type: 3}
@@ -369,6 +370,38 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.18138921, y: 0.21720165}
   m_EdgeRadius: 0
+--- !u!114 &358390824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358390819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78083c5238063d445bd085f72ceeb2f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+--- !u!114 &358390825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358390819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c148fd8316b12d40aa813e71b047c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
+  health: 100
+  attack: 10
+  defense: 5
+  speed: 5
+  attackSpeed: 1
+  defenseSpeed: 1
+  stream: 0
+  bulletType: 0
 --- !u!114 &483766523 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4119365176880602350, guid: cea471689fcd5b94a9cdf70f5ab3f0d7, type: 3}
@@ -923,7 +956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9340c93813542e14f9f3db2e8c3aabfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
-  shotCooldown: 0.3
   bulletSpeed: 10
   bulletPrefab: {fileID: -7341050640415145600, guid: 790f4992891d89a4fafac6f738f1850b, type: 3}
   bulletSfx: {fileID: 8300000, guid: cee342e722798824b96644ded61b1af4, type: 3}
@@ -1322,7 +1354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9340c93813542e14f9f3db2e8c3aabfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
-  shotCooldown: 0.3
   bulletSpeed: 10
   bulletPrefab: {fileID: -7341050640415145600, guid: 790f4992891d89a4fafac6f738f1850b, type: 3}
   bulletSfx: {fileID: 8300000, guid: cee342e722798824b96644ded61b1af4, type: 3}

@@ -1,44 +1,38 @@
 using UnityEngine;
 
+// ¡Este script ahora es Ciego y Obediente! Actuador Puro (Arma).
 public class EnemyShooter : MonoBehaviour
 {
-    [SerializeField] private float shotCooldown = 1.5f;
+    [Header("Weapon Config")]
     [SerializeField] private float bulletSpeed = 5f;
     [SerializeField] private BulletController bulletPrefab;
 
     [Header("Sonidos")]
     [SerializeField] private AudioClip bulletSfx;
-    [SerializeField] float volumen = 0.4f;
+    [SerializeField] private float volumen = 0.4f;
 
-    private float timer = 0f;
     private Transform player;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        // Solo necesita ubicarse con su objetivo
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+            player = playerObj.transform;
     }
 
-    private void Update()
+    public void FirePattern()
     {
-        if (player == null) return;
+        if (player == null || bulletPrefab == null) return;
 
-        timer -= Time.deltaTime;
-        if (timer <= 0f)
-        {
-            ShootAtPlayer();
-            timer = shotCooldown;
-        }
-
-    }
-
-    private void ShootAtPlayer()
-    {
         Vector2 direction = (player.position - transform.position).normalized;
-        Vector2 velocity = direction * bulletSpeed;
+        Vector2 finalVelocity = direction * bulletSpeed;
 
         BulletController bullet = BulletPoolManager.Instance.RequestBullet(bulletPrefab);
+        
+        // Respetamos arquitectura Pool
         bullet.transform.position = transform.position;
-        bullet.Velocity = velocity;
+        bullet.Velocity = finalVelocity; 
         bullet.gameObject.SetActive(true);
         
         SoundManager.Instance.PlaySFX(bulletSfx, volumen);

@@ -14,8 +14,4 @@ public class PlayerSanaeState : PlayerBaseState
     {
         LogicMoverse();
     }
-    public override void OnCollisionEnter()
-    {
-        // Handle Sanae-specific collision logic here
-    }
 }

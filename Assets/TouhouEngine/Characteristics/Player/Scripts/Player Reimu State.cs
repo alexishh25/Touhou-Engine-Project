@@ -14,8 +14,4 @@ public class PlayerReimuState : PlayerBaseState
     {
         LogicMoverse();
     }
-    public override void OnCollisionEnter()
-    {
-        // Handle Reimu-specific collision logic here
-    }
 }

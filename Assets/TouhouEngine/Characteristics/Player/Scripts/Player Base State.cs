@@ -16,7 +16,10 @@ public abstract class PlayerBaseState
     }
     public abstract void EnterState();
     public abstract void UpdateState();
-    public abstract void OnCollisionEnter();
+    public virtual void OnCollisionEnter()
+    {
+        
+    }
 
     protected void LogicMoverse()
     {

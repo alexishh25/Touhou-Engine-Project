@@ -1059,7 +1059,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shot_03_14
+      name: shotdie_1
       rect:
         serializedVersion: 2
         x: 461
@@ -5672,7 +5672,6 @@ TextureImporter:
       Shot_03_137: -4482968688942395000
       Shot_03_138: -3287889600737291346
       Shot_03_139: -7589555191937660905
-      Shot_03_14: -2070076585015520711
       Shot_03_140: -1935951633788839686
       Shot_03_141: -1894573805596634494
       Shot_03_142: 942610783213435145
@@ -5849,6 +5848,7 @@ TextureImporter:
       Shot_03_98: -1323838235033564939
       Shot_03_99: 2451107397268417239
       hitbox_sprite: -4674768756729062053
+      shotdie_1: -2070076585015520711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

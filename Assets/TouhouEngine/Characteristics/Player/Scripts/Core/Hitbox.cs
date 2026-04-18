@@ -14,11 +14,19 @@ public class Hitbox : MonoBehaviour
 
     private void Update()
     {
-        Efectos();
+        Effects();
     }
 
-    private void Efectos()
+    private void Effects()
     {
         hitbox.Rotate(0, 0, velocidad * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            PlayerStateManager.Instance.currentStats.OnCollisionEnter();
+        }
     }
 }
