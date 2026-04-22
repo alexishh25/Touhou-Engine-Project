@@ -8,6 +8,7 @@ using System.Threading;
 /// </summary>
 public class PlayerStateManager : MonoBehaviour
 {
+
     public static PlayerStateManager Instance { get; private set; }
     private void Awake()
     {

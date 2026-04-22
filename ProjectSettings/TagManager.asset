@@ -12,14 +12,14 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - Player
   - Wall
   - EnemyBullet
   - PlayerBullet
-  - 
+  - 3D Background
   - 
   - 
   - 
