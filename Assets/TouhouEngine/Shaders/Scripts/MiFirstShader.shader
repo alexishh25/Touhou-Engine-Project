@@ -1,19 +1,17 @@
-Shader "Custom/MiFirstShader"
+Shader "Custom/RenderTexture"
 {
     Properties {
         _MainTex ("Texture", 2D) = "white" {}
-        _TintColor ("Tint Color", Color) = (1,1,1,1)
-        _Transparency ("Transparency", Range(0.0, 1.0)) = 0.25
-        _CutoutThresh ("Coutout Threshold", Range(0.0, 1.0)) = 0.2
-        _Distance("Distance", float) = 1
-        _Amplitude("Amplitude", float) = 1
-        _Speed("Speed", float) = 1
-        _Amount("Amount", float) = 1
+
     }
 
     SubShader {
 
-        Tags {"Queue"="Transparent" "RenderType" = "Transparent" }
+        Tags 
+        {
+            "Queue"="Transparent" 
+            "RenderType" = "Transparent" 
+        }
 
         ZWrite Off
         Blend SrcAlpha OneMinusSrcAlpha

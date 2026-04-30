@@ -2,44 +2,48 @@ using UnityEngine;
 
 public class InfiniteStairs : MonoBehaviour
 {
+    [Header("Referencias")]
     [SerializeField] public Camera _camera;
-
     [SerializeField] public GameObject[] stairs;
-    public float speed = 2.0f;
-    public float stepHeight = 1.5f;
-    public float stepWidth = 11.0f;
-    public float threshold = -5.0f;
 
-    private void Start()
+    [Header("Configuración de Movimiento")]
+    public float downspeed = 2.0f;
+    public float backspeed = 2.0f;
+
+    [Header("Configuración de la Escalera")]
+    public Vector3 initialPosition = new Vector3(0, 0, 0);
+    public float stepHeight = 1.0f; // Separación vertical (Y) entre escalones
+
+    public void RepositionStair(Transform stair_transform)
     {
+        float highestY = float.MinValue;
+
+        // Buscamos cuál es el escalón que está más arriba en este momento
         for (int i = 0; i < stairs.Length; i++)
         {
-            stairs[i].transform.SetParent(this.transform);
-            stairs[i] = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            stairs[i].transform.localScale = new Vector3(stepWidth, stepHeight, 1);
-
-            if (i == 0)
-                stairs[i].transform.localPosition = new Vector3(0, 0, 0);
-            else
+            if (stairs[i] != null && stairs[i].transform.localPosition.y > highestY)
             {
-                var prestair_y = stairs[i - 1].transform.position.y;
-                var prestair_z = stairs[i - 1].transform.position.z;
-                stairs[i].transform.localPosition = new Vector3(stairs[i].transform.localPosition.x, prestair_y - stepHeight, prestair_z + stepWidth);
+                highestY = stairs[i].transform.localPosition.y;
             }
         }
+
+        // Lo colocamos justo por encima del más alto, manteniendo su X y Z intactos
+        Vector3 newLocalPosition = stair_transform.localPosition;
+        newLocalPosition.y = highestY + stepHeight;
+        
+        stair_transform.localPosition = newLocalPosition;
+        // Debug.Log($"Stair repositioned to local Y: {newLocalPosition.y}");
     }
 
     private void Update()
     {
-        transform.Translate(Vector3.down * speed * Time.deltaTime);
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        if (transform.position.y < threshold)
+        var cameraBottomY = _camera.WorldToViewportPoint(transform.position).y;
+        for (int i = 0; i < stairs.Length; i++)
         {
-            Vector3 newPosition = transform.position;
-            newPosition.y += stepHeight * stairs.Length;
-            transform.position = newPosition;
+            if (stairs[i] == null) continue;
+
+            stairs[i].transform.Translate(Vector3.down * downspeed * Time.deltaTime, Space.World);
+            stairs[i].transform.Translate(Vector3.back * backspeed * Time.deltaTime, Space.World);
         }
     }
-
-
 }

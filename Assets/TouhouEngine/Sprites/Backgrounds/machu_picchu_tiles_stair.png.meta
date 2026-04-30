@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7e08743019e626e489ea871084dca57d
+guid: adbf0dc79501c214e8b121a6e1cad2da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5624052211936455150
-    second: machu_picchu_tiles_0
+      213: 2201902949464222439
+    second: machu_picchu_tiles_stair_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,12 +37,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stair_mp_tile
+      name: machu_picchu_tiles_stair_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 734
-        width: 172
-        height: 20
+        x: 0
+        y: 0
+        width: 170
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee9e8b270b5ac0e40800000000000000
-      internalID: 5624052211936455150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wall
-      rect:
-        serializedVersion: 2
-        x: 522
-        y: 21
-        width: 144
-        height: 1021
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5ec39ee9988718409c56fd9ccc03fa3
-      internalID: 874382431
+      spriteID: 7ea23bcf01bbe8e10800000000000000
+      internalID: 2201902949464222439
       vertices: []
       indices: 
       edges: []
@@ -147,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 77ac6011fd56b0847ba0d2603fc37c36
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -157,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stair_mp_tile: 5624052211936455150
-      wall: 874382431
+      machu_picchu_tiles_stair_0: 2201902949464222439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
