@@ -5,7 +5,7 @@ public class StairDetection : MonoBehaviour
     public InfiniteStairs stairs;
 
     // Cambiado a 3D y usando Trigger en lugar de Collision
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         Debug.Log("StairDetection: Trigger entered by " + other.gameObject.name);
         // Validamos que chocó con el EndCollider

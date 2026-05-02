@@ -46,4 +46,5 @@ public class InfiniteStairs : MonoBehaviour
             stairs[i].transform.Translate(Vector3.back * backspeed * Time.deltaTime, Space.World);
         }
     }
+
 }
